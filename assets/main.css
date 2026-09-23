@@ -8,6 +8,24 @@
   font-family: "google-sans", Helvetica, Arial, Sans-Serif;
 }
 
+:root {
+  --aws-squid-ink: #232f3e;
+  --aws-orange: #ff9900;
+  --aws-yellow: #ffc400;
+  --aws-red: #ec7211;
+  --aws-surface: #f5f7f9;
+}
+
+body {
+  background: var(--aws-surface);
+}
+
+.aws-card {
+  border: 1px solid rgba(35, 47, 62, 0.12);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(35, 47, 62, 0.08);
+}
+
 .footer-icons {
   float: right;
 }

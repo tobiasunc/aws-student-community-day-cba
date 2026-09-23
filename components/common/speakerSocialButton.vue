@@ -1,3 +1,8 @@
+<!--
+  Componente: speakerSocialButton.vue
+  Qué hace: botones de redes sociales que solo aparecen cuando hay URL.
+  Dónde se usa: tarjetas de speakers, equipo, footer y contacto.
+-->
 <template>
   <div class="mt-4">
     <!-- {{ socialLinks }} -->

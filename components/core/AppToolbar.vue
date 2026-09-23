@@ -1,27 +1,33 @@
+<!--
+  Componente: AppToolbar.vue
+  Qué hace: barra de navegación fija, marca AWS, enlaces principales y CTA de inscripción.
+  Dónde se usa: layouts/default.vue.
+  Datos: navbarData y eventInfo desde data/config.json y data/navbar.json.
+-->
 <template>
   <v-app-bar
     :elevation="0"
     fixed
     class="mt-0 px-2 toolbar-class mx-auto mt-4"
     rounded="xl"
-    color="#eeeeee"
+    color="#232F3E"
   >
   <v-app-bar-nav-icon
       class="d-md-none d-lg-none d-sm-flex d-flex"
       @click="drawerAction"
     ></v-app-bar-nav-icon>
-    <NuxtLink to="/" class="px-2" style="text-decoration: none; color: black">
+    <NuxtLink to="/" class="px-2" style="text-decoration: none; color: white">
       <div class="d-flex">
         <v-img
-          width="120"
-          alt="logo"
-          src="/assets/img/devfest-logo.svg"
+          width="44"
+          alt="Logo de AWS Student Builder Group UNC"
+          src="/img/common/aws-sbg-logo.svg"
           class="mr-2"
         ></v-img>
         <v-chip
           style="display: inline; background-color: white"
           variant="outlined"
-          color="black"
+          color="#FF9900"
           size="small"
           class="align-center pt-1"
           >{{ mainData.communityLocation.city }}</v-chip
@@ -36,6 +42,7 @@
           rounded
           size="small"
           style="text-transform: capitalize"
+          color="white"
           :to="item.path"
           class="mx-1"
           v-if="item.visible"
@@ -48,14 +55,12 @@
       <v-btn
         rounded
         v-if="
-          mainData &&
-          mainData.eventInfo.registeration.link.length &&
-          new Date(mainData.eventInfo.registeration.end_date) > new Date()
+          registrationIsOpen
         "
-        :href="mainData.eventInfo.registeration.link"
+        :href="mainData.eventInfo.registration.link"
         class="d-md-flex d-lg-flex d-sm-flex d-none mr-3"
         target="_blank"
-        color="#FFD427"
+        color="#FF9900"
         style="
           border: 1.5px solid #1e1e1e;
           color: black;
@@ -63,7 +68,7 @@
           font-weight: 100;
         "
         variant="flat"
-        >Register Now</v-btn
+        >Inscribite</v-btn
       >
     </ClientOnly>
     
@@ -74,9 +79,8 @@
 import { useDisplay } from "vuetify";
 const { mainData, navbarData } = useJSONData();
 const sidebar = useSideBar();
-const { width, mobile } = useDisplay();
-
-const screenWidth = ref(width);
+const registrationIsOpen = useRegistrationStatus();
+useDisplay();
 
 const drawerAction = () => {
   sidebar.value = !sidebar.value;

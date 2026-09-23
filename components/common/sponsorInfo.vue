@@ -1,3 +1,9 @@
+<!--
+  Componente: sponsorInfo.vue
+  Qué hace: lista sponsors agrupados por categoría.
+  Dónde se usa: components/home/SponsorsSection.vue.
+  Datos: sponsorsData; logos desde public/img/sponsors con fallback local.
+-->
 <template>
   <v-container fluid class="pa-0 ma-0">
     <v-row
@@ -23,8 +29,12 @@
           <ClientOnly>
             <v-tooltip location="bottom" :key="indexp">
               <template v-slot:activator="{ props }">
-                <a aria-label="sponsor name" :href="sponsor.link" target="_blank" v-bind="props">
-                  <v-img alt="sponsor-logo" :src="'/img/sponsors/' + sponsor.logo"></v-img>
+                <a :aria-label="`Visitar el sitio de ${sponsor.name}`" :href="sponsor.link" target="_blank" v-bind="props">
+                  <v-img
+                    :alt="`Logo de ${sponsor.name}`"
+                    :src="'/img/sponsors/' + sponsor.logo"
+                    @error="handleImageError"
+                  ></v-img>
                 </a>
               </template>
               <span>{{ sponsor.name }}</span>
@@ -38,6 +48,10 @@
 
 <script setup>
 const { sponsorsData } = useJSONData();
+const handleImageError = (event) => {
+  if (event?.target?.src?.endsWith("/img/common/avatar.png")) return;
+  event.target.src = "/img/common/avatar.png";
+};
 </script>
 
 <style>

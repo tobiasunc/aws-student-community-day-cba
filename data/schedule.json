@@ -1,28 +1,13 @@
 [
     {
         "day": "1",
-        "date": "Oct 23",
+        "date": "7 de noviembre de 2026",
         "schedule": [
-            {
-                "startTime": "03:30",
-                "endTime": "04:00",
-                "session": 1001
-            },
-            {
-                "startTime": "04:00",
-                "endTime": "04:40",
-                "session": 1002
-            },
-            {
-                "startTime": "04:50",
-                "endTime": "05:30",
-                "session": 1003
-            },
-            {
-                "startTime": "05:40",
-                "endTime": "06:00",
-                "session": 1004
-            }
+            { "startTime": "09:30", "endTime": "11:00", "session": "1001" },
+            { "startTime": "11:00", "endTime": "12:30", "session": "1002" },
+            { "startTime": "13:30", "endTime": "14:15", "session": "1003" },
+            { "startTime": "15:00", "endTime": "15:45", "session": "1004" },
+            { "startTime": "16:30", "endTime": "16:45", "session": "1005" }
         ]
     }
 ]

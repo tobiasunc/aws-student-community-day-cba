@@ -1,3 +1,9 @@
+<!--
+  Componente: SponsorsSection.vue
+  Qué hace: contenedor visual de sponsors.
+  Dónde se usa: pages/index.vue.
+  Datos: delega en CommonSponsorInfo.
+-->
 <template>
   <v-container fluid >
     <v-row>

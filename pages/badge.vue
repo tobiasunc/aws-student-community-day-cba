@@ -1,3 +1,8 @@
+<!--
+  Componente: badge.vue
+  Qué hace: genera una credencial local en Canvas sin subir la foto al servidor.
+  Datos: imagen elegida por la persona y asset de badge local.
+-->
 <template>
   <NuxtLayout name="default">
     <v-container fluid class=" fill-height">
@@ -5,11 +10,12 @@
         <v-col md="6" sm="7" cols="12">
           <h1>Badge</h1>
           <p class="mt-2">
-            Upload an image and generate a personalized badge with the DevFest
-            frame.
+            Subí una imagen y generá una credencial personalizada del AWS
+            Student Community Day UNC.
           </p>
 
-          <p class="mt-8">Select an Image</p>
+          <!-- La fotografía se procesa en el navegador y no se sube al servidor. -->
+          <p class="mt-8">Seleccioná una imagen</p>
 
           <v-btn
             class="mt-4 mb-5"
@@ -20,7 +26,7 @@
             variant="flat"
             style="border: 1.5px solid #1e1e1e; color: black;text-transform: capitalize"
           >
-            Upload Image
+            Subir imagen
             <v-icon>mdi-tray-arrow-up</v-icon>
           </v-btn>
           <input
@@ -34,7 +40,7 @@
 
           <div class="mt-5">
             <label class="google-font mb-5" style="font-size: 110%">
-              Image Shape
+              Forma de la imagen
             </label>
             <br />
             <v-btn-toggle
@@ -52,8 +58,8 @@
           </div>
           <p class="mt-8 mb-md-0">
             <span>
-              *&nbsp; We respect your privacy and are not storing your pictures
-              on our servers.
+              *&nbsp; Respetamos tu privacidad: la imagen se procesa en tu
+              navegador y no se almacena en nuestros servidores.
             </span>
           </p>
         </v-col>
@@ -74,7 +80,7 @@
               v-show="downloadVisible"
             >
               <v-icon left>mdi-arrow-down-bold-circle-outline</v-icon>
-              Download
+              Descargar
             </v-btn>
           </div>
         </v-col>
@@ -115,20 +121,35 @@ const initializeCanvas = () => {
 };
 
 const upload = (e) => {
-  if (e && e.target.files && e.target.files[0]) {
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      image.value = new Image();
-      image.value.onload = draw;
-      image.value.src = event.target.result;
-    };
-    reader.readAsDataURL(e.target.files[0]);
+  const file = e?.target?.files?.[0];
+  const maxFileSize = 10 * 1024 * 1024;
+  if (!file || !file.type.startsWith("image/") || file.size > maxFileSize) {
+    e.target.value = "";
+    return;
   }
+
+  const reader = new FileReader();
+  reader.onerror = () => {
+    image.value = null;
+    downloadVisible.value = false;
+  };
+  reader.onload = (event) => {
+    image.value = new Image();
+    image.value.onload = () => {
+      draw();
+      downloadVisible.value = true;
+    };
+    image.value.onerror = () => {
+      image.value = null;
+      downloadVisible.value = false;
+    };
+    image.value.src = event.target.result;
+  };
+  reader.readAsDataURL(file);
 };
 
 const triggerFileUpload = () => {
   fileInput.value.click();
-  downloadVisible.value = true;
 };
 
 const draw = () => {
@@ -212,6 +233,7 @@ const applyShape = () => {
     );
     ctx.value.closePath();
     ctx.value.fill();
+    ctx.value.globalCompositeOperation = "source-over";
   }
 };
 
@@ -228,27 +250,7 @@ const download = () => {
   a.click();
 };
 
-useSeoMeta({
-  contentType: "text/html; charset=utf-8",
-  title: "Badge - " + mainData.eventInfo.name + " | " + mainData.communityName,
-  description: mainData.eventInfo.description.short,
-  keywords: mainData.seo.keywords,
-  ogLocale:'en_US',
-  author: "OSS Labs",
-  creator: "OSS Labs",
-  viewport: "width=device-width, initial-scale=1.0",
-  ogTitle:
-    "Badge - " + mainData.eventInfo.name + " | " + mainData.communityName,
-  ogDescription: mainData.eventInfo.description.short,
-  ogImage: `${mainData.seo.hostUrl}/thumbnail.png?auto=format&fit=crop&frame=1&h=512&w=1024`,
-  ogUrl: mainData.seo.hostUrl,
-  ogType: "website",
-  twitterTitle:
-    "Badge - " + mainData.eventInfo.name + " | " + mainData.communityName,
-  twitterDescription: mainData.eventInfo.description.short,
-  twitterImage: `${mainData.seo.hostUrl}thumbnail.png?auto=format&fit=crop&frame=1&h=512&w=1024`,
-  twitterCard: "summary_large_image",
-});
+useEventSeo("Badge");
 </script>
 
 <style scoped>

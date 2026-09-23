@@ -1,3 +1,9 @@
+<!--
+  Componente: HomeStats.vue
+  Qué hace: grilla de métricas oficiales del evento.
+  Dónde se usa: pages/index.vue.
+  Datos: eventInfo.stats desde data/config.json.
+-->
 <template>
   <v-container fluid class="mx-3">
     <v-row
@@ -12,13 +18,13 @@
       <v-col cols="12" md="2" sm="12" order-md="1" order="2" order-sm="1" class="pa-0">
         <!--Desktop-->
         <v-img
-          alt="image"
+          alt="Elemento decorativo AWS"
           class="d-none d-sm-none d-md-flex d-lg-flex d-xl-flex"
           src="/assets/img/element1.svg"
         ></v-img>
         <!--mobile-->
         <v-img
-          alt="image"
+          alt="Elemento decorativo AWS"
           class="d-flex d-sm-none d-md-none d-lg-none d-xl-none"
           src="/assets/img/element3.svg"
         ></v-img>

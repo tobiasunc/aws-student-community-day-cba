@@ -1,13 +1,22 @@
+<!--
+  Componente: HeroSection.vue
+  Qué hace: hero de la home con identidad del evento, fecha, sede e inscripción.
+  Dónde se usa: pages/index.vue.
+  Datos: eventInfo desde data/config.json.
+-->
 <template>
   <v-container fluid class="">
     <v-row justify-center align="center">
       <v-col md="6" sm="6" cols="12">
         <h1 class="responsive-h1 my-4">
-          DevFest <br />
-          {{ mainData.communityLocation.city }} 2024
+          AWS Student Community Day <br />
+          UNC 2026
         </h1>
         <p class="" :style="{ maxWidth: '90%' }">
           {{ mainData.eventInfo.description.short }}
+        </p>
+        <p class="text-subtitle-1 font-weight-medium" style="color: #EC7211">
+          {{ mainData.eventInfo.tagline }}
         </p>
 
         <p class="my-5">
@@ -18,7 +27,7 @@
 
           <span class="mr-4">
             <v-icon class="mr-1">mdi-map-legend</v-icon>
-            <a :href="mainData.eventInfo.venue.map_link" target="_blank" style="color:black">
+            <a :href="mainData.eventInfo.venue.mapLink" target="_blank" style="color:black">
               {{ mainData.eventInfo.venue.address }}
             </a>
             
@@ -30,11 +39,9 @@
           size="large"
           color="#FFD427"
           v-if="
-            mainData.eventInfo &&
-            mainData.eventInfo.registeration.link.length &&
-            new Date(mainData.eventInfo.registeration.end_date) > new Date()
+            registrationIsOpen
           "
-          :href="mainData.eventInfo.registeration.link"
+          :href="mainData.eventInfo.registration.link"
           class="my-4 mt-3"
           target="_blank"
           style="border: 1.5px solid #1e1e1e; color: black"
@@ -44,7 +51,7 @@
       </v-col>
       <v-col md="6" sm="6" cols="12">
         <v-img
-          alt="logo"
+          alt="Ilustración AWS Student Community Day UNC"
           src="assets/img/hero-image.svg"
           lazy-src="assets/img/hero-image.svg"
         ></v-img>
@@ -58,6 +65,7 @@ import { useDisplay } from "vuetify";
 const { width, mobile } = useDisplay();
 const screenWidth = ref(width);
 const { mainData } = useJSONData();
+const registrationIsOpen = useRegistrationStatus();
 </script>
 
 <style scoped>

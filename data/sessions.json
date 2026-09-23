@@ -1,62 +1,67 @@
 [
-    {
-        "id": "1001",
-        "slide": "",
-        "title": "Session 1",
-        "description": "In this session, we will help you get kickstarted with web, starting from what is the current state of web in India, challenges and opportunities, Roadmap, Google's web technologies, getting started with e-commerce application. We will also see, how we can extend the functionalities of a web-app with Authentication, Database and Hosting using Firebase. You will also learn frequently asked interview questions.",
-        "track": "Web",
-        "link": "https://www.youtube.com/embed/SYQa0pqoPWA?si=PTsrvHcgN23ffbYJ",
-        "time": "06:00 PM to 06:35 PM (IST)",
-        "format": "Day 1",
-        "date": "Oct 22, 2021",
-        "timeDuration": "40",
-        "speakers": [
-            101
-        ]
-    },
-    {
-        "id": "1002",
-        "slide": "",
-        "title": "Session 2",
-        "description": "In this session, we will help you get kickstarted with web, starting from what is the current state of web in India, challenges and opportunities, Roadmap, Google's web technologies, getting started with e-commerce application. We will also see, how we can extend the functionalities of a web-app with Authentication, Database and Hosting using Firebase. You will also learn frequently asked interview questions.",
-        "track": "Web",
-        "link": "",
-        "time": "06:00 PM to 06:35 PM (IST)",
-        "format": "Day 1",
-        "date": "Oct 22, 2021",
-        "timeDuration": "40",
-        "speakers": [
-            101
-        ]
-    },
-    {
-        "id": "1003",
-        "slide": "",
-        "title": "Session 3",
-        "description": "In this session, we will help you get kickstarted with web, starting from what is the current state of web in India, challenges and opportunities, Roadmap, Google's web technologies, getting started with e-commerce application. We will also see, how we can extend the functionalities of a web-app with Authentication, Database and Hosting using Firebase. You will also learn frequently asked interview questions.",
-        "track": "Web",
-        "link": "",
-        "time": "06:00 PM to 06:35 PM (IST)",
-        "format": "Day 1",
-        "date": "Oct 22, 2021",
-        "timeDuration": "40",
-        "speakers": [
-            102, 101
-        ]
-    },
-    {
-        "id": "1004",
-        "slide": "",
-        "title": "Session 4",
-        "description": "In this session, we will help you get kickstarted with web, starting from what is the current state of web in India, challenges and opportunities, Roadmap, Google's web technologies, getting started with e-commerce application. We will also see, how we can extend the functionalities of a web-app with Authentication, Database and Hosting using Firebase. You will also learn frequently asked interview questions.",
-        "track": "Web",
-        "link": "",
-        "time": "06:00 PM to 06:35 PM (IST)",
-        "format": "Day 1",
-        "date": "Oct 22, 2021",
-        "timeDuration": "40",
-        "speakers": [
-            102
-        ]
-    }
+  {
+    "id": "1001",
+    "slide": "",
+    "title": "De cero a tu primera arquitectura AWS",
+    "description": "Workshop introductorio para entender servicios fundamentales, redes y buenas prácticas de costo.",
+    "track": "Red Track",
+    "link": "",
+    "time": "09:30 ART",
+    "format": "Workshop",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "90",
+    "speakers": ["101"]
+  },
+  {
+    "id": "1002",
+    "slide": "",
+    "title": "DevSecOps para equipos estudiantiles",
+    "description": "Herramientas y hábitos para integrar seguridad, IAM y compliance en el ciclo de desarrollo.",
+    "track": "Red Track",
+    "link": "",
+    "time": "11:00 ART",
+    "format": "Workshop",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "90",
+    "speakers": ["102"]
+  },
+  {
+    "id": "1003",
+    "slide": "",
+    "title": "Serverless e infraestructura como código",
+    "description": "Una mirada práctica a sistemas escalables con servicios administrados y automatización.",
+    "track": "Green Track",
+    "link": "",
+    "time": "13:30 ART",
+    "format": "Technical talk",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "45",
+    "speakers": ["101", "102"]
+  },
+  {
+    "id": "1004",
+    "slide": "",
+    "title": "IA responsable y oportunidades de carrera",
+    "description": "Conversación sobre privacidad, gobernanza, LLMs open-source y caminos profesionales.",
+    "track": "Orange Track",
+    "link": "",
+    "time": "15:00 ART",
+    "format": "Technical talk",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "45",
+    "speakers": ["101"]
+  },
+  {
+    "id": "1005",
+    "slide": "",
+    "title": "Community Flash Talks",
+    "description": "Sesiones relámpago de 15 minutos para compartir proyectos, aprendizajes y oportunidades.",
+    "track": "Yellow Track",
+    "link": "",
+    "time": "16:30 ART",
+    "format": "Flash talks",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "15",
+    "speakers": ["102"]
+  }
 ]

@@ -1,3 +1,8 @@
+<!--
+  Componente: index.vue
+  Qué hace: página principal que compone el hero y todas las secciones del evento.
+  Datos: eventInfo desde data/config.json.
+-->
 <template>
   <NuxtLayout name="default">
     <v-container fluid>
@@ -11,16 +16,18 @@
         <!-- Stats -->
 
         <!-- Whats New -->
-        <HomeExpectionSection class="mt-md-10" />
+        <HomeExpectationSection class="mt-md-10" />
         <!-- Whats New -->
+
+        <HomeEventProgram class="mb-md-10" />
 
         <!-- Technologies -->
         <HomeTechSection class="mb-md-10" />
         <!-- Technologies -->
 
-        <!-- Past DevFest -->
-        <HomePastDevFest class="mb-md-10" />
-        <!-- Past DevFest -->
+        <!-- Recap de actividades anteriores de la comunidad -->
+        <HomePastEvent class="mb-md-10" />
+        <!-- Fin del recap -->
 
         <!-- Sponsors -->
         <HomeSponsorsSection />
@@ -40,25 +47,7 @@ definePageMeta({
   layout: false,
 });
 
-useSeoMeta({
-  contentType: "text/html; charset=utf-8",
-  title: mainData.eventInfo.name + " | " + mainData.communityName,
-  description: mainData.eventInfo.description.short,
-  ogLocale:'en_US',
-  keywords: mainData.seo.keywords,
-  author: "OSS Labs",
-  creator: "OSS Labs",
-  viewport: "width=device-width, initial-scale=1.0",
-  ogTitle: mainData.eventInfo.name + " | " + mainData.communityName,
-  ogDescription: mainData.eventInfo.description.short,
-  ogImage: `${mainData.seo.hostUrl}/thumbnail.png?auto=format&fit=crop&frame=1&h=512&w=1024`,
-  ogUrl: mainData.seo.hostUrl,
-  ogType: "website",
-  twitterTitle: mainData.eventInfo.name + " | " + mainData.communityName,
-  twitterDescription: mainData.eventInfo.description.short,
-  twitterImage: `${mainData.seo.hostUrl}thumbnail.png?auto=format&fit=crop&frame=1&h=512&w=1024`,
-  twitterCard: "summary_large_image",
-});
+useEventSeo();
 </script>
 
 <style scoped></style>

@@ -1,6 +1,6 @@
-# DevFest 2024
-Standard Web App for DevFest's Events. <br>
-Show some ❤️ and star the repo to support the project
+# AWS Student Community Day UNC 2026
+Sitio oficial del AWS Student Community Day UNC 2026. <br>
+Evento estudiantil y comunitario en Córdoba, Argentina.
 
 ![asd](/public/thumbnail.png)
 
@@ -10,9 +10,8 @@ Show some ❤️ and star the repo to support the project
     - Install [Node.js (v20 or above)](https://nodejs.org/en/download/)
 1. Install project dependencies: `npm install` 
 1. Compiles and hot-reloads for development use `npm run dev`
-1. Update JSON files from `/data` and `/public/` directory
-1. Upload all the images related to Speakers, Team and Sponsors in `/public/speakers/` | `/public/team/` with their respective directory and try to upload the images in 1:1 aspect ratio
-1. For the production: `npm run generate` and then one dir will be created for static hosting
+1. Actualizá los archivos JSON de `/data` y los assets de `/public/` cuando cambie la información oficial.
+1. Para producción ejecutá `npm run generate`; Nuxt generará el sitio estático en `.output/public`.
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
@@ -25,7 +24,9 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 1. Go to the Firebase Console Dashboard and Click on Hosting in the left navigation.
 1. Click on Get Started
 1. Click through all steps till you’re taken to the Hosting page in the console.
-1. You’ll be provided with a ready domain with your project ID. It should look like - `<project-id>.web.app or <project-id>.firebaseapp.com`
+El dominio público del evento es `https://awstudentcommunitydaycba.com/`. Firebase
+Hosting puede mantener además un subdominio técnico del proyecto, pero no debe
+usarse como URL canónica.
 1. Copy the sub-domain name of the URL provided. In this case, it will be the project ID. However, to be precise, you have to copy the part before .web.aap or .firebaseapp.com. This is your Site ID
 1. Update `Firebase.json` file, set the site key to Site ID
     ```js
@@ -57,7 +58,8 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 * [VueJS](https://vuejs.org/)
 * [Nuxt](https://nuxt.com/)
-* [Firebase](https://firebase.google.com/)
+* [AWS Community](https://aws.amazon.com/developer/community/)
+* [Firebase Hosting](https://firebase.google.com/)
 
 ## Contributing
 Awesome! We would greatly appreciate it if you could contribute to all kinds. To help smoothen the process we have a few non-exhaustive guidelines to follow which should get you going in no time.

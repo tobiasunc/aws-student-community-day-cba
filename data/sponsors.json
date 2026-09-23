@@ -1,58 +1,15 @@
 [
   {
-      "category_name": "Title Sponsors",
-      "sponsors": [
-          {
-              "name":"Google For Developers",
-              "link": "https://developers.google.com",
-              "logo": "googlefordevelopers.png"   
-          },
-          {
-              "name":"Google For Developers",
-              "link": "https://developers.google.com",
-              "logo": "googlefordevelopers.png"   
-          },
-          {
-              "name":"Google For Developers",
-              "link": "https://developers.google.com",
-              "logo": "googlefordevelopers.png"   
-          },
-          {
-              "name":"Google For Developers",
-              "link": "https://developers.google.com",
-              "logo": "googlefordevelopers.png"   
-          }
-      ]
+    "category_name": "Community partners",
+    "sponsors": [
+      { "id": "aws", "name": "Amazon Web Services", "link": "https://aws.amazon.com", "logo": "aws.png" },
+      { "id": "unc", "name": "Universidad Nacional de Córdoba", "link": "https://www.unc.edu.ar", "logo": "unc.png" }
+    ]
   },
   {
-      "category_name": "Venue Sponsors",
-      "sponsors": [
-          {
-              "name":"Google For Developers",
-              "link": "https://developers.google.com",
-              "logo": "googlefordevelopers.png"   
-          },
-          {
-              "name":"Google For Developers",
-              "link": "https://developers.google.com",
-              "logo": "googlefordevelopers.png"   
-          },
-          {
-              "name":"Google For Developers",
-              "link": "https://developers.google.com",
-              "logo": "googlefordevelopers.png"   
-          }
-      ]
-  },
-  {
-      "category_name": "Template Partner",
-      "sponsors": [
-          {
-              "name":"TechFerment",
-              "link": "https://techferment.com",
-              "logo": "techferment.png"   
-          }
-      ]
+    "category_name": "Supporting partners",
+    "sponsors": [
+      { "id": "partner-1", "name": "Partner announcement coming soon", "link": "https://aws.amazon.com/developer/community/", "logo": "placeholder.png" }
+    ]
   }
-
 ]

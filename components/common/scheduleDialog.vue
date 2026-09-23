@@ -1,5 +1,11 @@
+<!--
+  Componente: scheduleDialog.vue
+  Qué hace: diálogo con detalle de una sesión, video y speakers relacionados.
+  Dónde se usa: components/common/scheduleDetails.vue.
+  Datos: Session y speakersData.
+-->
 <template>
-  <v-dialog v-model="dialog" width="800" scrollable>
+  <v-dialog v-if="props.data" v-model="dialog" width="800" scrollable>
     <template v-slot:activator="{ props: activatorProps }">
       <div
         style="cursor: pointer"
@@ -12,7 +18,7 @@
         <span v-for="(itemp, indexp) in speakers" :key="indexp">
           <v-chip pill class="mt-2 mr-2">
             <v-avatar start>
-              <img :src="getImgUrl(itemp.image)" style="width: 100%" />
+              <img :alt="`Foto de ${itemp.name}`" :src="getImgUrl(itemp.image)" style="width: 100%" />
             </v-avatar>
             {{ itemp.name }}
           </v-chip>
@@ -91,7 +97,7 @@
                 <span v-for="(itemp, indexp) in speakers" :key="indexp">
                   <v-chip pill class="mt-2 mr-2">
                     <v-avatar start>
-                      <img :src="getImgUrl(itemp.image)" style="width: 100%" />
+                      <img :alt="`Foto de ${itemp.name}`" :src="getImgUrl(itemp.image)" style="width: 100%" />
                     </v-avatar>
                     {{ itemp.name }}
                   </v-chip>
@@ -109,29 +115,23 @@
   </v-dialog>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import type { Session } from '~/types'
+
 const { speakersData } = useJSONData();
 
 let dialog = ref(false);
-let speakers = ref([]);
 
-const props = defineProps({
-  data: {
-    type: Array,
-    default: [],
-  },
-});
+const props = defineProps<{ data?: Session }>();
 
-onMounted(() => {
-  speakers.value = props.data.speakers.map((speakerId) => {
-    return speakersData.find(
-      (speaker) => parseInt(speaker.id) === parseInt(speakerId)
-    );
-  });
-});
+const speakers = computed(() =>
+  (props.data?.speakers || [])
+    .map((speakerId) => speakersData.find((speaker) => speaker.id === String(speakerId)))
+    .filter(Boolean)
+);
 
 const getImgUrl = (pic, defaultimage = "avatar.png") => {
-  if (pic.length > 0) {
+  if (pic?.length > 0) {
     return "/img/speakers/" + pic;
   } else {
     return "/img/common/" + defaultimage;

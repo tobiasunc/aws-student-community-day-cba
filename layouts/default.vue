@@ -1,3 +1,8 @@
+<!--
+  Componente: default.vue
+  Qué hace: layout global con toolbar, drawer, contenido y footer.
+  Dónde se usa: todas las páginas mediante NuxtLayout.
+-->
 <template>
   <v-app style="background-color: #FFFFFF" class="google-font">
     <CoreAppToolbar />

@@ -1,3 +1,9 @@
+<!--
+  Componente: CommunityContact.vue
+  Qué hace: CTA de contacto y enlaces de la comunidad AWS SBG UNC.
+  Dónde se usa: pages/index.vue.
+  Datos: communityName y communityLinks.
+-->
 <template>
   <v-container fluid>
     <v-row>
@@ -13,12 +19,11 @@
           <v-row justify-center align="center" class="pa-5">
             <v-col md="5" sm="6" cols="12">
               <h1 style="line-height: normal;">
-                Keep in touch with {{ mainData.communityName }} for the latest
-                announcements
+                Mantenete en contacto con {{ mainData.communityName }}
               </h1>
               <p class="mb-3">
-                Stake out #{{ mainData.communityName }} for the latest updates
-                and news.
+                Seguinos para recibir novedades, actividades y oportunidades de
+                la comunidad.
               </p>
 
               <CommonSpeakerSocialButton
@@ -27,7 +32,7 @@
             </v-col>
             <v-col md="4" sm="1"></v-col>
             <v-col md="3" sm="5" cols="12">
-              <v-img alt="logo" src="/assets/img/gdg-logo.svg"></v-img>
+              <v-img alt="Logo de AWS Student Builder Group UNC" src="/img/common/aws-sbg-logo.svg"></v-img>
             </v-col>
           </v-row>
         </v-container>
