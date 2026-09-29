@@ -4,6 +4,7 @@
         "date": "7 de noviembre de 2026",
         "schedule": [
             { "startTime": "09:30", "endTime": "11:00", "session": "1001" },
+            { "startTime": "09:30", "endTime": "11:00", "session": "1006" },
             { "startTime": "11:00", "endTime": "12:30", "session": "1002" },
             { "startTime": "13:30", "endTime": "14:15", "session": "1003" },
             { "startTime": "15:00", "endTime": "15:45", "session": "1004" },

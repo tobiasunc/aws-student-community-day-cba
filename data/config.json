@@ -19,19 +19,19 @@
     "venue": {
       "id": "auditorio-unc",
       "name": "Auditorio UNC",
-      "address": "Av. Medina Allende, Córdoba",
+      "address": "FaMAF, Universidad Nacional de Córdoba",
       "city": "Córdoba",
       "country": "Argentina",
-      "mapLink": "https://maps.google.com/?q=Av.+Medina+Allende,+Córdoba"
+      "mapLink": "https://www.google.com/maps/place/FaMAF/@-31.4384193,-64.1955379,17z/data=!3m1!4b1!4m6!3m5!1s0x9432a2f50c080985:0xec1e4c66fe09e826!8m2!3d-31.4384193!4d-64.192963!16s%2Fg%2F121qyb2y?entry=ttu&g_ep=EgoyMDI2MDkyNy4xIKXMDSoASAFQAw%3D%3D"
     },
     "venues": [
       {
         "id": "auditorio-unc",
         "name": "Auditorio UNC",
-        "address": "Av. Medina Allende, Córdoba",
+        "address": "FaMAF, Universidad Nacional de Córdoba",
         "city": "Córdoba",
         "country": "Argentina",
-        "mapLink": "https://maps.google.com/?q=Av.+Medina+Allende,+Córdoba",
+        "mapLink": "https://www.google.com/maps/place/FaMAF/@-31.4384193,-64.1955379,17z/data=!3m1!4b1!4m6!3m5!1s0x9432a2f50c080985:0xec1e4c66fe09e826!8m2!3d-31.4384193!4d-64.192963!16s%2Fg%2F121qyb2y?entry=ttu&g_ep=EgoyMDI2MDkyNy4xIKXMDSoASAFQAw%3D%3D",
         "capacity": 500,
         "description": "Main stage for keynotes and community talks."
       },

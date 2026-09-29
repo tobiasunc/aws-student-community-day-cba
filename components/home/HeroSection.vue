@@ -51,9 +51,9 @@
       </v-col>
       <v-col md="6" sm="6" cols="12">
         <v-img
-          alt="Ilustración AWS Student Community Day UNC"
-          src="assets/img/hero-image.svg"
-          lazy-src="assets/img/hero-image.svg"
+          alt="AWS Student Community Day UNC"
+          :src="heroImage"
+          :lazy-src="heroImage"
         ></v-img>
       </v-col>
     </v-row>
@@ -62,6 +62,8 @@
 
 <script setup>
 import { useDisplay } from "vuetify";
+import heroImage from "@/assets/img/foto_pagina _principal.png";
+
 const { width, mobile } = useDisplay();
 const screenWidth = ref(width);
 const { mainData } = useJSONData();

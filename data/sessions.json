@@ -26,6 +26,19 @@
     "speakers": ["102"]
   },
   {
+    "id": "1006",
+    "slide": "",
+    "title": "Laboratorio de datos con Amazon Bedrock",
+    "description": "Experiencia práctica para construir un prototipo de IA generativa con datos propios y servicios administrados de AWS.",
+    "track": "Blue Track",
+    "link": "",
+    "time": "09:30 ART",
+    "format": "Workshop",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "90",
+    "speakers": ["101", "102"]
+  },
+  {
     "id": "1003",
     "slide": "",
     "title": "Serverless e infraestructura como código",

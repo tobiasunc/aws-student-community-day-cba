@@ -15,7 +15,13 @@
         </p>
       </v-col>
       <v-col v-for="track in mainData.eventInfo.tracks" :key="track.id" cols="12" sm="6" md="4" lg="3">
-        <v-card class="aws-card h-100 pa-5" :style="{ borderTop: `6px solid ${track.color}` }">
+        <v-card
+          class="aws-card h-100 pa-5"
+          :style="{ borderTop: `6px solid ${track.color}` }"
+          :to="{ path: '/agenda', query: { track: track.id } }"
+          link
+          :aria-label="`Ver agenda del track ${track.name}`"
+        >
           <v-chip size="small" :color="track.color" class="mb-4">{{ track.name }}</v-chip>
           <p class="text-caption text-medium-emphasis mb-2">{{ track.category }}</p>
           <p class="mb-0">{{ track.description }}</p>

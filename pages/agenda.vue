@@ -11,7 +11,7 @@
           <h1>Agenda</h1>
           <p>
             Explorá workshops, charlas técnicas y flash talks organizadas en
-            tracks escalables. Blue y Yellow se habilitan según la demanda.
+            cinco tracks escalables. Seleccioná un track para ver sus sesiones.
           </p>
         </v-col>
       </v-row>
@@ -22,13 +22,17 @@
               <v-tabs
                 v-model="model"
                 color="primary"
-                slider-color="primary"
                 centered
                 class="px-3"
               >
-                <v-tab v-for="(item, index) in scheduleData" :key="index">{{
-                  item.date
-                }}</v-tab>
+                <v-tab
+                  v-for="track in tracks"
+                  :key="track.id"
+                  :value="track.id"
+                  :color="track.color"
+                >
+                  {{ track.name }}
+                </v-tab>
               </v-tabs>
             </v-toolbar>
 
@@ -38,11 +42,16 @@
               style="background-color: white; border-radius: 15px"
             >
               <v-tabs-window-item
-                v-for="(item, index) in scheduleData"
-                :key="index"
+                v-for="trackSchedule in trackSchedules"
+                :key="trackSchedule.track.id"
+                :value="trackSchedule.track.id"
                 class="pa-0 ma-0"
               >
-                <CommonScheduleDetails :data="item" />
+                <CommonScheduleDetails
+                  v-for="day in trackSchedule.days"
+                  :key="day.date"
+                  :data="day"
+                />
               </v-tabs-window-item>
             </v-tabs-window>
           </v-col>
@@ -53,8 +62,40 @@
 </template>
 
 <script setup>
-const model = ref("");
-const { mainData, scheduleData } = useJSONData();
+const { mainData, scheduleData, sessionsData } = useJSONData();
+const route = useRoute();
+
+const tracks = computed(() => mainData.eventInfo.tracks);
+const defaultTrack = () => {
+  const requestedTrack = String(route.query.track || "");
+  return tracks.value.some((track) => track.id === requestedTrack)
+    ? requestedTrack
+    : tracks.value[0]?.id || "";
+};
+const model = ref(defaultTrack());
+
+const trackSchedules = computed(() =>
+  tracks.value.map((track) => ({
+    track,
+    days: scheduleData.map((day) => ({
+      ...day,
+      schedule: day.schedule.filter((item) => {
+        const session = sessionsData.find(
+          (candidate) => candidate.id === String(item.session),
+        );
+        return session?.track === `${track.name} Track`;
+      }),
+    })),
+  })),
+);
+
+watch(
+  () => route.query.track,
+  () => {
+    model.value = defaultTrack();
+  },
+);
+
 definePageMeta({
   layout: false,
 });

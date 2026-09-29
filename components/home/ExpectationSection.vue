@@ -47,12 +47,13 @@
 </template>
 
 <script setup>
-import img1 from "@/assets/img/section-elements/se-1.svg";
-import img2 from "@/assets/img/section-elements/se-2.svg";
-import img3 from "@/assets/img/section-elements/se-3.svg";
+import img1 from "@/assets/img/Icons/SVG/AWS Student Builder Group_RGB_Icons_Speaker_Magenta.svg";
+import img2 from "@/assets/img/Icons/SVG/AWS Student Builder Group_RGB_Icons_Clock_Blue.svg";
+import img3 from "@/assets/img/Icons/SVG/AWS Student Builder Group_RGB_Icons_Trophy_Mint.svg";
+import img4 from "@/assets/img/Icons/SVG/AWS Student Builder Group_RGB_Icons_Teams_Amber.svg";
 
 const { mainData } = useJSONData();
-const sectionImages = [img1, img2, img3, img1];
+const sectionImages = [img1, img2, img3, img4];
 const getImage = (index) => {
   return sectionImages[index - 1] || img1;
 };
