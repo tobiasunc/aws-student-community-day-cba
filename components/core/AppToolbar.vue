@@ -21,7 +21,7 @@
         <v-img
           width="44"
           alt="Logo de AWS Student Builder Group UNC"
-          src="/img/common/aws-sbg-logo.svg"
+          :src="programIcon"
           class="mr-2"
         ></v-img>
         <v-chip
@@ -77,6 +77,8 @@
 
 <script setup>
 import { useDisplay } from "vuetify";
+import programIcon from "@/assets/img/Program Icon/SVG/AWS Student Builder Group_RGB_Program Icon_Amber.svg";
+
 const { mainData, navbarData } = useJSONData();
 const sidebar = useSideBar();
 const registrationIsOpen = useRegistrationStatus();

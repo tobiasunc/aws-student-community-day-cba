@@ -47,9 +47,9 @@
           style="background-color: #eeeeee; border-radius: 20px;border: 1.5px solid black;"
           class="pa-8 text-center"
         >
-          <v-img alt="AWS Student Builder Group UNC" style="width: 100%;margin: auto;" src="/assets/img/aws-sbg-logo.svg"></v-img>
+          <v-img alt="AWS Student Builder Group UNC" style="width: 100%;margin: auto;" :src="programIcon"></v-img>
           <v-chip class="mt-n12" variant="outlined" color="black" style="background-color: white;">{{ mainData.communityLocation.city }}</v-chip>
-          <v-img alt="AWS logo" style="width: 90%;margin: auto;" src="/assets/img/aws-sbg-logo.svg"></v-img>
+          <v-img alt="AWS Student Builder Group UNC" style="width: 90%;margin: auto;" :src="programIcon"></v-img>
         </div>
       </v-col>
     </v-row>
@@ -57,6 +57,8 @@
 </template>
 
 <script setup>
+import programIcon from "@/assets/img/Program Icon/SVG/AWS Student Builder Group_RGB_Program Icon_Amber.svg";
+
 const { mainData } = useJSONData();
 const fallbackLogo = "/img/common/avatar.png";
 const useFallback = (event) => {
@@ -68,27 +70,27 @@ var tech = ref([
   {
     name: "AWS Cloud",
     link: "https://aws.amazon.com/",
-    logo: "/assets/img/aws-sbg-logo.svg",
+    logo: programIcon,
   },
   {
     name: "AWS Academy",
     link: "https://aws.amazon.com/training/awsacademy/",
-    logo: "/assets/img/aws-sbg-logo.svg",
+    logo: programIcon,
   },
   {
     name: "AWS Lambda",
     link: "https://aws.amazon.com/lambda/",
-    logo: "/assets/img/aws-sbg-logo.svg",
+    logo: programIcon,
   },
   {
     name: "Amazon EC2",
     link: "https://aws.amazon.com/ec2/",
-    logo: "/assets/img/aws-sbg-logo.svg",
+    logo: programIcon,
   },
   {
     name: "Amazon S3",
     link: "https://aws.amazon.com/s3/",
-    logo: "/assets/img/aws-sbg-logo.svg",
+    logo: programIcon,
   },
 ]);
 </script>

@@ -32,7 +32,7 @@
             </v-col>
             <v-col md="4" sm="1"></v-col>
             <v-col md="3" sm="5" cols="12">
-              <v-img alt="Logo de AWS Student Builder Group UNC" src="/img/common/aws-sbg-logo.svg"></v-img>
+              <v-img alt="Logo de AWS Student Builder Group UNC" :src="programIcon"></v-img>
             </v-col>
           </v-row>
         </v-container>
@@ -42,6 +42,8 @@
 </template>
 
 <script setup>
+import programIcon from "@/assets/img/Program Icon/SVG/AWS Student Builder Group_RGB_Program Icon_Amber.svg";
+
 const { mainData } = useJSONData();
 </script>
 
