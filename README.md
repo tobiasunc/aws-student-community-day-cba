@@ -2,8 +2,6 @@
 Sitio oficial del AWS Student Community Day UNC 2026. <br>
 Evento estudiantil y comunitario en Córdoba, Argentina.
 
-![asd](/public/thumbnail.png)
-
 ## Getting Started
 1. Fork the repo
 1. Setup Environment
