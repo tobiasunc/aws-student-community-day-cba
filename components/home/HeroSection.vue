@@ -62,7 +62,7 @@
 
 <script setup>
 import { useDisplay } from "vuetify";
-import heroImage from "@/assets/img/foto_pagina _principal.png";
+import heroImage from "@/assets/img/foto_pagina_principal.png";
 
 const { width, mobile } = useDisplay();
 const screenWidth = ref(width);
