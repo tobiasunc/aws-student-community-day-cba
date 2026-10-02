@@ -1,138 +1,14 @@
 [
   {
     "id": "101",
-    "name": "Vrijraj Singh",
+    "name": "Speaker misterioso",
     "company": {
-      "name": "agprop",
-      "designation": "CTO"
+      "name": "AWS Student Community Day UNC",
+      "designation": "Speaker invitado"
     },
-    "community_title": "Perfil de ejemplo — pendiente de confirmación",
-    "image": "vrijraj.jpg",
-    "bio": "Perfil de ejemplo conservado de la plantilla original. Reemplazar por la biografía y los enlaces de la persona confirmada antes de publicar el evento.",
-    "social": {
-      "linkedin": "https://www.linkedin.com/in/vrijrajsingh/",
-      "twitter": "https://twitter.com/SVrijraj",
-      "github": "https://github.com/vrijraj",
-      "web": "https://vrijraj.xyz/"
-    }
-  },
-  {
-    "id": "102",
-    "name": "Full Name",
-    "company": {
-      "name": "Company",
-      "designation": "Designation"
-    },
-    "community_title": "Community Title",
+    "community_title": "Speaker invitado del evento",
     "image": "",
-    "bio": "Bio Section",
-    "social": {
-      "linkedin": "https://www.linkedin.com/in/vrijrajsingh/",
-      "twitter": "https://twitter.com/SVrijraj",
-      "github": "https://github.com/vrijraj",
-      "web": "https://vrijraj.xyz/"
-    }
-  },
-  {
-    "id": "103",
-    "name": "Full Name",
-    "company": {
-      "name": "Company",
-      "designation": "Designation"
-    },
-    "community_title": "Community Title",
-    "image": "",
-    "bio": "Bio Section",
-    "social": {
-      "linkedin": "https://www.linkedin.com/in/vrijrajsingh/",
-      "twitter": "https://twitter.com/SVrijraj",
-      "github": "https://github.com/vrijraj",
-      "web": "https://vrijraj.xyz/"
-    }
-  },
-  {
-    "id": "104",
-    "name": "Full Name",
-    "company": {
-      "name": "Company",
-      "designation": "Designation"
-    },
-    "community_title": "Community Title",
-    "image": "",
-    "bio": "Bio Section",
-    "social": {
-      "linkedin": "https://www.linkedin.com/in/vrijrajsingh/",
-      "twitter": "https://twitter.com/SVrijraj",
-      "github": "https://github.com/vrijraj",
-      "web": "https://vrijraj.xyz/"
-    }
-  },
-  {
-    "id": "105",
-    "name": "Full Name",
-    "company": {
-      "name": "Company",
-      "designation": "Designation"
-    },
-    "community_title": "Community Title",
-    "image": "",
-    "bio": "Bio Section",
-    "social": {
-      "linkedin": "https://www.linkedin.com/in/vrijrajsingh/",
-      "twitter": "https://twitter.com/SVrijraj",
-      "github": "https://github.com/vrijraj",
-      "web": "https://vrijraj.xyz/"
-    }
-  },
-  {
-    "id": "106",
-    "name": "Full Name",
-    "company": {
-      "name": "Company",
-      "designation": "Designation"
-    },
-    "community_title": "Community Title",
-    "image": "",
-    "bio": "Bio Section",
-    "social": {
-      "linkedin": "https://www.linkedin.com/in/vrijrajsingh/",
-      "twitter": "https://twitter.com/SVrijraj",
-      "github": "https://github.com/vrijraj",
-      "web": "https://vrijraj.xyz/"
-    }
-  },
-  {
-    "id": "107",
-    "name": "Full Name",
-    "company": {
-      "name": "Company",
-      "designation": "Designation"
-    },
-    "community_title": "Community Title",
-    "image": "",
-    "bio": "Bio Section",
-    "social": {
-      "linkedin": "https://www.linkedin.com/in/vrijrajsingh/",
-      "twitter": "https://twitter.com/SVrijraj",
-      "github": "https://github.com/vrijraj",
-      "web": "https://vrijraj.xyz/"
-    }
-  },
-  {
-    "id": "108",
-    "name": "Full Name",
-    "company": {
-      "name": "Company",
-      "designation": "Designation"
-    },
-    "community_title": "Community Title",
-    "image": "",
-    "bio": "Bio Section",
-    "social": {
-      "linkedin": "https://www.linkedin.com/in/vrijrajsingh/",
-      "twitter": "https://twitter.com/SVrijraj",
-      "github": "https://github.com/vrijraj",
-      "web": "https://vrijraj.xyz/"
-    }
+    "bio": "Speaker invitado con una charla sorpresa para la comunidad.",
+    "social": {}
   }
 ]

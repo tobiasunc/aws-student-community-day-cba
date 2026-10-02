@@ -5,7 +5,7 @@
   Datos: communityName y communityLinks desde data/config.json.
 -->
 <template>
-  <v-container fluid class="px-5 mt-8" style="background-color: #232F3E">
+  <v-container fluid class="px-5 mt-8 app-footer" data-gsap-reveal>
     <v-row
       justify-center
       align="center"
@@ -91,4 +91,9 @@
 const { mainData } = useJSONData();
 </script>
 
-<style></style>
+<style scoped>
+.app-footer {
+  background: #08080b;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+</style>

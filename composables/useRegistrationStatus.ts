@@ -1,3 +1,6 @@
+import { computed } from 'vue'
+import { useJSONData } from '~/composables/useJSONData'
+
 export const useRegistrationStatus = () => {
   const { mainData } = useJSONData()
 

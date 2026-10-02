@@ -5,75 +5,48 @@
 -->
 <template>
   <div class="mt-4">
-    <!-- {{ socialLinks }} -->
-    <v-btn
-      class="mr-1 mb-1"
-      v-if="socialLinks.linkedin != null && socialLinks.linkedin.length"
-      icon="mdi-linkedin"
-      :href="socialLinks.linkedin"
-      target="_blank"
-      size="small"
-      :color="dark ? 'white' : ''"
-      variant="text"
-    ></v-btn>
-    <v-btn
-      class="mr-1 mb-1"
-      v-if="socialLinks.github != null && socialLinks.github.length"
-      icon="mdi-github"
-      :color="dark ? 'white' : ''"
-      :href="socialLinks.github"
-      target="_blank"
-      size="small"
-      variant="text"
-    ></v-btn>
-    <v-btn
-      class="mr-1 mb-1"
-      icon="mdi-twitter"
-      :color="dark ? 'white' : ''"
-      :href="socialLinks.twitter"
-      target="_blank"
-      size="small"
-      v-if="socialLinks.twitter != null && socialLinks.twitter.length"
-      variant="text"
-    ></v-btn>
-    <v-btn
-      class="mr-1 mb-1"
-      icon="mdi-instagram"
-      :color="dark ? 'white' : ''"
-      v-if="socialLinks.instagram != null && socialLinks.instagram.length"
-      size="small"
-      :href="socialLinks.instagram"
-      target="_blank"
-      variant="text"
-    ></v-btn>
-    <v-btn
-      class="mr-1 mb-1"
-      icon="mdi-web"
-      :color="dark ? 'white' : ''"
-      v-if="socialLinks.web != null && socialLinks.web.length"
-      size="small"
-      :href="socialLinks.web"
-      target="_blank"
-      variant="text"
-    ></v-btn>
-    <v-btn
-      class="mr-1 mb-1"
-      icon="mdi-youtube"
-      :color="dark ? 'white' : ''"
-      v-if="socialLinks.youtube != null && socialLinks.youtube.length"
-      :href="socialLinks.youtube"
-      target="_blank"
-      size="small"
-      variant="text"
-    ></v-btn>
+    <template v-for="network in networks" :key="network.name">
+      <v-btn
+        v-if="socialLinks[network.key]"
+        class="mr-1 mb-1"
+        :href="socialLinks[network.key]"
+        :aria-label="`Abrir ${network.name}`"
+        target="_blank"
+        rel="noreferrer"
+        size="small"
+        :color="dark ? 'white' : ''"
+        variant="text"
+      >
+        <v-img
+          v-if="network.icon"
+          :src="network.icon"
+          :alt="network.name"
+          width="20"
+          height="20"
+        />
+        <v-icon v-else :icon="network.mdiIcon" />
+      </v-btn>
+    </template>
   </div>
 </template>
 
 <script setup>
-const props = defineProps({
+const networks = [
+  { key: "meetup", name: "Meetup", icon: "/img/common/meetup-svgrepo-com.svg" },
+  { key: "whatsapp", name: "WhatsApp", icon: "/img/common/whatsapp-fill-svgrepo-com.svg" },
+  { key: "instagram", name: "Instagram", mdiIcon: "mdi-instagram" },
+  { key: "linkedin", name: "LinkedIn", icon: "/img/common/linkedin-rounded-svgrepo-com.svg" },
+  { key: "devto", name: "DEV Community", icon: "/img/common/dev-to-svgrepo-com.svg" },
+  { key: "twitch", name: "Twitch", icon: "/img/common/twitch-182-svgrepo-com.svg" },
+  { key: "twitter", name: "X", icon: "/img/common/x.svg" },
+  { key: "youtube", name: "YouTube", icon: "/img/common/youtube-168-svgrepo-com.svg" },
+  { key: "github", name: "GitHub", icon: "/img/common/github-142-svgrepo-com.svg" },
+];
+
+defineProps({
   socialLinks: {
     type: Object,
-    default: {},
+    default: () => ({}),
   },
   dark: {
     type: Boolean,
@@ -81,5 +54,3 @@ const props = defineProps({
   },
 });
 </script>
-
-<style></style>

@@ -7,7 +7,8 @@
 <template>
   <v-dialog v-if="props.data" v-model="dialog" width="800" scrollable>
     <template v-slot:activator="{ props: activatorProps }">
-      <div
+      <button
+        type="button"
         style="cursor: pointer"
         class="py-3 ma-1 fill-height"
         v-bind="activatorProps"
@@ -27,10 +28,10 @@
         <v-chip v-if="props.data.track" small class="mt-2">{{
           props.data.track
         }}</v-chip>
-      </div>
+      </button>
     </template>
 
-    <v-card class="pa-0 white" v-if="dialog" style="border-radius: 12px;border: 2px solid black" >
+    <v-card class="pa-0 futuristic-surface" v-if="dialog" style="border-radius: 12px;border: 2px solid var(--aws-orange)" >
       <iframe
         v-if="props.data.link"
         class="ma-0 pa-0"
@@ -46,7 +47,7 @@
             <v-col md="12" cols="12">
               <p
                 class="my-2"
-                style="text-align: left;font-size:25px;font-weight:500;color:black'line-height:15px"
+                style="text-align: left;font-size:25px;font-weight:500;line-height:15px"
               >
                 {{ props.data.title }} Details
               </p>
@@ -66,11 +67,11 @@
 
               <p
                 class="mt-5"
-                style="font-size: 22px; color: black; font-weight: 500"
+                style="font-size: 22px; font-weight: 500"
               >
                 Overview
               </p>
-              <p style="font-size: 95%; color: black; opacity: 0.9">
+              <p style="font-size: 95%; opacity: 0.9">
                 {{ props.data.description }}
               </p>
 
@@ -88,7 +89,7 @@
                 class="mt-2 mr-2"
                 label
               >
-                <v-avatar left>
+                <v-avatar start>
                   <v-icon small>mdi-note-outline</v-icon>
                 </v-avatar>
                 Presentation
@@ -109,7 +110,7 @@
       </v-card-text>
       <v-card-actions>
         <v-spacer></v-spacer>
-        <v-btn aria-label="close" text @click="dialog = false">Close</v-btn>
+        <v-btn aria-label="close" variant="text" @click="dialog = false">Close</v-btn>
       </v-card-actions>
     </v-card>
   </v-dialog>
@@ -117,6 +118,8 @@
 
 <script setup lang="ts">
 import type { Session } from '~/types'
+import { computed, ref } from 'vue'
+import { useJSONData } from '~/composables/useJSONData'
 
 const { speakersData } = useJSONData();
 
@@ -127,14 +130,22 @@ const props = defineProps<{ data?: Session }>();
 const speakers = computed(() =>
   (props.data?.speakers || [])
     .map((speakerId) => speakersData.find((speaker) => speaker.id === String(speakerId)))
-    .filter(Boolean)
+    .filter((speaker): speaker is (typeof speakersData)[number] => Boolean(speaker))
 );
 
-const getImgUrl = (pic, defaultimage = "avatar.png") => {
-  if (pic?.length > 0) {
-    return "/img/speakers/" + pic;
-  } else {
-    return "/img/common/" + defaultimage;
-  }
+const getImgUrl = (pic?: string, defaultImage = "avatar.png"): string => {
+  return pic?.length ? `/img/speakers/${pic}` : `/img/common/${defaultImage}`;
 };
 </script>
+
+<style scoped>
+button {
+  display: block;
+  width: 100%;
+  border: 0;
+  color: inherit;
+  text-align: left;
+  background: transparent;
+  font: inherit;
+}
+</style>

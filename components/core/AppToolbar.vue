@@ -10,30 +10,37 @@
     fixed
     class="mt-0 px-2 toolbar-class mx-auto mt-4"
     rounded="xl"
-    color="#232F3E"
+    color="#0d0d12"
   >
   <v-app-bar-nav-icon
       class="d-md-none d-lg-none d-sm-flex d-flex"
       @click="drawerAction"
     ></v-app-bar-nav-icon>
-    <NuxtLink to="/" class="px-2" style="text-decoration: none; color: white">
-      <div class="d-flex">
+    <div class="d-flex align-center px-2">
+      <NuxtLink to="/" style="text-decoration: none; color: white">
         <v-img
           width="44"
           alt="Logo de AWS Student Builder Group UNC"
           :src="programIcon"
           class="mr-2"
         ></v-img>
+      </NuxtLink>
+      <a
+        href="https://www.meetup.com/aws-sbg-at-national-university-of-cordoba/"
+        class="community-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="AWS Student Builder Group Universidad Nacional de Córdoba en Meetup"
+      >
         <v-chip
-          style="display: inline; background-color: white"
+          class="city-chip align-center"
           variant="outlined"
           color="#FF9900"
           size="small"
-          class="align-center pt-1"
-          >{{ mainData.communityLocation.city }}</v-chip
+          >AWS Student Builder Group<br />Universidad Nacional de Córdoba</v-chip
         >
-      </div>
-    </NuxtLink>
+      </a>
+    </div>
 
     <v-spacer></v-spacer>
     <div class="mx-4 d-none d-sm-none d-md-flex d-lg-flex">
@@ -41,10 +48,9 @@
         <v-btn
           rounded
           size="small"
-          style="text-transform: capitalize"
+          class="toolbar-link mx-1"
           color="white"
           :to="item.path"
-          class="mx-1"
           v-if="item.visible"
           >{{ item.name }}</v-btn
         >
@@ -58,15 +64,9 @@
           registrationIsOpen
         "
         :href="mainData.eventInfo.registration.link"
-        class="d-md-flex d-lg-flex d-sm-flex d-none mr-3"
+        class="register-button d-md-flex d-lg-flex d-sm-flex d-none mr-3"
         target="_blank"
         color="#FF9900"
-        style="
-          border: 1.5px solid #1e1e1e;
-          color: black;
-          text-transform: capitalize;
-          font-weight: 100;
-        "
         variant="flat"
         >Inscribite</v-btn
       >
@@ -97,7 +97,63 @@ const drawerAction = () => {
   right: 0;
   z-index: 100;
   margin-bottom: 80px;
-  height: 64px; /* Set the height of the toolbar */
+  height: 72px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+}
+
+.toolbar-link {
+  color: #d9d9df !important;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.toolbar-link:hover {
+  color: #ff9900 !important;
+}
+
+.city-chip {
+  color: #ff9900 !important;
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.14), rgba(255, 153, 0, 0.03)) !important;
+  max-width: min(58vw, 330px);
+  min-height: 42px;
+  padding: 5px 12px !important;
+  border: 1px solid rgba(255, 153, 0, 0.7) !important;
+  border-radius: 12px !important;
+  height: auto !important;
+  white-space: normal;
+  text-align: left;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.city-chip :deep(.v-chip__content) {
+  display: block;
+  color: #ffb84d;
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.025em;
+  white-space: normal;
+}
+
+.community-link {
+  display: inline-flex;
+  max-width: min(58vw, 360px);
+  color: inherit;
+  text-decoration: none;
+}
+
+.community-link:hover .city-chip {
+  background: linear-gradient(135deg, rgba(255, 153, 0, 0.24), rgba(255, 153, 0, 0.06)) !important;
+  box-shadow: 0 0 18px rgba(255, 153, 0, 0.26);
+}
+
+.register-button {
+  border: 1px solid #ff9900;
+  color: #0d0d12 !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 /* Mobile breakpoint */
 @media (max-width: 700px) {
@@ -107,6 +163,11 @@ const drawerAction = () => {
     margin-right: auto !important;
     margin-top: 0 !important;
     border-radius: 0 !important;
+  }
+
+  .city-chip,
+  .community-link {
+    max-width: 48vw;
   }
 }
 

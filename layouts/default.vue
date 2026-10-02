@@ -4,20 +4,24 @@
   Dónde se usa: todas las páginas mediante NuxtLayout.
 -->
 <template>
-  <v-app style="background-color: #FFFFFF" class="google-font">
+  <v-app class="google-font site-shell">
     <CoreAppToolbar />
     <ClientOnly>
       <CoreAppDrawer />
     </ClientOnly>
-    <v-main
-      class="mt-3"
-      style="max-width: 1200px; margin-left: auto; margin-right: auto"
-    >
-      <slot></slot>
-    </v-main>
-    <CoreAppFooter />
+    <div ref="animationRoot" class="animation-root">
+      <v-main class="site-main">
+        <slot></slot>
+      </v-main>
+      <CoreAppFooter />
+    </div>
   </v-app>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { ref } from 'vue'
+import { useGsapAnimations } from '~/composables/useGsapAnimations'
+
+const animationRoot = ref<HTMLElement | null>(null);
+useGsapAnimations(animationRoot);
 </script>

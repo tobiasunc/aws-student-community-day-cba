@@ -9,8 +9,9 @@
     <v-row>
       <v-col md="9" sm="7" cols="12">
         <div
-          style="background-color: #eeeeee; border-radius: 20px;border: 1.5px solid black;"
-          class="pa-8"
+          class="pa-8 futuristic-surface"
+          data-gsap-box
+          data-gsap-reveal
         >
           <h1>Explorá tecnologías para construir en la nube</h1>
           <p>
@@ -28,10 +29,10 @@
               >
                 <a :href="item.link" target="_blank" :aria-label="`Conocer ${item.name}`">
                   <v-avatar
-                    color="white"
                     size="60"
                     class="pa-3"
-                    style="border: 1px solid black"
+                    color="#15151d"
+                    style="border: 1px solid var(--aws-orange)"
                   >
                     <v-img :alt="`Logo de ${item.name}`" :src="item.logo" :lazy-src="item.logo" @error="useFallback"></v-img>
                   </v-avatar>
@@ -44,11 +45,12 @@
 
       <v-col md="3" sm="5" cols="12">
         <div
-          style="background-color: #eeeeee; border-radius: 20px;border: 1.5px solid black;"
-          class="pa-8 text-center"
+          class="pa-8 text-center futuristic-surface"
+          data-gsap-box
+          data-gsap-reveal
         >
           <v-img alt="AWS Student Builder Group UNC" style="width: 100%;margin: auto;" :src="programIcon"></v-img>
-          <v-chip class="mt-n12" variant="outlined" color="black" style="background-color: white;">{{ mainData.communityLocation.city }}</v-chip>
+          <v-chip class="mt-n12" variant="outlined" color="#FF9900">{{ mainData.communityLocation.city }}</v-chip>
           <v-img alt="AWS Student Builder Group UNC" style="width: 90%;margin: auto;" :src="programIcon"></v-img>
         </div>
       </v-col>

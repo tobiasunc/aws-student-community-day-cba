@@ -28,6 +28,8 @@ export default defineNuxtConfig({
   },
   // Google Analytics queda desactivado si no existe NUXT_PUBLIC_GTAG_ID.
   // Para activarlo: NUXT_PUBLIC_GTAG_ID=G-XXXXXXXXXX npm run generate.
+  // nuxt-gtag añade esta propiedad mediante su módulo en tiempo de ejecución.
+  // @ts-expect-error nuxt-gtag no expone la extensión en InputConfig.
   gtag: gtagId ? { id: gtagId } : undefined,
   runtimeConfig: {
     public: {

@@ -7,7 +7,7 @@
 <template>
   <v-container fluid >
     <v-row>
-      <v-col md="12">
+      <v-col md="12" data-gsap-reveal>
         <h1>Our Sponsors</h1>
         <p>Sponsors dedicated to building remarkable experience!</p>
 

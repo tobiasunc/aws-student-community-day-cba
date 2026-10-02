@@ -8,17 +8,21 @@
     <v-container fluid class="mt-5">
       <v-row>
         <v-col md="12">
-          <h1>Agenda</h1>
-          <p>
+          <h1 class="section-heading">Agenda</h1>
+          <p class="muted-copy">
             Explorá workshops, charlas técnicas y flash talks organizadas en
-            cinco tracks escalables. Seleccioná un track para ver sus sesiones.
+            cinco tracks de contenido. Seleccioná un track para ver sus sesiones.
           </p>
         </v-col>
       </v-row>
       <ClientOnly>
         <v-row class="mb-7">
-          <v-col>
-            <v-toolbar flat class="px-0" style="border-radius: 15px">
+          <v-col data-gsap-reveal>
+            <v-toolbar
+              flat
+              class="agenda-toolbar px-0"
+              :style="{ '--agenda-track-color': activeTrack?.color || '#146EB4' }"
+            >
               <v-tabs
                 v-model="model"
                 color="primary"
@@ -38,8 +42,7 @@
 
             <v-tabs-window
               v-model="model"
-              class="mt-5 py-0"
-              style="background-color: white; border-radius: 15px"
+              class="agenda-window mt-5 py-0"
             >
               <v-tabs-window-item
                 v-for="trackSchedule in trackSchedules"
@@ -51,6 +54,8 @@
                   v-for="day in trackSchedule.days"
                   :key="day.date"
                   :data="day"
+                  :track-color="trackSchedule.track.color"
+                  :track-id="trackSchedule.track.id"
                 />
               </v-tabs-window-item>
             </v-tabs-window>
@@ -73,6 +78,9 @@ const defaultTrack = () => {
     : tracks.value[0]?.id || "";
 };
 const model = ref(defaultTrack());
+const activeTrack = computed(() =>
+  tracks.value.find((track) => track.id === model.value),
+);
 
 const trackSchedules = computed(() =>
   tracks.value.map((track) => ({
@@ -103,4 +111,18 @@ definePageMeta({
 useEventSeo("Agenda");
 </script>
 <style scoped>
+.agenda-toolbar,
+.agenda-window {
+  background: #15151d !important;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+}
+
+.agenda-toolbar {
+  border-color: color-mix(in srgb, var(--agenda-track-color) 45%, rgba(255, 255, 255, 0.12)) !important;
+}
+
+.agenda-window {
+  overflow: hidden;
+}
 </style>

@@ -5,7 +5,13 @@
   Datos: ScheduleDay desde schedule.json y Session desde sessions.json.
 -->
 <template>
-  <v-container fluid class="pa-0 ma-0" v-if="props.data" style="">
+  <v-container
+    fluid
+    class="pa-0 ma-0 schedule-track"
+    v-if="props.data"
+    :style="{ '--track-color': props.trackColor }"
+    :class="`schedule-track-${props.trackId}`"
+  >
     <v-row
       justify-center
       align="center"
@@ -25,13 +31,11 @@
         </p>
       </v-col>
       <v-col
-        class="my-0 schedule-details-white col-border-white"
+        class="my-0 schedule-details-white col-border-white futuristic-surface"
         cols="9"
         md="10"
       >
-        <ClientOnly>
-          <CommonScheduleDialog :data="getSessionData(item.session)" />
-        </ClientOnly>
+        <CommonScheduleDialog :data="getSessionData(item.session)" />
       </v-col>
     </v-row>
   </v-container>
@@ -39,12 +43,17 @@
 
 <script setup lang="ts">
 import type { ScheduleDay } from '~/types'
+import { useJSONData } from '~/composables/useJSONData'
 
 const { sessionsData } = useJSONData();
 
-const props = defineProps<{ data: ScheduleDay }>();
+const props = defineProps<{
+  data: ScheduleDay;
+  trackColor?: string;
+  trackId?: string;
+}>();
 
-const getSessionData = (id) => {
+const getSessionData = (id: string | number) => {
   return sessionsData.find((session) => session.id === String(id));
 };
 </script>
@@ -52,12 +61,37 @@ const getSessionData = (id) => {
 
 <style scoped>
 .schedule-details-white:hover {
-  background: #fafafa;
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--track-color) 26%, #1b2638),
+      #283c55
+    ) !important;
 }
 .row-border-white {
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
 }
 .col-border-white {
-  border-left: 1px solid #e0e0e0;
+  border-left: 2px solid color-mix(in srgb, var(--track-color) 65%, rgba(255, 255, 255, 0.18));
+}
+
+.schedule-track {
+  border: 1px solid color-mix(in srgb, var(--track-color) 35%, transparent);
+  border-radius: 18px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--track-color) 7%, transparent);
+}
+
+.schedule-track :deep(.schedule-details-white) {
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--track-color) 13%, #151b29),
+      #101622
+    ) !important;
+}
+
+.schedule-track :deep(.v-chip) {
+  border-color: color-mix(in srgb, var(--track-color) 45%, rgba(255, 255, 255, 0.18));
 }
 </style>

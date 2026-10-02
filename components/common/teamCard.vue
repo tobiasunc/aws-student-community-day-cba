@@ -7,28 +7,29 @@
 <template>
   <v-dialog v-model="dialog" width="800" persistent>
     <template v-slot:activator="{ props: activatorProps }">
-      <div
+      <button
+        type="button"
         v-bind="activatorProps"
         style="cursor: pointer"
         class="text-center image-container"
       >
-        <!-- La foto sale de public/img/team y usa avatar.png si no está disponible. -->
-        <v-img alt="Marco visual de integrante del equipo" class="frame" src="/assets/img/frame.png"></v-img>
-        <v-img
-          class="avatar"
-          aspect-ratio="1"
-          cover
-          :alt="props.data.name"
-          :src="
-            props.data.image.length
-              ? '/img/team/' + props.data.image
-              : '/img/common/avatar.png'
-          "
-        ></v-img>
+        <div class="octagon-portrait" data-gsap-image data-gsap-box>
+          <v-img
+            class="avatar"
+            cover
+            :alt="props.data.name"
+            :src="
+              props.data.image.length
+                ? '/img/team/' + props.data.image
+                : '/img/common/avatar.png'
+            "
+          ></v-img>
+          <span class="octagon-frame" aria-hidden="true"></span>
+        </div>
         <h3 class="mt-n1">{{ props.data.name }}</h3>
         <v-chip size="x-small" color="#FFC400" class="mt-1">Ejemplo — a confirmar</v-chip>
         <p style="font-size: 90%">{{ props.data.company.name }}</p>
-      </div>
+      </button>
     </template>
 
     <v-card
@@ -41,18 +42,19 @@
         <v-row>
           <v-col md="4" cols="12">
             <div class="text-center image-container">
-              <v-img alt="Marco visual de integrante del equipo" class="frame" src="/assets/img/frame.png"></v-img>
-              <v-img
-                class="avatar"
-                :alt="props.data.name"
-                aspect-ratio="1"
-                cover
-                :src="
-                  props.data.image.length
-                    ? '/img/team/' + props.data.image
-                    : '/img/common/avatar.png'
-                "
-              ></v-img>
+              <div class="octagon-portrait">
+                <v-img
+                  class="avatar"
+                  :alt="props.data.name"
+                  cover
+                  :src="
+                    props.data.image.length
+                      ? '/img/team/' + props.data.image
+                      : '/img/common/avatar.png'
+                  "
+                ></v-img>
+                <span class="octagon-frame" aria-hidden="true"></span>
+              </div>
             </div>
           </v-col>
           <v-col md="8" cols="12">
@@ -71,7 +73,7 @@
         </v-row>
       </v-container>
       <template v-slot:actions>
-        <v-btn text @click="dialog = false">Cerrar</v-btn>
+        <v-btn variant="text" @click="dialog = false">Cerrar</v-btn>
       </template>
     </v-card>
   </v-dialog>
@@ -79,6 +81,7 @@
 
 <script setup lang="ts">
 import type { TeamMember } from '~/types'
+import { ref } from 'vue'
 
 const props = defineProps<{ data: TeamMember }>()
 
@@ -88,24 +91,36 @@ const dialog = ref(false);
 
 <style scoped>
 .image-container {
+  display: block;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  font: inherit;
   position: relative;
   width: 80%;
   margin-top: 20px;
 }
 
-.avatar {
-  width: 100%;
-  height: auto;
+.octagon-portrait {
   position: relative;
-  border: 1px solid white;
+  width: 100%;
+  aspect-ratio: 1;
+  filter: drop-shadow(0 0 14px rgba(255, 153, 0, 0.28));
 }
 
-.frame {
+.avatar {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 5;
+  inset: 6%;
+  z-index: 1;
+  width: 88%;
+  height: 88%;
+  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+  background: #15151d;
+}
+
+.octagon-frame {
+  display: none;
 }
 
 h4,
@@ -113,4 +128,5 @@ p {
   position: relative;
   z-index: 10;
 }
+
 </style>

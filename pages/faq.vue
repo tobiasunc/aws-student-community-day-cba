@@ -12,29 +12,21 @@
           <p>Need Answers? Everything you need to know</p>
 
           <v-expansion-panels
-            class="mb-6 mt-10"
+            data-gsap-reveal
+            class="mb-6 mt-10 futuristic-surface"
             rounded="12"
-            bg-color="white"
             flat
-            style="
-              border-radius: 20px !important;
-              /* border-bottom: 1px solid black; */
-              overflow: hidden;
-            "
             variant="accordion"
           >
             <!-- :style="{ borderBottom: i<3?'1px solid black':'', borderTop: i!=0?'1px solid black':'' }" -->
             <v-expansion-panel
               v-for="(item, index) in faqData"
               :key="index"
-              :style="{
-                borderBottom:
-                  index + 1 < faqData.length ? '1px solid black' : '',
-              }"
+              class="futuristic-faq-item"
             >
               <v-expansion-panel-title
                 expand-icon="mdi-menu-down"
-                style="background-color: #eeeeee"
+                class="futuristic-faq-title"
               >
                 {{ item.question }}
               </v-expansion-panel-title>

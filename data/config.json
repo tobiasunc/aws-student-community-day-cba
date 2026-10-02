@@ -6,16 +6,23 @@
   },
   "communityDescription": "AWS Student Community Day UNC is a student-led, community-driven event that brings cloud learning and collaboration to Universidad Nacional de Córdoba.",
   "communityLinks": {
-    "website": "https://aws.amazon.com/developer/community/",
-    "instagram": "https://www.instagram.com/aws_sbg_unc/",
-    "linkedin": "https://www.linkedin.com/",
-    "youtube": "https://www.youtube.com/"
+    "meetup": "https://www.meetup.com/aws-sbg-at-national-university-of-cordoba",
+    "whatsapp": "https://chat.whatsapp.com/EUqffuZgjEkLqxeUm8K3kW",
+    "instagram": "https://www.instagram.com/aws.sbg.unc",
+    "linkedin": "https://www.linkedin.com/company/aws-student-builder-group-at-unc",
+    "devto": "https://dev.to/aws_sbg_unc_official",
+    "twitch": "https://www.twitch.tv/aws_sbg_unc",
+    "twitter": "https://x.com/sbg_unc",
+    "youtube": "https://youtube.com/@AWS.SBG_UNC",
+    "github": "https://github.com/AWS-Student-Builder-Group-at-UNC"
   },
   "eventInfo": {
     "name": "AWS Student Community Day UNC 2026",
     "tagline": "Conectando el Talento Estudiantil con el Ecosistema Tecnológico",
     "date": "7 de noviembre de 2026",
     "time": "9:00 a 18:00 ART",
+    "startDateTime": "2026-11-07T13:00:00-03:00",
+    "endDateTime": "2026-11-07T20:00:00-03:00",
     "venue": {
       "id": "auditorio-unc",
       "name": "Auditorio UNC",
@@ -93,7 +100,7 @@
       "long": "AWS Student Community Day UNC 2026 is a community event created by students for students. Join talks, workshops, labs and networking activities to discover cloud careers and build practical AWS skills."
     },
     "stats": [
-      { "name": "Asistentes presenciales esperados", "value": "200–300+" },
+      { "name": "Asistentes presenciales esperados", "value": "300+" },
       { "name": "Tracks de contenido simultáneos", "value": "5" },
       { "name": "Duración Speed Interviews", "value": "7 min" },
       { "name": "Becas AWS + credenciales FAMAF", "value": "100%" },
@@ -117,11 +124,11 @@
       { "id": "technical-talks", "title": "Charlas Técnicas Principales", "description": "Sesiones profundas de expertos de industria y académicos.", "venueId": "auditorio-unc" }
     ],
     "tracks": [
-      { "id": "red", "name": "Red", "color": "#D13212", "category": "Hands-on Workshops", "scalable": true, "description": "Hands-on Workshops." },
-      { "id": "blue", "name": "Blue", "color": "#146EB4", "category": "Hands-on Workshops", "scalable": true, "description": "Hands-on Workshops. Se activa si Red se llena." },
-      { "id": "green", "name": "Green", "color": "#2E7D32", "category": "Charlas Técnicas", "scalable": true, "description": "Charlas Técnicas." },
-      { "id": "orange", "name": "Orange", "color": "#EC7211", "category": "Charlas Técnicas", "scalable": true, "description": "Tendencias de industria y empleabilidad." },
-      { "id": "yellow", "name": "Yellow", "color": "#FFC400", "category": "Charlas Técnicas / Flash Talks", "scalable": true, "description": "Se activa si Green u Orange se llenan." }
+      { "id": "red", "name": "Red", "color": "#D13212", "category": "Hands-on Workshops", "description": "Talleres prácticos para construir fundamentos y soluciones en AWS." },
+      { "id": "blue", "name": "Blue", "color": "#146EB4", "category": "Hands-on Workshops", "description": "Talleres prácticos sobre datos, IA y desarrollo de aplicaciones." },
+      { "id": "green", "name": "Green", "color": "#2E7D32", "category": "Charlas Técnicas", "description": "Charlas sobre infraestructura, automatización y operación en la nube." },
+      { "id": "orange", "name": "Orange", "color": "#EC7211", "category": "Charlas Técnicas", "description": "Charlas sobre carreras, comunidad, industria y empleabilidad." },
+      { "id": "yellow", "name": "Yellow", "color": "#FFC400", "category": "Charlas Técnicas / Flash Talks", "description": "Charlas breves y experiencias compartidas por la comunidad." }
     ],
     "topics": [
       { "id": "workshops", "title": "Hands-on Workshops", "topics": ["DevOps & Infrastructure", "Cloud Security & DevSecOps", "Open Source & Hardware", "Tool-Specific Workshops"] },

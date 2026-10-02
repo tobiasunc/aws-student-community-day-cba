@@ -9,28 +9,10 @@
     <v-row
       justify-center
       align="center"
-      style="
-        background-color: #f3f3f3;
-        border-radius: 20px;
-        border: 1.5px solid black;
-      "
+      class="stats-panel"
+      data-gsap-reveal
     >
-      <v-col cols="12" md="2" sm="12" order-md="1" order="2" order-sm="1" class="pa-0">
-        <!--Desktop-->
-        <v-img
-          alt="Elemento decorativo AWS"
-          class="d-none d-sm-none d-md-flex d-lg-flex d-xl-flex"
-          src="/assets/img/element1.svg"
-        ></v-img>
-        <!--mobile-->
-        <v-img
-          alt="Elemento decorativo AWS"
-          class="d-flex d-sm-none d-md-none d-lg-none d-xl-none"
-          src="/assets/img/element3.svg"
-        ></v-img>
-      </v-col>
-
-      <v-col cols="12" md="10" sm="12" order-md="2" order="1" order-sm="2">
+      <v-col cols="12" md="12" sm="12">
         <v-container fluid>
           <v-row>
             <v-col
@@ -38,6 +20,8 @@
               sm="3"
               cols="6"
               class="stats-container"
+              data-gsap-image
+              data-gsap-box
               :style="{
                 backgroundImage: `url(${item.image})`,
                 backgroundPosition: 'center',
@@ -50,7 +34,7 @@
               v-for="(item, index) in mainData.eventInfo.stats"
               :key="index"
             >
-              <h1 class="responsive-title">{{ item.value }}</h1>
+              <h1 class="responsive-title" data-gsap-stat :data-value="item.value">{{ item.value }}</h1>
               <p>
                 {{ item.name }}
               </p>
@@ -67,8 +51,21 @@ const { mainData } = useJSONData();
 </script>
 
 <style scoped>
+.stats-panel {
+  background: #15151d;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+}
+
+.stats-container p {
+  color: #aaaab4;
+  text-align: center;
+}
+
 .responsive-title {
   font-size: 300%;
+  color: #ff9900;
+  font-family: monospace;
 }
 .stats-container {
   background-size: 70%;
@@ -77,9 +74,6 @@ const { mainData } = useJSONData();
 @media (max-width: 1140px) {
   .responsive-title {
     font-size: 250%;
-  }
-  .stats-container {
-    background-size: 85%;
   }
 }
 
@@ -92,16 +86,10 @@ const { mainData } = useJSONData();
   .responsive-title {
     font-size: 250%;
   }
-  .stats-container {
-    background-size: 75%;
-  }
 }
 @media (max-width: 460px) {
   .responsive-title {
     font-size: 180%;
-  }
-  .stats-container {
-    background-size: 80%;
   }
 }
 </style>

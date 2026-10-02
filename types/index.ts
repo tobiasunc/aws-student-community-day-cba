@@ -2,6 +2,10 @@
 export interface SocialLinks {
   /** Página principal o perfil de la comunidad. */
   page?: string
+  /** Comunidad en Meetup. */
+  meetup?: string
+  /** Grupo de WhatsApp. */
+  whatsapp?: string
   /** Sitio web oficial. */
   website?: string
   /** Perfil de Instagram. */
@@ -14,6 +18,10 @@ export interface SocialLinks {
   twitter?: string
   /** Canal de YouTube. */
   youtube?: string
+  /** Perfil en DEV Community. */
+  devto?: string
+  /** Canal de Twitch. */
+  twitch?: string
   /** Enlace web alternativo heredado. */
   web?: string
 }
@@ -73,7 +81,6 @@ export interface Track {
   name: string
   color: string
   category: string
-  scalable: boolean
   description: string
 }
 
@@ -117,6 +124,10 @@ export interface EventConfig {
     tagline: string
     date: string
     time: string
+    /** Fecha de inicio del evento en formato ISO con zona horaria. */
+    startDateTime: string
+    /** Fecha de finalización del evento en formato ISO con zona horaria. */
+    endDateTime: string
     venue: Venue
     venues: Venue[]
     registration: Registration

@@ -7,7 +7,7 @@
 <template>
   <v-container fluid>
     <v-row class="mb-0">
-      <v-col md="12" sm="12" cols="12" class="text-center">
+      <v-col md="12" sm="12" cols="12" class="text-center" data-gsap-reveal>
         <h1>La comunidad que estamos construyendo</h1>
         <p>
           {{ mainData.eventInfo.pastEvent.summary }}

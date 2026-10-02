@@ -10,9 +10,13 @@ Configuración general del evento:
 
 - `communityName`, `communityLocation`: identidad y ubicación de la comunidad.
 - `communityDescription`: descripción institucional.
-- `communityLinks`: enlaces oficiales. `instagram` contiene la cuenta
-  `@aws_sbg_unc`.
+- `communityLinks`: enlaces oficiales de la comunidad. Actualmente admite
+  `meetup`, `whatsapp`, `instagram`, `linkedin`, `devto`, `twitch`, `twitter`,
+  `youtube` y `github`. Los botones se muestran automáticamente cuando la URL
+  existe.
 - `eventInfo.name`, `tagline`, `date`, `time`: textos principales del hero.
+- `eventInfo.startDateTime`, `eventInfo.endDateTime`: fechas ISO completas con
+  zona horaria para el contador del evento.
 - `eventInfo.venue`: sede principal y `mapLink`.
 - `eventInfo.venues`: sedes o espacios físicos disponibles.
 - `eventInfo.registration`: `link` externo y `endDate` ISO (`YYYY-MM-DD`).
@@ -22,8 +26,8 @@ Configuración general del evento:
   `description` e ícono opcional.
 - `eventInfo.spaces`: seis espacios de la experiencia; `venueId` relaciona el
   espacio con `eventInfo.venues`.
-- `eventInfo.tracks`: tracks con color, categoría y `scalable`. `scalable: true`
-  indica que el track se habilita según demanda.
+- `eventInfo.tracks`: tracks disponibles con `id`, nombre, color, categoría y
+  descripción. Cada track aparece en la portada y en la agenda.
 - `eventInfo.topics`: tres grupos de tópicos, cada uno con un array `topics`.
 - `eventInfo.sponsorshipTiers`: los paquetes Base, Socio de Interacción y
   Constructor del Ecosistema, con precio, condición y beneficios.

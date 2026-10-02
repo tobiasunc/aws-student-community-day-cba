@@ -7,7 +7,7 @@
 <template>
   <v-container fluid>
     <v-row>
-      <v-col md="12">
+      <v-col md="12" data-gsap-reveal>
         <v-container
           fluid
           style="

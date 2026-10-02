@@ -1,69 +1,93 @@
 # AWS Student Community Day UNC 2026
-Sitio oficial del AWS Student Community Day UNC 2026. <br>
-Evento estudiantil y comunitario en Córdoba, Argentina.
 
-## Getting Started
-1. Fork the repo
-1. Setup Environment
-    - Install [Node.js (v20 or above)](https://nodejs.org/en/download/)
-1. Install project dependencies: `npm install` 
-1. Compiles and hot-reloads for development use `npm run dev`
-1. Actualizá los archivos JSON de `/data` y los assets de `/public/` cuando cambie la información oficial.
-1. Para producción ejecutá `npm run generate`; Nuxt generará el sitio estático en `.output/public`.
+Sitio oficial del AWS Student Community Day UNC 2026, un evento estudiantil
+gratuito sobre cloud, tecnología y comunidad en Córdoba, Argentina.
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Requisitos
 
-## Deployment on Firebase
-1. Install required tools for performing Firebase deployment
-    - Install Firebase CLI: `npm i -g firebase-tools`
-1. Login into Firebase CLI using the following command -  `firebase login`
-1. Now type `firebase login` command in your Terminal/CMD/Powershell
-1. Update the `Firebase Project ID` in `.firebasesrc` file. This value should match the project ID in your Project Settings of the Firebase project you created in the previous section.
-1. Go to the Firebase Console Dashboard and Click on Hosting in the left navigation.
-1. Click on Get Started
-1. Click through all steps till you’re taken to the Hosting page in the console.
-El dominio público del evento es `https://awstudentcommunitydaycba.com/`. Firebase
-Hosting puede mantener además un subdominio técnico del proyecto, pero no debe
-usarse como URL canónica.
-1. Copy the sub-domain name of the URL provided. In this case, it will be the project ID. However, to be precise, you have to copy the part before .web.aap or .firebaseapp.com. This is your Site ID
-1. Update `Firebase.json` file, set the site key to Site ID
-    ```js
-        {
-            "hosting": {
-                "site":"Your_Firebase_Hosting_id",
-                "public": ".output/public",
-                "rewrites": [ {
-                    "source": "**",
-                    "destination": "/index.html"
-                } ],
-                "ignore": [
-                    "firebase.json",
-                    "**/.*",
-                    "**/node_modules/**"
-                ]
-            }
-        }
-    ```
-1. In your terminal at the root directory of the project,  build and deploy using the following command     
-    - `firebase deploy`
+- Node.js 20 o superior.
+- npm 10 o superior.
+- Firebase CLI únicamente si se publica en Firebase Hosting.
 
-## Developed by
-1. [Vrijraj Singh](https://vrijraj.xyz/)
-2. [Shivam Singh](https://shivam.live/)
-3. [Sandali Singh](https://sandali.xyz/)
+## Desarrollo local
 
-## Technology Stack
+```powershell
+npm install
+npm run dev
+```
 
-* [VueJS](https://vuejs.org/)
-* [Nuxt](https://nuxt.com/)
-* [AWS Community](https://aws.amazon.com/developer/community/)
-* [Firebase Hosting](https://firebase.google.com/)
+La aplicación estará disponible en `http://localhost:3000`.
 
-## Contributing
-Awesome! We would greatly appreciate it if you could contribute to all kinds. To help smoothen the process we have a few non-exhaustive guidelines to follow which should get you going in no time.
+## Comandos del proyecto
 
-## LICENSE
-Check out the developer [LICENSE](https://github.com/oss-labs/devfest-2024/blob/main/LICENSE)
+| Comando | Uso |
+| --- | --- |
+| `npm run dev` | Servidor de desarrollo con recarga automática. |
+| `npm run typecheck` | Verificación de TypeScript y componentes Vue. |
+| `npm run build` | Build de producción de Nuxt. |
+| `npm run generate` | Generación estática para hosting. |
+| `npm run preview` | Vista local de la salida de producción. |
 
-## Facing Any Problem or need any Help?
-Write us in the [issues](https://github.com/oss-labs/devfest-2024/issues) section. Our team will try to solve your issue within 10-12 hours.<be>
+Antes de abrir un pull request, ejecutar:
+
+```powershell
+npm run typecheck
+npm run generate
+git diff --check
+```
+
+## Contenido y estructura
+
+El contenido editable vive en [`data/`](data/). Las imágenes importadas por
+componentes están en [`assets/`](assets/) y los archivos servidos directamente
+desde una URL pública están en [`public/`](public/).
+
+La guía detallada para modificar tracks, agenda, speakers, equipo, sponsors,
+imágenes y redes está en [`docs/CONTENT_GUIDE.md`](docs/CONTENT_GUIDE.md).
+
+Páginas principales:
+
+- `/`: portada y presentación del evento.
+- `/agenda`: agenda filtrable por track.
+- `/speakers`: speakers.
+- `/team`: equipo organizador.
+- `/faq`: preguntas frecuentes.
+- `/coc`: código de conducta.
+
+## Despliegue en Firebase Hosting
+
+La configuración de [`firebase.json`](firebase.json) publica `.output/public`.
+Para desplegar:
+
+```powershell
+npm run generate
+npx firebase-tools login
+npx firebase-tools deploy --only hosting
+```
+
+El proyecto de Firebase configurado en [`.firebaserc`](.firebaserc) debe estar
+disponible para la cuenta que realiza el despliegue. El dominio público es
+`https://awstudentcommunitydaycba.com/`.
+
+## Analítica
+
+Google Analytics es opcional. Definir `NUXT_PUBLIC_GTAG_ID` únicamente en el
+entorno de build:
+
+```powershell
+$env:NUXT_PUBLIC_GTAG_ID="G-XXXXXXXXXX"
+npm run generate
+```
+
+## Contribuir
+
+Mantener los cambios enfocados, no incluir secretos ni artefactos generados
+(`.nuxt`, `.output`, `.firebase`) y revisar el resultado visual en desktop y
+mobile. Los datos personales y los perfiles de ejemplo deben confirmarse antes
+de publicar el evento.
+
+## Licencia y contacto
+
+Para reportar un problema, abrir un issue en el repositorio. La información de
+los organizadores y sus enlaces se mantiene en los archivos de datos del
+proyecto.

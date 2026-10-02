@@ -23,8 +23,8 @@
         :key="indexp"
       >
         <div
-          style="background-color: #F3F3F3; border-radius: 15px;border: 1.5px solid black;"
-          class="pa-5"
+          class="futuristic-surface pa-5"
+          style="border-radius: 15px;border: 1.5px solid var(--aws-orange);"
         >
           <ClientOnly>
             <v-tooltip location="bottom" :key="indexp">

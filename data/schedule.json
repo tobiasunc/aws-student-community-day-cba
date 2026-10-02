@@ -1,14 +1,183 @@
 [
-    {
-        "day": "1",
-        "date": "7 de noviembre de 2026",
-        "schedule": [
-            { "startTime": "09:30", "endTime": "11:00", "session": "1001" },
-            { "startTime": "09:30", "endTime": "11:00", "session": "1006" },
-            { "startTime": "11:00", "endTime": "12:30", "session": "1002" },
-            { "startTime": "13:30", "endTime": "14:15", "session": "1003" },
-            { "startTime": "15:00", "endTime": "15:45", "session": "1004" },
-            { "startTime": "16:30", "endTime": "16:45", "session": "1005" }
-        ]
-    }
+  {
+    "day": "1",
+    "date": "7 de noviembre de 2026",
+    "schedule": [
+      {
+        "startTime": "13:00",
+        "endTime": "14:00",
+        "session": "2001"
+      },
+      {
+        "startTime": "14:00",
+        "endTime": "15:00",
+        "session": "2002"
+      },
+      {
+        "startTime": "15:00",
+        "endTime": "16:00",
+        "session": "2003"
+      },
+      {
+        "startTime": "16:00",
+        "endTime": "17:00",
+        "session": "2004"
+      },
+      {
+        "startTime": "17:00",
+        "endTime": "18:00",
+        "session": "2005"
+      },
+      {
+        "startTime": "18:00",
+        "endTime": "19:00",
+        "session": "2006"
+      },
+      {
+        "startTime": "19:00",
+        "endTime": "20:00",
+        "session": "2007"
+      },
+      {
+        "startTime": "13:00",
+        "endTime": "14:00",
+        "session": "2008"
+      },
+      {
+        "startTime": "14:00",
+        "endTime": "15:00",
+        "session": "2009"
+      },
+      {
+        "startTime": "15:00",
+        "endTime": "16:00",
+        "session": "2010"
+      },
+      {
+        "startTime": "16:00",
+        "endTime": "17:00",
+        "session": "2011"
+      },
+      {
+        "startTime": "17:00",
+        "endTime": "18:00",
+        "session": "2012"
+      },
+      {
+        "startTime": "18:00",
+        "endTime": "19:00",
+        "session": "2013"
+      },
+      {
+        "startTime": "19:00",
+        "endTime": "20:00",
+        "session": "2014"
+      },
+      {
+        "startTime": "13:00",
+        "endTime": "14:00",
+        "session": "2015"
+      },
+      {
+        "startTime": "14:00",
+        "endTime": "15:00",
+        "session": "2016"
+      },
+      {
+        "startTime": "15:00",
+        "endTime": "16:00",
+        "session": "2017"
+      },
+      {
+        "startTime": "16:00",
+        "endTime": "17:00",
+        "session": "2018"
+      },
+      {
+        "startTime": "17:00",
+        "endTime": "18:00",
+        "session": "2019"
+      },
+      {
+        "startTime": "18:00",
+        "endTime": "19:00",
+        "session": "2020"
+      },
+      {
+        "startTime": "19:00",
+        "endTime": "20:00",
+        "session": "2021"
+      },
+      {
+        "startTime": "13:00",
+        "endTime": "14:00",
+        "session": "2022"
+      },
+      {
+        "startTime": "14:00",
+        "endTime": "15:00",
+        "session": "2023"
+      },
+      {
+        "startTime": "15:00",
+        "endTime": "16:00",
+        "session": "2024"
+      },
+      {
+        "startTime": "16:00",
+        "endTime": "17:00",
+        "session": "2025"
+      },
+      {
+        "startTime": "17:00",
+        "endTime": "18:00",
+        "session": "2026"
+      },
+      {
+        "startTime": "18:00",
+        "endTime": "19:00",
+        "session": "2027"
+      },
+      {
+        "startTime": "19:00",
+        "endTime": "20:00",
+        "session": "2028"
+      },
+      {
+        "startTime": "13:00",
+        "endTime": "14:00",
+        "session": "2029"
+      },
+      {
+        "startTime": "14:00",
+        "endTime": "15:00",
+        "session": "2030"
+      },
+      {
+        "startTime": "15:00",
+        "endTime": "16:00",
+        "session": "2031"
+      },
+      {
+        "startTime": "16:00",
+        "endTime": "17:00",
+        "session": "2032"
+      },
+      {
+        "startTime": "17:00",
+        "endTime": "18:00",
+        "session": "2033"
+      },
+      {
+        "startTime": "18:00",
+        "endTime": "19:00",
+        "session": "2034"
+      },
+      {
+        "startTime": "19:00",
+        "endTime": "20:00",
+        "session": "2035"
+      }
+    ]
+  }
 ]

@@ -7,9 +7,9 @@
 <template>
   <v-container fluid>
     <v-row>
-      <v-col md="12" sm="12">
-        <h1>What to Expect</h1>
-        <p>
+      <v-col md="12" sm="12" data-gsap-reveal>
+        <h1 class="section-heading">What to Expect</h1>
+        <p class="muted-copy">
           Una jornada creada por estudiantes para conectar talento, comunidades,
           empresas y academia alrededor de la nube y la tecnología.
         </p>
@@ -22,10 +22,12 @@
         :key="index"
       >
         <div
+          data-gsap-reveal
+          data-gsap-box
           style="
-            background-color: #eeeeee;
+            background-color: #15151d;
             border-radius: 20px;
-            border: 1.5px solid black;
+            border: 1px solid rgba(255, 255, 255, 0.12);
           "
         >
           <v-img
@@ -33,10 +35,11 @@
             width="140"
             :alt="`Ilustración: ${item.title}`"
             class="float-right mr-5"
+            data-gsap-image
           ></v-img>
           <div class="pa-8">
             <h2>{{ item.title }}</h2>
-            <p style="font-size: 95%">
+            <p class="muted-copy" style="font-size: 95%">
               {{ item.description }}
             </p>
           </div>

@@ -1,4 +1,6 @@
 import type { EventConfig } from '~/types'
+import { useJSONData } from '~/composables/useJSONData'
+import { useRoute, useRuntimeConfig, useSeoMeta, useHead } from '#imports'
 
 /**
  * Centraliza SEO, canonical y metadatos sociales de cada página.
@@ -11,7 +13,10 @@ export const useEventSeo = (pageTitle?: string, event?: EventConfig) => {
     ? `${pageTitle} - ${config.eventInfo.name}`
     : config.eventInfo.name
   const siteUrl = useRuntimeConfig().public.siteUrl as string
-  const image = `${siteUrl}thumbnail.png`
+  const route = useRoute()
+  const baseUrl = siteUrl.endsWith('/') ? siteUrl : `${siteUrl}/`
+  const pageUrl = new URL(route.fullPath, baseUrl).toString()
+  const image = new URL('thumbnail.png', baseUrl).toString()
 
   useSeoMeta({
     contentType: 'text/html; charset=utf-8',
@@ -25,7 +30,7 @@ export const useEventSeo = (pageTitle?: string, event?: EventConfig) => {
     ogTitle: title,
     ogDescription: config.eventInfo.description.short,
     ogImage: image,
-    ogUrl: siteUrl,
+    ogUrl: pageUrl,
     ogType: 'website',
     twitterTitle: title,
     twitterDescription: config.eventInfo.description.short,
@@ -34,7 +39,7 @@ export const useEventSeo = (pageTitle?: string, event?: EventConfig) => {
   })
 
   useHead({
-    link: [{ rel: 'canonical', href: siteUrl }],
-    meta: [{ property: 'twitter:url', content: siteUrl }],
+    link: [{ rel: 'canonical', href: pageUrl }],
+    meta: [{ property: 'twitter:url', content: pageUrl }],
   })
 }

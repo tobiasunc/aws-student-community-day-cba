@@ -7,17 +7,20 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@mdi/font": "^7.4.47",
-    "firebase": "^10.13.0",
+    "gsap": "^3.15.0",
     "nuxt": "^3.12.4",
     "nuxt-gtag": "^3.0.1",
     "vue": "3.4.38"
   },
   "devDependencies": {
+    "typescript": "^5.6.3",
     "vite-plugin-vuetify": "^2.0.4",
+    "vue-tsc": "^2.1.10",
     "vuetify": "^3.7.0"
   }
 }

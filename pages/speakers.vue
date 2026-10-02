@@ -7,7 +7,7 @@
   <NuxtLayout name="default">
     <v-container fluid class="mt-5">
       <v-row>
-        <v-col md="12">
+        <v-col md="12" data-gsap-reveal>
           <h1>Speakers</h1>
           <p>
             Our speakers are influential leaders and allies actively involved in
@@ -20,6 +20,7 @@
 
       <v-row>
         <v-col
+          data-gsap-reveal
           md="2"
           cols="6"
           sm="3"
