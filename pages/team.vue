@@ -8,13 +8,11 @@
     <v-container fluid class="mt-5">
       <v-row>
         <v-col md="12" data-gsap-reveal>
-          <h1>Team</h1>
+          <h1>Equipo</h1>
           <p>
-            Our mission is to equip our community members with practical skills,
-            enabling them to communicate their insights and drive innovative
-            solutions effectively. Whatever your challenge, these leaders on the
-            front line of transformation, innovation, and exploration helped
-            solve it with you.
+            Nuestro objetivo es brindar herramientas prácticas a la comunidad
+            para compartir conocimientos y crear soluciones innovadoras en
+            equipo.
           </p>
         </v-col>
       </v-row>

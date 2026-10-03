@@ -69,7 +69,7 @@
                 aria-label="link"
                 class="mr-6 google-font grey--text text--darken-3"
                 style="text-decoration: none; color: white"
-                >AWS Community Code of Conduct</a
+                >Código de conducta de la comunidad AWS</a
               >
             </v-col>
 

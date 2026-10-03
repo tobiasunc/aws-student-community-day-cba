@@ -53,7 +53,7 @@ Cada sesión debe tener:
 - `track`: nombre exacto del track seguido de ` Track`, por ejemplo
   `Green Track`.
 - `date`, `time` y `timeDuration`: información temporal.
-- `format`: tipo de sesión, como `Technical talk`, `Workshop` o `Networking`.
+- `format`: tipo de sesión, como `Charla técnica`, `Taller` o `Networking`.
 - `speakers`: array de IDs existentes en `data/speakers.json`.
 - `link` y `slide`: opcionales; pueden quedar vacíos.
 

@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "id": "2001",
     "slide": "",
@@ -7,7 +7,7 @@
     "track": "Red Track",
     "link": "",
     "time": "13:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -17,12 +17,12 @@
   {
     "id": "2002",
     "slide": "",
-    "title": "Costos y buenas prácticas en la nube",
+    "title": "Costos y buenas prÃ¡cticas en la nube",
     "description": "Charla de una hora del Red Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Red Track",
     "link": "",
     "time": "14:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -37,7 +37,7 @@
     "track": "Red Track",
     "link": "",
     "time": "15:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -52,7 +52,7 @@
     "track": "Red Track",
     "link": "",
     "time": "16:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -67,7 +67,7 @@
     "track": "Red Track",
     "link": "",
     "time": "17:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -77,12 +77,12 @@
   {
     "id": "2006",
     "slide": "",
-    "title": "Cómo presentar tu proyecto cloud",
+    "title": "CÃ³mo presentar tu proyecto cloud",
     "description": "Charla de una hora del Red Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Red Track",
     "link": "",
     "time": "18:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -112,7 +112,7 @@
     "track": "Blue Track",
     "link": "",
     "time": "13:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -127,7 +127,7 @@
     "track": "Blue Track",
     "link": "",
     "time": "14:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -142,7 +142,7 @@
     "track": "Blue Track",
     "link": "",
     "time": "15:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -152,12 +152,12 @@
   {
     "id": "2011",
     "slide": "",
-    "title": "Automatización con Lambda",
+    "title": "AutomatizaciÃ³n con Lambda",
     "description": "Charla de una hora del Blue Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Blue Track",
     "link": "",
     "time": "16:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -167,12 +167,12 @@
   {
     "id": "2012",
     "slide": "",
-    "title": "Prototipado rápido con servicios administrados",
+    "title": "Prototipado rÃ¡pido con servicios administrados",
     "description": "Charla de una hora del Blue Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Blue Track",
     "link": "",
     "time": "17:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -187,7 +187,7 @@
     "track": "Blue Track",
     "link": "",
     "time": "18:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -212,12 +212,12 @@
   {
     "id": "2015",
     "slide": "",
-    "title": "Infraestructura como código",
+    "title": "Infraestructura como cÃ³digo",
     "description": "Charla de una hora del Green Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Green Track",
     "link": "",
     "time": "13:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -232,7 +232,7 @@
     "track": "Green Track",
     "link": "",
     "time": "14:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -242,12 +242,12 @@
   {
     "id": "2017",
     "slide": "",
-    "title": "CI/CD para equipos pequeños",
+    "title": "CI/CD para equipos pequeÃ±os",
     "description": "Charla de una hora del Green Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Green Track",
     "link": "",
     "time": "15:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -262,7 +262,7 @@
     "track": "Green Track",
     "link": "",
     "time": "16:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -277,7 +277,7 @@
     "track": "Green Track",
     "link": "",
     "time": "17:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -292,7 +292,7 @@
     "track": "Green Track",
     "link": "",
     "time": "18:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -317,12 +317,12 @@
   {
     "id": "2022",
     "slide": "",
-    "title": "Carreras en cloud y tecnología",
+    "title": "Carreras en cloud y tecnologÃ­a",
     "description": "Charla de una hora del Orange Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Orange Track",
     "link": "",
     "time": "13:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -337,7 +337,7 @@
     "track": "Orange Track",
     "link": "",
     "time": "14:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -347,12 +347,12 @@
   {
     "id": "2024",
     "slide": "",
-    "title": "Cómo prepararse para una entrevista técnica",
+    "title": "CÃ³mo prepararse para una entrevista tÃ©cnica",
     "description": "Charla de una hora del Orange Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Orange Track",
     "link": "",
     "time": "15:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -367,7 +367,7 @@
     "track": "Orange Track",
     "link": "",
     "time": "16:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -382,7 +382,7 @@
     "track": "Orange Track",
     "link": "",
     "time": "17:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -397,7 +397,7 @@
     "track": "Orange Track",
     "link": "",
     "time": "18:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -427,7 +427,7 @@
     "track": "Yellow Track",
     "link": "",
     "time": "13:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -442,7 +442,7 @@
     "track": "Yellow Track",
     "link": "",
     "time": "14:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -452,12 +452,12 @@
   {
     "id": "2031",
     "slide": "",
-    "title": "Flash talk: errores que enseñan",
+    "title": "Flash talk: errores que enseÃ±an",
     "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Yellow Track",
     "link": "",
     "time": "15:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -472,7 +472,7 @@
     "track": "Yellow Track",
     "link": "",
     "time": "16:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -487,7 +487,7 @@
     "track": "Yellow Track",
     "link": "",
     "time": "17:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -502,7 +502,7 @@
     "track": "Yellow Track",
     "link": "",
     "time": "18:00 ART",
-    "format": "Technical talk",
+    "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -525,3 +525,4 @@
     ]
   }
 ]
+

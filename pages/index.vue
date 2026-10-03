@@ -15,27 +15,27 @@
         <HomeStats class="my-0 my-md-5" />
         <!-- Stats -->
 
-        <!-- Whats New -->
+        <!-- Qué vas a encontrar -->
         <HomeExpectationSection class="mt-md-10" />
-        <!-- Whats New -->
+        <!-- Fin de qué vas a encontrar -->
 
         <HomeEventProgram class="mb-md-10" />
 
-        <!-- Technologies -->
+        <!-- Tecnologías -->
         <HomeTechSection class="mb-md-10" />
-        <!-- Technologies -->
+        <!-- Fin de tecnologías -->
 
-        <!-- Recap de actividades anteriores de la comunidad -->
+        <!-- Tecnologías y comunidad -->
         <HomePastEvent class="mb-md-10" />
-        <!-- Fin del recap -->
+        <!-- Fin de tecnologías y comunidad -->
 
         <!-- Sponsors -->
         <HomeSponsorsSection />
         <!-- Sponsors -->
 
-        <!-- Keep in Touch -->
+        <!-- Contacto -->
         <HomeCommunityContact />
-        <!-- Keep in Touch -->
+        <!-- Fin de contacto -->
       </v-row>
     </v-container>
   </NuxtLayout>

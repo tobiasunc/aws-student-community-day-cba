@@ -8,7 +8,7 @@
   <v-container fluid>
     <v-row>
       <v-col md="12" sm="12" data-gsap-reveal>
-        <h1 class="section-heading">What to Expect</h1>
+        <h1 class="section-heading">Qué vas a encontrar</h1>
         <p class="muted-copy">
           Una jornada creada por estudiantes para conectar talento, comunidades,
           empresas y academia alrededor de la nube y la tecnología.

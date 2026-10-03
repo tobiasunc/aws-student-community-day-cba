@@ -1,85 +1,80 @@
 <!--
   Componente: PastEvent.vue
-  Qué hace: recap visual de actividades previas de la comunidad.
+  Qué hace: muestra tecnologías AWS y open source relacionadas con el evento.
   Dónde se usa: pages/index.vue.
-  Datos: eventInfo.pastEvent; fotos desde public/img/event.
+  Datos: lista local de tecnologías y sus logos públicos.
 -->
 <template>
   <v-container fluid>
-    <v-row class="mb-0">
-      <v-col md="12" sm="12" cols="12" class="text-center" data-gsap-reveal>
-        <h1>La comunidad que estamos construyendo</h1>
+    <v-row>
+      <v-col cols="12" class="text-center" data-gsap-reveal>
+        <h1>Tecnologías para construir en la nube</h1>
         <p>
-          {{ mainData.eventInfo.pastEvent.summary }}
+          Una selección de herramientas AWS y open source para aprender,
+          experimentar y crear soluciones reales.
         </p>
-        <v-img
-          style="max-height: 300px; border: 1.5px solid black"
-          rounded="xl"
-          alt="Foto destacada de actividades de la comunidad"
-          cover
-          class="mt-6"
-          :src="`/img/event/${mainData.eventInfo.pastEvent.images[0]}`"
-        ></v-img>
       </v-col>
-      <v-col md="12" sm="12" cols="12">
-        <v-container fluid class="px-0">
-          <v-row>
-            <v-col
-              md="3"
-              v-for="(item, index) in mainData.eventInfo.pastEvent.stats"
-              :key="index"
-              cols="6"
-            >
-              <div
-                class="text-center py-3"
-                :style="{
-                  backgroundColor: `${colors[index]}`,
-                  borderTopLeftRadius: index == 0 ? '23px' : '',
-                  borderBottomLeftRadius: index == 0 ? '23px' : '',
-                  borderTopRightRadius:
-                    index == mainData.eventInfo.pastEvent.stats.length - 1
-                      ? '23px'
-                      : '',
-                  borderBottomRightRadius:
-                    index == mainData.eventInfo.pastEvent.stats.length - 1
-                      ? '23px'
-                      : '',
-                }"
-              >
-                <h1>{{ item.value }}</h1>
-                <p>{{ item.name }}</p>
-              </div>
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-col>
-    </v-row>
-    <v-row class="my-0">
-      <v-col md="6" sm="6">
-        <v-img
-          height="250"
-          rounded="xl"
-          cover
-          alt="Participantes y comunidad en una actividad previa"
-          :src="`/img/event/${mainData.eventInfo.pastEvent.images[1]}`"
-          style="border: 1.5px solid black"
-        ></v-img>
-      </v-col>
-      <v-col md="6" sm="6">
-        <v-img
-          height="250"
-          rounded="xl"
-          cover
-          alt="Espacio de encuentro de una actividad previa"
-          :src="`/img/event/${mainData.eventInfo.pastEvent.images[2]}`"
-          style="border: 1.5px solid black"
-        ></v-img>
+      <v-col
+        v-for="technology in technologies"
+        :key="technology.name"
+        cols="6"
+        sm="4"
+        md="3"
+        data-gsap-box
+      >
+        <a
+          class="technology-card futuristic-surface"
+          :href="technology.link"
+          target="_blank"
+          rel="noopener noreferrer"
+          :aria-label="`Conocer ${technology.name}`"
+        >
+          <img :src="technology.logo" :alt="`Logo de ${technology.name}`" />
+          <strong>{{ technology.name }}</strong>
+        </a>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
-<script setup>
-const { mainData } = useJSONData();
-const colors = ref(["#C3ECF6", "#F8D8D8", "#FFE7A5", "#CCF6C5"]);
+<script setup lang="ts">
+import programIcon from "@/assets/img/Program Icon/SVG/AWS Student Builder Group_RGB_Program Icon_Amber.svg";
+
+const technologies = [
+  { name: "AWS", link: "https://aws.amazon.com/", logo: programIcon },
+  { name: "AWS Lambda", link: "https://aws.amazon.com/lambda/", logo: "/img/technologies/awslambda.svg" },
+  { name: "Amazon S3", link: "https://aws.amazon.com/s3/", logo: "/img/technologies/amazons3.svg" },
+  { name: "Kubernetes", link: "https://kubernetes.io/", logo: "/img/technologies/kubernetes.svg" },
+  { name: "Docker", link: "https://www.docker.com/", logo: "/img/technologies/docker.svg" },
+  { name: "Terraform", link: "https://www.terraform.io/", logo: "/img/technologies/terraform.svg" },
+  { name: "Python", link: "https://www.python.org/", logo: "/img/technologies/python.svg" },
+  { name: "Node.js", link: "https://nodejs.org/", logo: "/img/technologies/nodedotjs.svg" },
+];
 </script>
+
+<style scoped>
+.technology-card {
+  display: flex;
+  min-height: 150px;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-direction: column;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 153, 0, 0.28);
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.technology-card:hover {
+  border-color: #ff9900;
+  transform: translateY(-4px);
+}
+
+.technology-card img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+}
+</style>

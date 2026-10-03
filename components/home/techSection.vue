@@ -1,8 +1,8 @@
 <!--
   Componente: techSection.vue
-  Qué hace: muestra tecnologías AWS relacionadas y aplica fallback a logos.
+  Qué hace: muestra tecnologías AWS y open source con sus logos.
   Dónde se usa: pages/index.vue.
-  Datos: lista local de enlaces; logos externos o aws-sbg-logo.svg.
+  Datos: lista local de enlaces y logos públicos versionados.
 -->
 <template>
   <v-container fluid>
@@ -24,8 +24,8 @@
                 md="1"
                 sm="2"
                 cols="3"
-                v-for="(item, index) in tech"
-                :key="index"
+                v-for="item in technologies"
+                :key="item.name"
               >
                 <a :href="item.link" target="_blank" :aria-label="`Conocer ${item.name}`">
                   <v-avatar
@@ -34,7 +34,7 @@
                     color="#15151d"
                     style="border: 1px solid var(--aws-orange)"
                   >
-                    <v-img :alt="`Logo de ${item.name}`" :src="item.logo" :lazy-src="item.logo" @error="useFallback"></v-img>
+                    <v-img :alt="`Logo de ${item.name}`" :src="item.logo" :lazy-src="item.logo"></v-img>
                   </v-avatar>
                 </a>
               </v-col>
@@ -62,40 +62,46 @@
 import programIcon from "@/assets/img/Program Icon/SVG/AWS Student Builder Group_RGB_Program Icon_Amber.svg";
 
 const { mainData } = useJSONData();
-const fallbackLogo = "/img/common/avatar.png";
-const useFallback = (event) => {
-  if (event?.target?.src !== fallbackLogo) {
-    event.target.src = fallbackLogo;
-  }
-};
-var tech = ref([
+const technologies = [
   {
     name: "AWS Cloud",
     link: "https://aws.amazon.com/",
     logo: programIcon,
   },
   {
-    name: "AWS Academy",
-    link: "https://aws.amazon.com/training/awsacademy/",
-    logo: programIcon,
-  },
-  {
     name: "AWS Lambda",
     link: "https://aws.amazon.com/lambda/",
-    logo: programIcon,
-  },
-  {
-    name: "Amazon EC2",
-    link: "https://aws.amazon.com/ec2/",
-    logo: programIcon,
+    logo: "/img/technologies/awslambda.svg",
   },
   {
     name: "Amazon S3",
     link: "https://aws.amazon.com/s3/",
-    logo: programIcon,
+    logo: "/img/technologies/amazons3.svg",
   },
-]);
+  {
+    name: "Kubernetes",
+    link: "https://kubernetes.io/",
+    logo: "/img/technologies/kubernetes.svg",
+  },
+  {
+    name: "Docker",
+    link: "https://www.docker.com/",
+    logo: "/img/technologies/docker.svg",
+  },
+  {
+    name: "Terraform",
+    link: "https://www.terraform.io/",
+    logo: "/img/technologies/terraform.svg",
+  },
+  {
+    name: "Python",
+    link: "https://www.python.org/",
+    logo: "/img/technologies/python.svg",
+  },
+  {
+    name: "Node.js",
+    link: "https://nodejs.org/",
+    logo: "/img/technologies/nodedotjs.svg",
+  },
+];
 </script>
-
-<style>
-</style>

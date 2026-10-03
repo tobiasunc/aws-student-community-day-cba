@@ -31,7 +31,7 @@ Configuración general del evento:
 - `eventInfo.topics`: tres grupos de tópicos, cada uno con un array `topics`.
 - `eventInfo.sponsorshipTiers`: los paquetes Base, Socio de Interacción y
   Constructor del Ecosistema, con precio, condición y beneficios.
-- `eventInfo.pastEvent`: recap de actividades previas, imágenes y métricas.
+- `eventInfo.pastEvent`: resumen y métricas de actividades previas.
 - `seo`: keywords y URL pública oficial.
 
 ## `navbar.json`

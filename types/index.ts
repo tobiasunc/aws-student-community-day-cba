@@ -107,9 +107,8 @@ export interface Registration {
 }
 
 export interface PastEvent {
-  /** Contenido visual y métricas del recap de una edición anterior. */
+  /** Resumen y métricas de una edición anterior de la comunidad. */
   summary: string
-  images: string[]
   stats: EventStat[]
 }
 
@@ -138,7 +137,7 @@ export interface EventConfig {
     tracks: Track[]
     topics: TopicGroup[]
     sponsorshipTiers: SponsorshipTier[]
-    /** Recap de una edición o actividad previa de la comunidad. */
+    /** Resumen de una edición o actividad previa de la comunidad. */
     pastEvent: PastEvent
   }
   seo: { keywords: string; hostUrl: string }

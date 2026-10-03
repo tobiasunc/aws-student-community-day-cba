@@ -10,10 +10,8 @@
         <v-col md="12" data-gsap-reveal>
           <h1>Speakers</h1>
           <p>
-            Our speakers are influential leaders and allies actively involved in
-            various communities within their organizations, cities, countries,
-            and beyond, making a significant impact through their contributions
-            and support.
+            Conocé a las personas invitadas que comparten experiencias,
+            conocimientos y herramientas para construir soluciones en la nube.
           </p>
         </v-col>
       </v-row>

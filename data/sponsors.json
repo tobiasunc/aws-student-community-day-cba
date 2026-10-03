@@ -1,13 +1,13 @@
 [
   {
-    "category_name": "Community partners",
+    "category_name": "Aliados de la comunidad",
     "sponsors": [
       { "id": "aws", "name": "Amazon Web Services", "link": "https://aws.amazon.com", "logo": "aws.png" },
       { "id": "unc", "name": "Universidad Nacional de Córdoba", "link": "https://www.unc.edu.ar", "logo": "unc.png" }
     ]
   },
   {
-    "category_name": "Supporting partners",
+    "category_name": "Aliados colaboradores",
     "sponsors": [
       { "id": "partner-1", "name": "Partner announcement coming soon", "link": "https://aws.amazon.com/developer/community/", "logo": "placeholder.png" }
     ]
