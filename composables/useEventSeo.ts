@@ -16,7 +16,10 @@ export const useEventSeo = (pageTitle?: string, event?: EventConfig) => {
   const route = useRoute()
   const baseUrl = siteUrl.endsWith('/') ? siteUrl : `${siteUrl}/`
   const pageUrl = new URL(route.fullPath, baseUrl).toString()
-  const image = new URL('thumbnail.png', baseUrl).toString()
+  const image = new URL(
+    'img/common/para-cuando-mandamos-links,%20lo-que-se-tendria-que-ver.png',
+    baseUrl,
+  ).toString()
 
   useSeoMeta({
     contentType: 'text/html; charset=utf-8',
@@ -30,11 +33,16 @@ export const useEventSeo = (pageTitle?: string, event?: EventConfig) => {
     ogTitle: title,
     ogDescription: config.eventInfo.description.short,
     ogImage: image,
+    ogImageAlt: `${config.eventInfo.name} - AWS Student Community Day UNC 2026`,
+    ogImageType: 'image/png',
+    ogImageWidth: '1365',
+    ogImageHeight: '768',
     ogUrl: pageUrl,
     ogType: 'website',
     twitterTitle: title,
     twitterDescription: config.eventInfo.description.short,
     twitterImage: image,
+    twitterImageAlt: `${config.eventInfo.name} - AWS Student Community Day UNC 2026`,
     twitterCard: 'summary_large_image',
   })
 
