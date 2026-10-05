@@ -8,8 +8,7 @@ public/img/
 ├── speakers/  Fotos de speakers; nombre recomendado: <id>-<nombre>.jpg
 ├── team/      Fotos del equipo; mismo criterio que speakers
 ├── sponsors/  Logos transparentes PNG/SVG con altura consistente
-├── event/     Fotos de recap, salón y ambiente del evento
-├── badge/     Assets públicos del generador de credenciales
+├── event/     Recursos visuales del evento, si se agregan en el futuro
 └── common/   Fallbacks e imágenes genéricas, como avatar.png
 ```
 
@@ -22,4 +21,4 @@ Si falta una foto de speaker o miembro del equipo, las tarjetas utilizan
 componente aplica el mismo fallback para evitar imágenes rotas.
 
 Las imágenes de `assets/` son distintas: esas son importadas y procesadas por
-Vite/Nuxt durante el build. El logo del SBG y el frame del badge viven allí.
+Vite/Nuxt durante el build. El logo del SBG y los recursos de marca viven allí.
