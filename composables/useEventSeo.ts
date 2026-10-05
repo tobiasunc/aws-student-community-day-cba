@@ -17,7 +17,7 @@ export const useEventSeo = (pageTitle?: string, event?: EventConfig) => {
   const baseUrl = siteUrl.endsWith('/') ? siteUrl : `${siteUrl}/`
   const pageUrl = new URL(route.fullPath, baseUrl).toString()
   const image = new URL(
-    'img/common/para-cuando-mandamos-links,%20lo-que-se-tendria-que-ver.png',
+    'img/common/para-cuando-mandamos-links,%20lo-que-se-tendria-que-ver.png?v=20261005',
     baseUrl,
   ).toString()
 
@@ -48,6 +48,10 @@ export const useEventSeo = (pageTitle?: string, event?: EventConfig) => {
 
   useHead({
     link: [{ rel: 'canonical', href: pageUrl }],
-    meta: [{ property: 'twitter:url', content: pageUrl }],
+    meta: [
+      { property: 'twitter:url', content: pageUrl },
+      { property: 'og:image:url', content: image },
+      { property: 'og:image:secure_url', content: image },
+    ],
   })
 }
