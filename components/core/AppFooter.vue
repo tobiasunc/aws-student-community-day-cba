@@ -12,7 +12,8 @@
       style="max-width: 1400px; margin-left: auto; margin-right: auto"
     >
       <v-col md="2" cols="12">
-        <h2 style="color: white">{{ mainData.communityName }}</h2>
+        <p class="footer-kicker">Recursos y enlaces</p>
+        <h2 style="color: white">AWS Student Builder Group UNC</h2>
         <a
           href="mailto:tobias.cruz@mi.unc.edu.ar"
           style="text-decoration: none; color: white"
@@ -93,7 +94,19 @@ const { mainData } = useJSONData();
 
 <style scoped>
 .app-footer {
-  background: #08080b;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  background:
+    linear-gradient(180deg, rgba(74, 36, 5, 0.34), rgba(8, 8, 11, 0.98) 68%),
+    #08080b;
+  border-top: 1px solid rgba(200, 95, 0, 0.72);
+  box-shadow: inset 0 1px 0 rgba(255, 153, 0, 0.08);
+}
+
+.footer-kicker {
+  margin-bottom: 0.45rem;
+  color: #c85f00;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 </style>

@@ -8,22 +8,14 @@
   <v-container fluid>
     <v-row>
       <v-col md="12" data-gsap-reveal>
-        <v-container
-          fluid
-          style="
-            background-color: #c3ecf6;
-            border-radius: 20px;
-            border: 1.5px solid black;
-          "
-        >
+        <v-container fluid class="community-contact-card">
           <v-row justify-center align="center" class="pa-5">
             <v-col md="5" sm="6" cols="12">
-              <h1 style="line-height: normal;">
-                Mantenete en contacto con {{ mainData.communityName }}
-              </h1>
+              <p class="eyebrow">Comunidad AWS en Córdoba</p>
+              <h1>Sumate a la comunidad</h1>
               <p class="mb-3">
-                Seguinos para recibir novedades, actividades y oportunidades de
-                la comunidad.
+                Conocé nuevas oportunidades, actividades y personas con quienes
+                aprender sobre tecnología en la nube.
               </p>
 
               <CommonSpeakerSocialButton
@@ -47,5 +39,33 @@ import programIcon from "@/assets/img/Program Icon/SVG/AWS Student Builder Group
 const { mainData } = useJSONData();
 </script>
 
-<style>
+<style scoped>
+.community-contact-card {
+  border: 1px solid rgba(255, 153, 0, 0.72);
+  border-radius: 20px;
+  background:
+    linear-gradient(120deg, rgba(112, 51, 0, 0.98), rgba(56, 27, 5, 0.98)),
+    #4a2405;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 196, 0, 0.16);
+  color: #ffffff;
+}
+
+.community-contact-card h1 {
+  max-width: 520px;
+  line-height: 1.08;
+}
+
+.community-contact-card p:not(.eyebrow) {
+  max-width: 520px;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.eyebrow {
+  margin-bottom: 0.55rem;
+  color: #ffc400;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
 </style>
