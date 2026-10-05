@@ -33,6 +33,10 @@
         <HomeSponsorsSection />
         <!-- Sponsors -->
 
+        <!-- Convocatorias -->
+        <HomeParticipationForms />
+        <!-- Convocatorias -->
+
         <!-- Contacto -->
         <HomeCommunityContact />
         <!-- Fin de contacto -->
