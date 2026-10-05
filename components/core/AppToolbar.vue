@@ -66,6 +66,7 @@
         :href="mainData.eventInfo.registration.link"
         class="register-button d-md-flex d-lg-flex d-sm-flex d-none mr-3"
         target="_blank"
+        rel="noopener noreferrer"
         color="#FF9900"
         variant="flat"
         >Inscribite</v-btn

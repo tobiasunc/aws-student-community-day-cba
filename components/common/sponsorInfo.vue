@@ -29,7 +29,7 @@
           <ClientOnly>
             <v-tooltip location="bottom" :key="indexp">
               <template v-slot:activator="{ props }">
-                <a :aria-label="`Visitar el sitio de ${sponsor.name}`" :href="sponsor.link" target="_blank" v-bind="props">
+                <a :aria-label="`Visitar el sitio de ${sponsor.name}`" :href="sponsor.link" target="_blank" rel="noopener noreferrer" v-bind="props">
                   <v-img
                     :alt="`Logo de ${sponsor.name}`"
                     :src="'/img/sponsors/' + sponsor.logo"

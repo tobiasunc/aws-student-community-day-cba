@@ -10,7 +10,7 @@ el build. No hay una API ni una base de datos que actualizar.
 2. Editar los archivos de `data/` y los componentes necesarios.
 3. Validar los JSON y ejecutar `npm run generate`.
 4. Revisar el resultado con `npm run dev`.
-5. Commitear y hacer push. El hosting publica `.output/public` después de
+5. Commitear y hacer push. Cloudflare Pages publica `dist` después de
    ejecutar `npm run generate`.
 
 ## Cambiar la información general del evento
@@ -142,12 +142,12 @@ npm run generate
 npm run dev
 ```
 
-`npm run generate` debe finalizar sin errores y generar `.output/public`.
+`npm run generate` debe finalizar sin errores y generar `dist`.
 Cloudflare Pages debe usar:
 
 ```text
 Build command: npm run generate
-Build output directory: .output/public
+Build output directory: dist
 ```
 
 Antes de commitear, revisar:

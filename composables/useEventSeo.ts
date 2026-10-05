@@ -7,7 +7,7 @@ import { useRoute, useRuntimeConfig, useSeoMeta, useHead } from '#imports'
  * Ejemplo: useEventSeo('Agenda') dentro de pages/agenda.vue.
  */
 export const useEventSeo = (pageTitle?: string, event?: EventConfig) => {
-  const { mainData } = useJSONData()
+  const { mainData, faqData } = useJSONData()
   const config = event ?? mainData
   const title = pageTitle
     ? `${pageTitle} - ${config.eventInfo.name}`
@@ -15,11 +15,65 @@ export const useEventSeo = (pageTitle?: string, event?: EventConfig) => {
   const siteUrl = useRuntimeConfig().public.siteUrl as string
   const route = useRoute()
   const baseUrl = siteUrl.endsWith('/') ? siteUrl : `${siteUrl}/`
-  const pageUrl = new URL(route.fullPath, baseUrl).toString()
+  const canonicalPath = route.path === '/' ? '/' : `${route.path.replace(/\/+$/, '')}/`
+  const pageUrl = new URL(canonicalPath, baseUrl).toString()
   const image = new URL(
     'img/common/para-cuando-mandamos-links,%20lo-que-se-tendria-que-ver.png?v=20261005',
     baseUrl,
   ).toString()
+  const eventSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    name: config.eventInfo.name,
+    description: config.eventInfo.description.long,
+    inLanguage: 'es-AR',
+    startDate: config.eventInfo.startDateTime,
+    endDate: config.eventInfo.endDateTime,
+    isAccessibleForFree: true,
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    image: [image],
+    location: {
+      '@type': 'Place',
+      name: config.eventInfo.venue.name,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: config.eventInfo.venue.address,
+        addressLocality: config.eventInfo.venue.city,
+        addressCountry: config.eventInfo.venue.country,
+      },
+      hasMap: config.eventInfo.venue.mapLink,
+    },
+    organizer: {
+      '@type': 'Organization',
+      name: config.communityName,
+      url: baseUrl,
+      sameAs: Object.values(config.communityLinks).filter(Boolean),
+    },
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'ARS',
+      availability: 'https://schema.org/InStock',
+      url: config.eventInfo.registration.link,
+      validThrough: config.eventInfo.registration.endDate,
+    },
+  }
+  const faqSchema =
+    pageTitle === 'FAQ'
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faqData.map((item) => ({
+            '@type': 'Question',
+            name: item.question,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: item.answer.replace(/<[^>]*>/g, ' '),
+            },
+          })),
+        }
+      : null
 
   useSeoMeta({
     contentType: 'text/html; charset=utf-8',
@@ -52,6 +106,12 @@ export const useEventSeo = (pageTitle?: string, event?: EventConfig) => {
       { property: 'twitter:url', content: pageUrl },
       { property: 'og:image:url', content: image },
       { property: 'og:image:secure_url', content: image },
+    ],
+    script: [
+      { type: 'application/ld+json', children: JSON.stringify(eventSchema) },
+      ...(faqSchema
+        ? [{ type: 'application/ld+json', children: JSON.stringify(faqSchema) }]
+        : []),
     ],
   })
 }

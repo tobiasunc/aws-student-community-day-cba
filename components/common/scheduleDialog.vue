@@ -69,7 +69,7 @@
                 class="mt-5"
                 style="font-size: 22px; font-weight: 500"
               >
-                Overview
+                Descripción
               </p>
               <p style="font-size: 95%; opacity: 0.9">
                 {{ props.data.description }}
@@ -83,16 +83,17 @@
               <v-chip
                 v-if="props.data.slide"
                 :href="props.data.slide"
-                color="indigo"
+                color="#c85f00"
                 outlined
                 target="_blank"
+                rel="noopener noreferrer"
                 class="mt-2 mr-2"
                 label
               >
                 <v-avatar start>
                   <v-icon small>mdi-note-outline</v-icon>
                 </v-avatar>
-                Presentation
+                Presentación
               </v-chip>
               <v-container fluid class="px-0 mx-0">
                 <span v-for="(itemp, indexp) in speakers" :key="indexp">

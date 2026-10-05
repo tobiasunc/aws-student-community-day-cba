@@ -28,7 +28,7 @@
 
           <span class="mr-4">
             <v-icon class="mr-1">mdi-map-legend</v-icon>
-            <a :href="mainData.eventInfo.venue.mapLink" target="_blank">
+            <a :href="mainData.eventInfo.venue.mapLink" target="_blank" rel="noopener noreferrer">
               {{ mainData.eventInfo.venue.address }}
             </a>
             
@@ -68,6 +68,7 @@
           class="register-button my-4 mt-3"
           data-gsap-hero
           target="_blank"
+          rel="noopener noreferrer"
           variant="flat"
           >Register Now</v-btn
         >

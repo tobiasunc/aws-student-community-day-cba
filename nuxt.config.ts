@@ -1,5 +1,5 @@
-// Configuración global: Nuxt genera un sitio estático que Firebase Hosting sirve
-// desde .output/public. Las variables públicas se leen desde el entorno de build.
+// Configuración global: Nuxt genera un sitio estático que Cloudflare Pages sirve
+// desde dist. Las variables públicas se leen desde el entorno de build.
 import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 const gtagId = process.env.NUXT_PUBLIC_GTAG_ID;
 

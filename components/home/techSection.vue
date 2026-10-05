@@ -27,7 +27,7 @@
                 v-for="item in technologies"
                 :key="item.name"
               >
-                <a :href="item.link" target="_blank" :aria-label="`Conocer ${item.name}`">
+                <a :href="item.link" target="_blank" rel="noopener noreferrer" :aria-label="`Conocer ${item.name}`">
                   <v-avatar
                     size="60"
                     class="pa-3"

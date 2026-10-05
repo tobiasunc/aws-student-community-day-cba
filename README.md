@@ -54,20 +54,21 @@ Páginas principales:
 - `/faq`: preguntas frecuentes.
 - `/coc`: código de conducta.
 
-## Despliegue en Firebase Hosting
+## Despliegue en Cloudflare Pages
 
-La configuración de [`firebase.json`](firebase.json) publica `.output/public`.
-Para desplegar:
+La configuración actual de Cloudflare Pages utiliza `dist` como directorio de salida.
+Configurá el proyecto con:
 
 ```powershell
-npm run generate
-npx firebase-tools login
-npx firebase-tools deploy --only hosting
+Build command: npm run generate
+Build output directory: dist
 ```
 
-El proyecto de Firebase configurado en [`.firebaserc`](.firebaserc) debe estar
-disponible para la cuenta que realiza el despliegue. El dominio público es
+El dominio público es
 `https://awstudentcommunitydaycba.com/`.
+
+El archivo [`firebase.json`](firebase.json) se conserva únicamente para un flujo
+alternativo de Firebase Hosting y no representa el despliegue principal.
 
 ## Analítica
 

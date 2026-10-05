@@ -8,8 +8,8 @@
     <v-container fluid class="mt-5">
       <v-row>
         <v-col md="8">
-          <h1>Frequently asked questions</h1>
-          <p>Need Answers? Everything you need to know</p>
+          <h1>Preguntas frecuentes</h1>
+          <p>Todo lo que necesitás saber sobre el evento.</p>
 
           <v-expansion-panels
             data-gsap-reveal
