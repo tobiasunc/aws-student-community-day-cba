@@ -22,8 +22,16 @@
         md="4"
         data-gsap-reveal
       >
-        <v-card class="form-card h-100 pa-6" data-gsap-box>
-          <div class="form-icon" :class="`form-icon--${form.accent}`">
+        <v-card
+          class="form-card h-100 pa-6"
+          data-gsap-box
+          data-gsap-track
+        >
+          <div
+            class="form-icon"
+            :class="`form-icon--${form.accent}`"
+            data-gsap-image
+          >
             <v-icon :icon="form.icon" size="28" />
           </div>
           <p class="form-label">{{ form.label }}</p>

@@ -10,7 +10,7 @@
       <v-col md="12" data-gsap-reveal>
         <v-container fluid class="community-contact-card">
           <v-row justify-center align="center" class="pa-5">
-            <v-col md="5" sm="6" cols="12">
+            <v-col md="5" sm="6" cols="12" data-gsap-reveal>
               <p class="eyebrow">Comunidad AWS en Córdoba</p>
               <h1>Sumate a la comunidad</h1>
               <p class="mb-3">
@@ -23,8 +23,12 @@
               />
             </v-col>
             <v-col md="4" sm="1"></v-col>
-            <v-col md="3" sm="5" cols="12">
-              <v-img alt="Logo de AWS Student Builder Group UNC" :src="programIcon"></v-img>
+            <v-col md="3" sm="5" cols="12" data-gsap-reveal>
+              <v-img
+                alt="Logo de AWS Student Builder Group UNC"
+                :src="programIcon"
+                data-gsap-image
+              ></v-img>
             </v-col>
           </v-row>
         </v-container>
