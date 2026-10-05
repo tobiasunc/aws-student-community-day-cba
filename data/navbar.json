@@ -1,6 +1,6 @@
 [
   {
-    "name": "Home",
+    "name": "Inicio",
     "path": "/",
     "visible": true
   },
@@ -10,7 +10,7 @@
     "visible": true
   },
   {
-    "name": "Speakers",
+    "name": "Ponentes",
     "path": "/speakers",
     "visible": true
   },

@@ -8,7 +8,7 @@
     <v-container fluid class="mt-5">
       <v-row>
         <v-col md="12" data-gsap-reveal>
-          <h1>Speakers</h1>
+          <h1>Ponentes</h1>
           <p>
             Conocé a las personas invitadas que comparten experiencias,
             conocimientos y herramientas para construir soluciones en la nube.
@@ -39,7 +39,7 @@ definePageMeta({
   layout: false,
 });
 
-useEventSeo("Speakers");
+useEventSeo("Ponentes");
 </script>
 
 <style scoped></style>

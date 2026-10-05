@@ -53,7 +53,7 @@ Cada sesión debe tener:
 - `track`: nombre exacto del track seguido de ` Track`, por ejemplo
   `Green Track`.
 - `date`, `time` y `timeDuration`: información temporal.
-- `format`: tipo de sesión, como `Charla técnica`, `Taller` o `Networking`.
+- `format`: tipo de sesión, como `Charla técnica`, `Taller` o `Conexiones`.
 - `speakers`: array de IDs existentes en `data/speakers.json`.
 - `link` y `slide`: opcionales; pueden quedar vacíos.
 
@@ -68,10 +68,10 @@ horario. La página `/agenda` filtra automáticamente cada bloque por el track
 seleccionado. Si una sesión no tiene un `id` válido o el `track` no coincide
 exactamente, no aparecerá en el track esperado.
 
-La cena y networking es una sesión común de tipo `Networking`, no una regla
+La cena y las conexiones son una sesión común de tipo `Conexiones`, no una regla
 especial del código. Puede modificarse como cualquier otra sesión.
 
-## Speakers y equipo
+## Ponentes y equipo
 
 - `data/speakers.json` contiene las personas asociadas a sesiones.
 - `data/team.json` contiene organizadores.

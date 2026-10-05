@@ -70,7 +70,7 @@
           target="_blank"
           rel="noopener noreferrer"
           variant="flat"
-          >Register Now</v-btn
+          >Inscribite ahora</v-btn
         >
       </v-col>
       <v-col md="6" sm="6" cols="12">

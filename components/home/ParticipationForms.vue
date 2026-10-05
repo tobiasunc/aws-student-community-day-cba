@@ -57,7 +57,7 @@
 const forms = [
   {
     label: "Compartí tu experiencia",
-    title: "Call for Speakers",
+    title: "Convocatoria de ponentes",
     description:
       "Proponé una charla, taller o experiencia práctica para inspirar a la comunidad.",
     action: "Postular una charla",

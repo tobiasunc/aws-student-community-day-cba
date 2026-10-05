@@ -64,7 +64,7 @@
 
     <v-row class="mt-8">
       <v-col cols="12" data-gsap-reveal>
-        <h2 class="text-h4 mb-2 section-heading">Sponsorship</h2>
+        <h2 class="text-h4 mb-2 section-heading">Alianzas y sponsors</h2>
         <p class="mb-4 muted-copy">La organización puede evaluar propuestas diferentes a las listadas.</p>
       </v-col>
       <v-col v-for="tier in mainData.eventInfo.sponsorshipTiers" :key="tier.id" cols="12" md="4">

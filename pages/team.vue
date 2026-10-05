@@ -31,7 +31,7 @@ definePageMeta({
   layout: false,
 });
 
-useEventSeo("Team");
+useEventSeo("Equipo");
 </script>
 
 <style scoped>

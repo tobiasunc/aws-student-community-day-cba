@@ -44,7 +44,7 @@
     },
     "community_title": "Developer",
     "image": "sandali.jpg",
-    "bio": "I'm Sandali Singh, a Software Developer, fueled by curiosity and driven by innovation, with a passion for full-stack development. Equipped with a solid foundation in computer science and hands-on experience in various programming languages and technologies, I am eager to contribute my creativity and technical expertise to building innovative and user-friendly solutions.",
+    "bio": "Sandali Singh es una desarrolladora de software impulsada por la curiosidad y la innovación, con pasión por el desarrollo full stack. Cuenta con una sólida base en ciencias de la computación y experiencia práctica en distintos lenguajes y tecnologías.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/sandali-singh/",
       "twitter": "https://twitter.com/_Sandali_Singh_",
@@ -55,14 +55,14 @@
   },
   {
     "id": "6004",
-    "name": "Volunteer team member",
+    "name": "Miembro del equipo voluntario",
     "company": {
       "name": "OSS Labs Community",
       "designation": "Developer"
     },
     "community_title": "Developer",
     "image": "",
-    "bio": "Full Name and Bio",
+    "bio": "Nombre completo y biografía",
     "social": {
       "linkedin": "https://www.linkedin.com/in/",
       "twitter": "https://twitter.com",

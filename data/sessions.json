@@ -92,12 +92,12 @@
   {
     "id": "2007",
     "slide": "",
-    "title": "Cena y networking",
+    "title": "Cena y conexiones",
     "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades.",
     "track": "Red Track",
     "link": "",
     "time": "19:00 ART",
-    "format": "Networking",
+    "format": "Conexiones",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -197,12 +197,12 @@
   {
     "id": "2014",
     "slide": "",
-    "title": "Cena y networking",
+    "title": "Cena y conexiones",
     "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades.",
     "track": "Blue Track",
     "link": "",
     "time": "19:00 ART",
-    "format": "Networking",
+    "format": "Conexiones",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -302,12 +302,12 @@
   {
     "id": "2021",
     "slide": "",
-    "title": "Cena y networking",
+    "title": "Cena y conexiones",
     "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades.",
     "track": "Green Track",
     "link": "",
     "time": "19:00 ART",
-    "format": "Networking",
+    "format": "Conexiones",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -362,7 +362,7 @@
   {
     "id": "2025",
     "slide": "",
-    "title": "Open source y comunidad",
+    "title": "Código abierto y comunidad",
     "description": "Charla de una hora del Orange Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Orange Track",
     "link": "",
@@ -407,12 +407,12 @@
   {
     "id": "2028",
     "slide": "",
-    "title": "Cena y networking",
+    "title": "Cena y conexiones",
     "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades.",
     "track": "Orange Track",
     "link": "",
     "time": "19:00 ART",
-    "format": "Networking",
+    "format": "Conexiones",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -422,7 +422,7 @@
   {
     "id": "2029",
     "slide": "",
-    "title": "Flash talk: mi primer proyecto AWS",
+    "title": "Charla relámpago: mi primer proyecto AWS",
     "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Yellow Track",
     "link": "",
@@ -437,7 +437,7 @@
   {
     "id": "2030",
     "slide": "",
-    "title": "Flash talk: aprender en comunidad",
+    "title": "Charla relámpago: aprender en comunidad",
     "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Yellow Track",
     "link": "",
@@ -452,7 +452,7 @@
   {
     "id": "2031",
     "slide": "",
-    "title": "Flash talk: errores que enseÃ±an",
+    "title": "Charla relámpago: errores que enseñan",
     "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Yellow Track",
     "link": "",
@@ -467,7 +467,7 @@
   {
     "id": "2032",
     "slide": "",
-    "title": "Flash talk: herramientas favoritas",
+    "title": "Charla relámpago: herramientas favoritas",
     "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Yellow Track",
     "link": "",
@@ -482,7 +482,7 @@
   {
     "id": "2033",
     "slide": "",
-    "title": "Flash talk: del aula a la nube",
+    "title": "Charla relámpago: del aula a la nube",
     "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Yellow Track",
     "link": "",
@@ -497,7 +497,7 @@
   {
     "id": "2034",
     "slide": "",
-    "title": "Flash talk: preguntas abiertas",
+    "title": "Charla relámpago: preguntas abiertas",
     "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Yellow Track",
     "link": "",
@@ -512,12 +512,12 @@
   {
     "id": "2035",
     "slide": "",
-    "title": "Cena y networking",
+    "title": "Cena y conexiones",
     "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades.",
     "track": "Yellow Track",
     "link": "",
     "time": "19:00 ART",
-    "format": "Networking",
+    "format": "Conexiones",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
     "speakers": [
@@ -525,4 +525,3 @@
     ]
   }
 ]
-

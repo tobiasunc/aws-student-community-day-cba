@@ -78,7 +78,7 @@
         "country": "Argentina",
         "mapLink": "https://maps.google.com/?q=Universidad+Nacional+de+Cordoba",
         "capacity": 120,
-        "description": "Networking, mentorías y stands de la comunidad."
+        "description": "Conexiones, mentorías y stands de la comunidad."
       },
       {
         "id": "hackathon-space",
@@ -97,12 +97,12 @@
     },
     "description": {
       "short": "Una jornada gratuita y estudiantil para aprender AWS, practicar y conectar con la comunidad en Córdoba.",
-      "long": "AWS Student Community Day UNC 2026 es un evento creado por estudiantes para estudiantes. Participá de charlas, talleres, laboratorios y actividades de networking para descubrir oportunidades en la nube y desarrollar habilidades prácticas en AWS."
+      "long": "AWS Student Community Day UNC 2026 es un evento creado por estudiantes para estudiantes. Participá de charlas, talleres, laboratorios y actividades de conexión para descubrir oportunidades en la nube y desarrollar habilidades prácticas en AWS."
     },
     "stats": [
       { "name": "Personas esperadas en Córdoba", "value": "300+" },
       { "name": "Tracks simultáneos para elegir", "value": "5" },
-      { "name": "Entrevistas rápidas de networking", "value": "7 min" },
+      { "name": "Entrevistas rápidas de conexión", "value": "7 min" },
       { "name": "Becas y credenciales disponibles", "value": "100%" },
       { "name": "Alcance digital estimado", "value": "14.000+" },
       { "name": "Interacción digital estimada", "value": "4–6%" },
@@ -110,17 +110,17 @@
       { "name": "Interés en stands y comunidades", "value": "80%" }
     ],
     "whatToExpect": [
-      { "title": "Community Villages & Stands", "description": "Espacios temáticos interactivos con demostraciones en vivo, proyectos open source y comunidades tecnológicas locales.", "icon": "mdi-storefront-outline" },
-      { "title": "7-Minute Speed Interviews", "description": "Rondas ágiles de reclutamiento presencial entre estudiantes y empresas.", "icon": "mdi-timer-outline" },
+      { "title": "Espacios y stands de la comunidad", "description": "Espacios temáticos interactivos con demostraciones en vivo, proyectos de código abierto y comunidades tecnológicas locales.", "icon": "mdi-storefront-outline" },
+      { "title": "Entrevistas rápidas de 7 minutos", "description": "Rondas ágiles de reclutamiento presencial entre estudiantes y empresas.", "icon": "mdi-timer-outline" },
       { "title": "Talleres Certificados y Becas", "description": "Capacitación hands-on con becas de certificación AWS y soporte académico de FAMAF.", "icon": "mdi-certificate-outline" },
-      { "title": "Community Flash Talks", "description": "Sesiones relámpago de 15 minutos para amplificar la voz de la comunidad tecnológica local.", "icon": "mdi-microphone-outline" }
+      { "title": "Charlas relámpago de la comunidad", "description": "Sesiones relámpago de 15 minutos para amplificar la voz de la comunidad tecnológica local.", "icon": "mdi-microphone-outline" }
     ],
     "spaces": [
-      { "id": "villages", "title": "Villages Temáticos y Stands", "description": "Demos en vivo, proyectos open-source y vinculación directa con la comunidad.", "venueId": "community-lounge" },
-      { "id": "interviews", "title": "Centro de Speed Interviews", "description": "Reclutamiento ágil de 7 minutos con talento preseleccionado.", "venueId": "workshop-1" },
+      { "id": "villages", "title": "Comunidades temáticas y stands", "description": "Demos en vivo, proyectos de código abierto y vinculación directa con la comunidad.", "venueId": "community-lounge" },
+      { "id": "interviews", "title": "Centro de entrevistas rápidas", "description": "Reclutamiento ágil de 7 minutos con talento preseleccionado.", "venueId": "workshop-1" },
       { "id": "certified-workshops", "title": "Talleres certificados", "description": "Aulas para talleres prácticos de 1,5 horas con certificación.", "venueId": "lab-aws" },
-      { "id": "flash-talks", "title": "Escenarios de Flash Talks", "description": "Sesiones relámpago de 15 minutos.", "venueId": "workshop-2" },
-      { "id": "activation", "title": "Espacio de activaciones", "description": "Networking entre empresas y comunidad durante el almuerzo y las pausas de café.", "venueId": "hackathon-space" },
+      { "id": "flash-talks", "title": "Escenarios de charlas relámpago", "description": "Sesiones relámpago de 15 minutos.", "venueId": "workshop-2" },
+      { "id": "activation", "title": "Espacio de activaciones", "description": "Conexiones entre empresas y comunidad durante el almuerzo y las pausas de café.", "venueId": "hackathon-space" },
       { "id": "technical-talks", "title": "Charlas Técnicas Principales", "description": "Sesiones profundas de expertos de industria y académicos.", "venueId": "auditorio-unc" }
     ],
     "tracks": [
@@ -128,17 +128,17 @@
       { "id": "blue", "name": "Blue", "color": "#146EB4", "category": "Talleres prácticos", "description": "Talleres sobre datos, IA y desarrollo de aplicaciones." },
       { "id": "green", "name": "Green", "color": "#2E7D32", "category": "Charlas Técnicas", "description": "Charlas sobre infraestructura, automatización y operación en la nube." },
       { "id": "orange", "name": "Orange", "color": "#EC7211", "category": "Charlas Técnicas", "description": "Charlas sobre carreras, comunidad, industria y empleabilidad." },
-      { "id": "yellow", "name": "Yellow", "color": "#FFC400", "category": "Charlas Técnicas / Flash Talks", "description": "Charlas breves y experiencias compartidas por la comunidad." }
+      { "id": "yellow", "name": "Yellow", "color": "#FFC400", "category": "Charlas técnicas breves", "description": "Charlas breves y experiencias compartidas por la comunidad." }
     ],
     "topics": [
-      { "id": "workshops", "title": "Talleres prácticos", "topics": ["DevOps e infraestructura", "Seguridad de nube y DevSecOps", "Open source y hardware", "Talleres de herramientas específicas"] },
+      { "id": "workshops", "title": "Talleres prácticos", "topics": ["DevOps e infraestructura", "Seguridad de nube y DevSecOps", "Código abierto y hardware", "Talleres de herramientas específicas"] },
       { "id": "talks", "title": "Charlas técnicas", "topics": ["Arquitectura de nube y tecnología moderna", "IA, ética y gobernanza", "Ciberseguridad y hacking ético", "Tendencias de la industria tecnológica"] },
       { "id": "villages", "title": "Comunidades temáticas", "topics": ["Proyectos y demostraciones en vivo", "Comunidades tecnológicas", "Talento y reclutamiento", "Muestras académicas y estudiantiles"] }
     ],
     "sponsorshipTiers": [
       { "id": "base", "name": "Paquete Base", "price": "USD 500", "condition": "Sin condición", "includes": ["Stand temático exclusivo", "Visibilidad en logística", "Promoción en redes", "Menciones de marca en coffee breaks", "Reporte post-evento con métricas"] },
-      { "id": "interaction", "name": "Socio de Interacción", "price": "30% OFF", "condition": "Todo lo del Base + Speed Interviews de 7 min O orador experto para charla/taller.", "includes": ["Todo lo del Paquete Base", "Speed Interviews de 7 min o charla/taller experto"] },
-      { "id": "ecosystem", "name": "Constructor del Ecosistema", "price": "60% OFF", "condition": "Máximo descuento. Todo lo del Base + Speed Interviews Y orador técnico o taller certificado.", "includes": ["Todo lo del Paquete Base", "Speed Interviews", "Orador técnico o taller con certificación oficial"] }
+      { "id": "interaction", "name": "Socio de Interacción", "price": "30% de descuento", "condition": "Todo lo del paquete base más entrevistas rápidas de 7 minutos o un orador experto para una charla o taller.", "includes": ["Todo lo del Paquete Base", "Entrevistas rápidas de 7 minutos o charla/taller experto"] },
+      { "id": "ecosystem", "name": "Constructor del Ecosistema", "price": "60% de descuento", "condition": "Máximo descuento. Todo lo del paquete base más entrevistas rápidas y un orador técnico o taller certificado.", "includes": ["Todo lo del Paquete Base", "Entrevistas rápidas", "Orador técnico o taller con certificación oficial"] }
     ],
     "pastEvent": {
       "summary": "La comunidad crece con estudiantes que comparten conocimiento, construyen en equipo y acercan la tecnología de nube a más personas.",
@@ -150,7 +150,7 @@
     }
   },
   "seo": {
-    "keywords": "AWS, AWS Student Community Day, UNC, Córdoba, cloud, students",
+    "keywords": "AWS, AWS Student Community Day, UNC, Córdoba, nube, estudiantes",
     "hostUrl": "https://awstudentcommunitydaycba.com/"
   }
 }

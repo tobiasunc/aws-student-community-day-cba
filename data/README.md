@@ -65,7 +65,7 @@ biografías actuales son placeholders de la plantilla hasta su confirmación.
 ## `sponsors.json`
 
 Sponsors agrupados por `category_name`. Cada sponsor tiene `id`, `name`, `link`
-y `logo`. Los elementos con nombres como “Partner announcement coming soon” son
+y `logo`. Los elementos con nombres como “Próximamente anunciaremos nuevas alianzas” son
 placeholders intencionales.
 
 ## `faq.json`

@@ -1,7 +1,7 @@
 [
   {
     "question": "¿Qué es AWS Student Community Day UNC?",
-    "answer": "Es un evento gratuito, estudiantil y comunitario que conecta talento universitario y técnico con el ecosistema tecnológico, mediante workshops, charlas, villages y networking."
+    "answer": "Es un evento gratuito, estudiantil y comunitario que conecta talento universitario y técnico con el ecosistema tecnológico mediante talleres, charlas, comunidades temáticas y espacios de conexión."
   },
   {
     "question": "¿Cuándo y dónde se realiza?",
@@ -21,6 +21,6 @@
   },
   {
     "question": "¿Cómo puedo colaborar como comunidad o empresa?",
-    "answer": "Podés escribir a <a href='mailto:tobias.cruz@mi.unc.edu.ar'>tobias.cruz@mi.unc.edu.ar</a> para proponer una charla, taller, village, actividad de recruiting o sponsorship."
+    "answer": "Podés escribir a <a href='mailto:tobias.cruz@mi.unc.edu.ar'>tobias.cruz@mi.unc.edu.ar</a> para proponer una charla, taller, comunidad temática, actividad de reclutamiento o alianza."
   }
 ]
