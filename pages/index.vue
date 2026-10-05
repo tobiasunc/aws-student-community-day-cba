@@ -11,10 +11,6 @@
         <HomeHeroSection class="my-0 my-md-10" />
         <!-- Hero -->
 
-        <!-- Stats -->
-        <HomeStats class="my-0 my-md-5" />
-        <!-- Stats -->
-
         <!-- Qué vas a encontrar -->
         <HomeExpectationSection class="mt-md-10" />
         <!-- Fin de qué vas a encontrar -->
@@ -32,6 +28,10 @@
         <!-- Sponsors -->
         <HomeSponsorsSection />
         <!-- Sponsors -->
+
+        <!-- Resumen del evento -->
+        <HomeStats class="my-md-8" />
+        <!-- Resumen del evento -->
 
         <!-- Convocatorias -->
         <HomeParticipationForms />

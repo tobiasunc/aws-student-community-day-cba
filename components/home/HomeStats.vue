@@ -1,19 +1,20 @@
 <!--
   Componente: HomeStats.vue
-  Qué hace: grilla de métricas oficiales del evento.
+  Qué hace: resume las proyecciones y oportunidades principales del evento.
   Dónde se usa: pages/index.vue.
   Datos: eventInfo.stats desde data/config.json.
 -->
 <template>
   <v-container fluid class="mx-3">
-    <v-row
-      justify-center
-      align="center"
-      class="stats-panel"
-      data-gsap-reveal
-    >
+    <v-row class="stats-panel" data-gsap-reveal>
       <v-col cols="12" md="12" sm="12">
-        <v-container fluid>
+        <v-container fluid class="pa-6 pa-md-8">
+          <p class="section-eyebrow">Una mirada rápida</p>
+          <h2 class="section-heading">El evento en números</h2>
+          <p class="stats-intro">
+            Proyecciones y oportunidades para entender la escala de la jornada
+            antes de sumarte como asistente, speaker, voluntario o aliado.
+          </p>
           <v-row>
             <v-col
               md="3"
@@ -34,7 +35,7 @@
               v-for="(item, index) in mainData.eventInfo.stats"
               :key="index"
             >
-              <h1 class="responsive-title" data-gsap-stat :data-value="item.value">{{ item.value }}</h1>
+              <h3 class="responsive-title" data-gsap-stat :data-value="item.value">{{ item.value }}</h3>
               <p>
                 {{ item.name }}
               </p>
@@ -52,18 +53,38 @@ const { mainData } = useJSONData();
 
 <style scoped>
 .stats-panel {
-  background: #15151d;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background:
+    linear-gradient(145deg, rgba(25, 31, 43, 0.98), rgba(13, 16, 25, 0.98));
+  border: 1px solid rgba(255, 153, 0, 0.34);
   border-radius: 20px;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.24);
+}
+
+.section-eyebrow {
+  margin-bottom: 0.45rem;
+  color: #ffc400;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.stats-intro {
+  max-width: 760px;
+  margin: 0 0 1.25rem;
+  color: #e0e4eb;
 }
 
 .stats-container p {
-  color: #aaaab4;
+  max-width: 170px;
+  margin: 0;
+  color: #d1d5dd;
   text-align: center;
 }
 
 .responsive-title {
-  font-size: 300%;
+  margin-bottom: 0.65rem;
+  font-size: 2.7rem;
   color: #ff9900;
   font-family: monospace;
 }
@@ -73,23 +94,23 @@ const { mainData } = useJSONData();
 
 @media (max-width: 1140px) {
   .responsive-title {
-    font-size: 250%;
+    font-size: 2.25rem;
   }
 }
 
 @media (max-width: 860px) {
   .responsive-title {
-    font-size: 180%;
+    font-size: 2rem;
   }
 }
 @media (max-width: 600px) {
   .responsive-title {
-    font-size: 250%;
+    font-size: 2rem;
   }
 }
 @media (max-width: 460px) {
   .responsive-title {
-    font-size: 180%;
+    font-size: 1.6rem;
   }
 }
 </style>
