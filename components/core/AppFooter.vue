@@ -25,16 +25,6 @@
           <v-row justify-center align="center">
             <v-col cols="12">
               <a
-                href="https://www.meetup.com/aws-sbg-at-national-university-of-cordoba"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="link"
-                class="grey--text text--darken-3 mr-6 google-font"
-                style="text-decoration: none; color: white"
-                >Meetup de AWS Student Builder Group UNC</a
-              >
-              <br class="hidden-md-and-up" />
-              <a
                 href="https://builder.aws.com/"
                 target="_blank"
                 rel="noreferrer"

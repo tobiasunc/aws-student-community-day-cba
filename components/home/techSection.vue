@@ -34,7 +34,12 @@
                     color="#15151d"
                     style="border: 1px solid var(--aws-orange)"
                   >
-                    <v-img :alt="`Logo de ${item.name}`" :src="item.logo" :lazy-src="item.logo"></v-img>
+                    <v-img
+                      class="technology-logo"
+                      :alt="`Logo de ${item.name}`"
+                      :src="item.logo"
+                      :lazy-src="item.logo"
+                    ></v-img>
                   </v-avatar>
                 </a>
               </v-col>
@@ -48,13 +53,11 @@
 </template>
 
 <script setup>
-import programIcon from "@/assets/img/Program Icon/SVG/AWS Student Builder Group_RGB_Program Icon_Amber.svg";
-
 const technologies = [
   {
     name: "AWS Cloud",
     link: "https://aws.amazon.com/",
-    logo: programIcon,
+    logo: "/img/common/aws-program-icon.svg",
   },
   {
     name: "AWS Lambda",
@@ -93,3 +96,9 @@ const technologies = [
   },
 ];
 </script>
+
+<style scoped>
+.technology-logo {
+  filter: brightness(0) invert(1);
+}
+</style>

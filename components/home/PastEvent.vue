@@ -29,7 +29,11 @@
           rel="noopener noreferrer"
           :aria-label="`Conocer ${technology.name}`"
         >
-          <img :src="technology.logo" :alt="`Logo de ${technology.name}`" />
+          <img
+            class="technology-logo"
+            :src="technology.logo"
+            :alt="`Logo de ${technology.name}`"
+          />
           <strong>{{ technology.name }}</strong>
         </a>
       </v-col>
@@ -38,10 +42,8 @@
 </template>
 
 <script setup lang="ts">
-import programIcon from "@/assets/img/Program Icon/SVG/AWS Student Builder Group_RGB_Program Icon_Amber.svg";
-
 const technologies = [
-  { name: "AWS", link: "https://aws.amazon.com/", logo: programIcon },
+  { name: "AWS", link: "https://aws.amazon.com/", logo: "/img/common/aws-program-icon.svg" },
   { name: "AWS Lambda", link: "https://aws.amazon.com/lambda/", logo: "/img/technologies/awslambda.svg" },
   { name: "Amazon S3", link: "https://aws.amazon.com/s3/", logo: "/img/technologies/amazons3.svg" },
   { name: "Kubernetes", link: "https://kubernetes.io/", logo: "/img/technologies/kubernetes.svg" },
@@ -76,5 +78,9 @@ const technologies = [
   width: 58px;
   height: 58px;
   object-fit: contain;
+}
+
+.technology-logo {
+  filter: brightness(0) invert(1);
 }
 </style>

@@ -1,6 +1,7 @@
 [
   {
     "category_name": "Empresas aliadas",
+    "folder": "sponsors",
     "sponsors": [
       { "id": "teracloud", "name": "TeraCloud", "link": "https://teracloud.io/", "logo": "teracloud-logo.png" },
       { "id": "craftech", "name": "Craftech", "link": "https://craftech.io/", "logo": "CRAFTECH-logo.png" }
@@ -8,6 +9,7 @@
   },
   {
     "category_name": "Comunidades aliadas",
+    "folder": "comunidad_aliada",
     "sponsors": [
       { "id": "unc-innovacion", "name": "UNC Innovación y Vinculación", "link": "https://www.famaf.unc.edu.ar/innovacion-y-vinculacion/", "logo": "UNC_innovacion_y_vinculacion-logo.png" },
       { "id": "hiperactiva", "name": "Fundación Hiperactiva", "link": "https://www.hiperactiva.org/", "logo": "hiperactiva-logo.jpg" },

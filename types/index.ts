@@ -185,6 +185,7 @@ export interface Sponsor {
 
 export interface SponsorCategory {
   category_name: string
+  folder?: string
   sponsors: Sponsor[]
 }
 

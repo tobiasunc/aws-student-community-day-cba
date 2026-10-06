@@ -2,7 +2,7 @@
   Componente: sponsorInfo.vue
   Qué hace: lista sponsors agrupados por categoría.
   Dónde se usa: components/home/SponsorsSection.vue.
-  Datos: sponsorsData; logos desde public/img/sponsors con fallback local.
+  Datos: sponsorsData; logos desde la carpeta pública de cada categoría.
 -->
 <template>
   <v-container fluid class="pa-0 ma-0">
@@ -31,7 +31,7 @@
         >
           <v-img
             :alt="`Logo de ${sponsor.name}`"
-            :src="'/img/sponsors/' + sponsor.logo"
+            :src="`/img/${item.folder || 'sponsors'}/${sponsor.logo}`"
             @error="handleImageError"
           ></v-img>
           <span>{{ sponsor.name }}</span>
