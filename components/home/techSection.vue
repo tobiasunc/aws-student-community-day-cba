@@ -7,7 +7,7 @@
 <template>
   <v-container fluid>
     <v-row>
-      <v-col md="9" sm="7" cols="12">
+      <v-col cols="12">
         <div
           class="pa-8 futuristic-surface"
           data-gsap-box
@@ -43,17 +43,6 @@
         </div>
       </v-col>
 
-      <v-col md="3" sm="5" cols="12">
-        <div
-          class="pa-8 text-center futuristic-surface"
-          data-gsap-box
-          data-gsap-reveal
-        >
-          <v-img alt="AWS Student Builder Group UNC" style="width: 100%;margin: auto;" :src="programIcon"></v-img>
-          <v-chip class="mt-n12" variant="outlined" color="#FF9900">{{ mainData.communityLocation.city }}</v-chip>
-          <v-img alt="AWS Student Builder Group UNC" style="width: 90%;margin: auto;" :src="programIcon"></v-img>
-        </div>
-      </v-col>
     </v-row>
   </v-container>
 </template>
@@ -61,7 +50,6 @@
 <script setup>
 import programIcon from "@/assets/img/Program Icon/SVG/AWS Student Builder Group_RGB_Program Icon_Amber.svg";
 
-const { mainData } = useJSONData();
 const technologies = [
   {
     name: "AWS Cloud",
