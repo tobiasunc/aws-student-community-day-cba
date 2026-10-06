@@ -1,15 +1,20 @@
 [
   {
-    "category_name": "Aliados de la comunidad",
+    "category_name": "Empresas aliadas",
     "sponsors": [
-      { "id": "aws", "name": "Amazon Web Services", "link": "https://aws.amazon.com", "logo": "aws.png" },
-      { "id": "unc", "name": "Universidad Nacional de Córdoba", "link": "https://www.unc.edu.ar", "logo": "unc.png" }
+      { "id": "teracloud", "name": "TeraCloud", "link": "https://teracloud.com.ar/", "logo": "teracloud-logo.png" },
+      { "id": "craftech", "name": "Craftech", "link": "https://craftech.io/", "logo": "CRAFTECH-logo.png" }
     ]
   },
   {
-    "category_name": "Aliados colaboradores",
+    "category_name": "Comunidades aliadas",
     "sponsors": [
-      { "id": "partner-1", "name": "Próximamente anunciaremos nuevas alianzas", "link": "https://aws.amazon.com/developer/community/", "logo": "placeholder.png" }
+      { "id": "unc-innovacion", "name": "UNC Innovación y Vinculación", "link": "https://www.famaf.unc.edu.ar/innovacion-y-vinculacion/", "logo": "UNC_innovacion_y_vinculacion-logo.png" },
+      { "id": "hiperactiva", "name": "Fundación Hiperactiva", "link": "https://www.hiperactiva.org/", "logo": "hiperactiva-logo.jpg" },
+      { "id": "fundacion-si", "name": "Fundación Sí", "link": "https://fundacionsi.org.ar/", "logo": "Fundacion-si-logo.avif" },
+      { "id": "famaf", "name": "FAMAF - UNC", "link": "https://www.famaf.unc.edu.ar/", "logo": "FAMAF-logo.png" },
+      { "id": "cybercirujas", "name": "Cybercirujas", "link": "https://foro.cybercirujas.org/", "logo": "cybercirujas-logo.gif" },
+      { "id": "coderdojo", "name": "CoderDojo Córdoba", "link": "https://coderdojo.unc.edu.ar/", "logo": "CoderDojo-logo.png" }
     ]
   }
 ]
