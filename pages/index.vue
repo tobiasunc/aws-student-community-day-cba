@@ -15,6 +15,10 @@
         <HomeExpectationSection class="mt-md-10" />
         <!-- Fin de qué vas a encontrar -->
 
+        <!-- Convocatorias -->
+        <HomeParticipationForms />
+        <!-- Convocatorias -->
+
         <HomeEventProgram class="mb-md-10" />
 
         <!-- Tecnologías -->
@@ -32,10 +36,6 @@
         <!-- Resumen del evento -->
         <HomeStats class="my-md-8" />
         <!-- Resumen del evento -->
-
-        <!-- Convocatorias -->
-        <HomeParticipationForms />
-        <!-- Convocatorias -->
 
         <!-- Contacto -->
         <HomeCommunityContact />
