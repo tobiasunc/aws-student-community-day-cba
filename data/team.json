@@ -1,74 +1,182 @@
 [
   {
     "id": "6001",
-    "name": "Vrijraj Singh",
+    "name": "Francisco Tobias Cruz",
     "company": {
-      "name": "OSS Labs Community",
-      "designation": "Developer"
+      "name": "AWS Student Builder Group at UNC",
+      "designation": "Leader"
     },
-    "community_title": "Perfil de ejemplo — pendiente de confirmación",
-    "image": "vrijraj.jpg",
-    "bio": "Perfil de ejemplo conservado de la plantilla original. Reemplazar por la biografía y los enlaces de la persona confirmada antes de publicar el evento.",
+    "community_title": "Líder de la comunidad",
+    "image": "tobiasCruz.jpg",
+    "bio": "Soy Profesor de Python orientado al Análisis de Datos y Técnico en Informática, con experiencia en programación, desarrollo web, bases de datos y diseño multimedial. Actualmente curso la Ingeniería en Computación en la FCEFyN (UNC), integrando el aprendizaje académico con la aplicación práctica en proyectos tecnológicos y educativos.\n\nMe especializo en enseñar programación desde una perspectiva práctica y analítica, acompañando a los estudiantes en proyectos de procesamiento de datos, integración con APIs y desarrollo de soluciones reales.\n\nComo AWS Student Builder Group Leader en la UNC y miembro activo de la IEEE Computer Society, promuevo el aprendizaje colaborativo, la innovación y la vinculación con la comunidad tecnológica, generando espacios de formación en cloud computing, data science y desarrollo de software.",
     "social": {
-      "linkedin": "https://www.linkedin.com/in/vrijrajsingh/",
-      "twitter": "https://twitter.com/SVrijraj",
-      "github": "https://github.com/vrijraj",
-      "web": "https://vrijraj.xyz/"
-    },
-    "type": "Core"
-  },
-  {
-    "id": "6003",
-    "name": "Shivam Singh",
-    "company": {
-      "name": "OSS Labs Community",
-      "designation": "Designer"
-    },
-    "community_title": "Designer",
-    "image": "shivam.png",
-    "bio": "A problem solver who uses his creative talents to tackle design-related challenges. With a keen eye for detail and an innate understanding of infographics, visual design, and UI/UX. I am able to transform complex information into visually compelling and user-friendly designs. Whether it includes working on a brand-new project or revamping an existing design.",
-    "social": {
-      "linkedin": "https://www.linkedin.com/in/s-shivam/",
-      "twitter": "https://twitter.com/Shivamc504?t=Vc1j2jeHDLkS1-cSM1LSkg&s=09",
-      "github": "",
-      "web": "https://shivam.live/"
+      "linkedin": "https://www.linkedin.com/in/francisco-tob%C3%ADas-cruz/?isSelfProfile=true&locale=en"
     },
     "type": "Core"
   },
   {
     "id": "6002",
-    "name": "Sandali Singh",
+    "name": "Catalina Villan",
     "company": {
-      "name": "OSS Labs Community",
-      "designation": "Developer"
+      "name": "AWS Student Builder Group at UNC",
+      "designation": "Core team"
     },
-    "community_title": "Developer",
-    "image": "sandali.jpg",
-    "bio": "Sandali Singh es una desarrolladora de software impulsada por la curiosidad y la innovación, con pasión por el desarrollo full stack. Cuenta con una sólida base en ciencias de la computación y experiencia práctica en distintos lenguajes y tecnologías.",
+    "community_title": "Equipo central",
+    "image": "cataVillan.jpg",
+    "bio": "Soy estudiante de segundo año de la Licenciatura en Ciencias de la Computación en FaMAF, Universidad Nacional de Córdoba. Actualmente exploro distintas áreas de la informática, como seguridad, cloud y HPC.",
     "social": {
-      "linkedin": "https://www.linkedin.com/in/sandali-singh/",
-      "twitter": "https://twitter.com/_Sandali_Singh_",
-      "github": "https://github.com/sandali-singh",
-      "web": "https://sandali.xyz/"
+      "instagram": "https://www.instagram.com/cat.villan/"
     },
-    "type": "Volunteer"
+    "type": "Core"
+  },
+  {
+    "id": "6003",
+    "name": "Matias Emiliano Del Carpio",
+    "company": {
+      "name": "AWS Student Builder Group at UNC",
+      "designation": "Core team"
+    },
+    "community_title": "Equipo central",
+    "image": "matiasCarpio.jpg",
+    "bio": "Nací en Córdoba, Argentina el 30 de diciembre de 2006 y soy estudiante de Licenciatura en Ciencias de la Computación en la UNC. Desde chico siempre me interesó todo lo referido a la tecnología de mi entorno: saber cómo funcionan los aparatos del día a día, jugar videojuegos, programarlos, etc. Me gusta la novedad y aprender por mi propia cuenta, y siempre estoy buscando aprender algo nuevo.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/mat%C3%ADas-emiliano-del-carpio-741362379"
+    },
+    "type": "Core"
   },
   {
     "id": "6004",
-    "name": "Miembro del equipo voluntario",
+    "name": "Facundo Horacio Octavio Herrera Alderete",
     "company": {
-      "name": "OSS Labs Community",
-      "designation": "Developer"
+      "name": "AWS Student Builder Group at UNC",
+      "designation": "Core team"
     },
-    "community_title": "Developer",
-    "image": "",
-    "bio": "Nombre completo y biografía",
+    "community_title": "Equipo central",
+    "image": "facundoHerrera.jpg",
+    "bio": "Estudiante de Ingeniería en Computación e Ingeniería Aeroespacial, Developer en desarrollo web, sistemas embebidos y robótica, gran apasionado de la docencia y de que el conocimiento se debe compartir. Asesor pedagógico de herramientas digitales y de robótica en educación, y en algún momento, Ingeniero en Planificación de Mantenimiento de Aeronaves militares y comerciales.",
     "social": {
-      "linkedin": "https://www.linkedin.com/in/",
-      "twitter": "https://twitter.com",
-      "github": "https://github.com",
-      "web": "https://example.com"
+      "linkedin": "https://www.linkedin.com/in/facuherrera/"
     },
-    "type": "Volunteer"
+    "type": "Core"
+  },
+  {
+    "id": "6005",
+    "name": "Francisco Villan",
+    "company": {
+      "name": "AWS Student Builder Group at UNC",
+      "designation": "Core team"
+    },
+    "community_title": "Equipo central",
+    "image": "franVillan.jpg",
+    "bio": "Estudiante de la Licenciatura en Ciencias de la Computación en FaMAF, Universidad Nacional de Córdoba. Interesado en el desarrollo de software, cloud computing y las nuevas tecnologías, participa activamente en la comunidad para fortalecer sus conocimientos y colaborar en proyectos junto a otros estudiantes.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/francisco-villan-007a852a2/"
+    },
+    "type": "Core"
+  },
+  {
+    "id": "6006",
+    "name": "Joaquin Ezequiel Zapata",
+    "company": {
+      "name": "AWS Student Builder Group at UNC",
+      "designation": "Core team"
+    },
+    "community_title": "Equipo central",
+    "image": "ezeZapata.jpg",
+    "bio": "Estudiante de Ingeniería en Computación en la FCEFyN, Universidad Nacional de Córdoba. Apasionado por la tecnología y el desarrollo de soluciones innovadoras, se interesa por el cloud computing, la programación y el trabajo colaborativo en comunidades tecnológicas, donde busca seguir aprendiendo y aportando a proyectos de impacto.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/joaquin-ezequiel-zapata-a0005a408/"
+    },
+    "type": "Core"
+  },
+  {
+    "id": "6007",
+    "name": "Iván Ezequiel Schneider",
+    "company": {
+      "name": "AWS Student Builder Group at UNC",
+      "designation": "Core team"
+    },
+    "community_title": "Equipo central",
+    "image": "ivanSchneider.png",
+    "bio": "Ingeniero en Sistemas de Información recibido de la UTN, con un fuerte interés en el ámbito tecnológico y gran capacidad para integrarme eficazmente en equipos multidisciplinarios. Mi principal motivación es resolver problemas técnicos de manera creativa y eficiente, siempre con el enfoque de aprender nuevas tecnologías y mejorar constantemente.\n\nMe comprometo a dar lo mejor de mí, aportando valor a cada proyecto y manteniendo una actitud proactiva. Además, mi habilidad para ser asertivo me permite comunicarme de manera efectiva, garantizando una colaboración fluida y constructiva. Siempre estoy dispuesto a seguir creciendo tanto a nivel profesional como personal, buscando nuevas oportunidades para aprender, contribuir y enfrentar nuevos retos tecnológicos.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/ivan-ezequiel-schneider/"
+    },
+    "type": "Core"
+  },
+  {
+    "id": "6008",
+    "name": "Ezequiel Ludueña",
+    "company": {
+      "name": "AWS Student Builder Group at UNC",
+      "designation": "Core team"
+    },
+    "community_title": "Equipo central",
+    "image": "ezeLuduena.jpg",
+    "bio": "Estudiante avanzado de Ciencias de la Computación en la Universidad Nacional de Córdoba. Entre mis principales intereses se encuentran la programación, el software libre y el self-hosting. Actualmente me dedico a desarrollar módulos de Odoo para organizaciones sociales, sindicatos y cooperativas de trabajo.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/ezeluduena/"
+    },
+    "type": "Core"
+  },
+  {
+    "id": "6009",
+    "name": "Valentina Belen Moreno",
+    "company": {
+      "name": "Atlassian Community",
+      "designation": "Champion"
+    },
+    "community_title": "Atlassian Community Champion",
+    "image": "valenMoreno.png",
+    "bio": "Profesional de IT especializada en el ecosistema Atlassian, con un fuerte enfoque en Jira Service Management y prácticas de ITSM.\n\nAyudo a las organizaciones a diseñar y escalar sus operaciones de soporte mediante la implementación de flujos de trabajo estructurados, automatización y soluciones de CMDB (Assets) que mejoran la eficiencia y la experiencia del usuario.\n\nCuento con experiencia práctica en la implementación de Jira Service Management, la integración de Jira con sistemas externos y la optimización de procesos alineados con las necesidades del negocio. Mi enfoque combina la experiencia técnica con una clara orientación hacia soluciones prácticas y escalables.\n\nMás allá de mi trabajo técnico, me apasiona compartir conocimiento y construir comunidad. Participo activamente en comunidades tecnológicas, organizo eventos y doy charlas sobre herramientas Atlassian y buenas prácticas de ITSM.\n\nDisfruto de tender puentes entre la tecnología y el negocio, ayudando a los equipos a adoptar herramientas de una manera que realmente aporte valor.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/valentina-belen-moreno-7584ba1bb/"
+    },
+    "type": "Community"
+  },
+  {
+    "id": "6010",
+    "name": "Marianela Victoria Flora",
+    "company": {
+      "name": "AWS Student Builder Group at UNC",
+      "designation": "Core team"
+    },
+    "community_title": "Equipo central",
+    "image": "mariFlora.jpg",
+    "bio": "Ingeniera en Computación, actualmente estoy explorando el área de desarrollo backend, testing y programación de dispositivos robóticos. Estoy trabajando como Junior Software Engineer en EPAM Systems y realizo trabajos freelance de QA Tester Manual / Automation.\n\nInglés avanzado C1, español nativo.\n\nHabilidades: Python, C++, HTML, CSS, JavaScript, Git, Haskell, Java y metodologías ágiles.\n\nHabilidades de testing: testing funcional, escritura de casos de prueba, documentación de bugs, Jira, automatización con Python y Selenium, Playwright.\n\nDesde muy chica me apasiona el mundo de la tecnología, más específicamente todo lo relacionado con computadoras, microchips y programación. En el proceso también se me contagió el gusto por los videojuegos, el café y las plantas.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/marianela-victoria-flora/"
+    },
+    "type": "Core"
+  },
+  {
+    "id": "6011",
+    "name": "Emilia Mocayar",
+    "company": {
+      "name": "AWS Student Builder Group at UNC",
+      "designation": "Core team"
+    },
+    "community_title": "Equipo central",
+    "image": "emiliaMocayar.jpg",
+    "bio": "Actualmente me desempeño como QA Engineer en Wallbit y estudio Ingeniería en Computación en la FCEFyN, UNC.\n\nA los 16 años descubrí la programación, y con ello, lo mucho que me apasiona colaborar en el desarrollo de soluciones que impactan en el mundo real y en el día a día de las personas.\n\nDisfruto aprender y compartir conocimientos sobre ciencia y tecnología.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/memocayar/"
+    },
+    "type": "Core"
+  },
+  {
+    "id": "6012",
+    "name": "Luis Biedma",
+    "company": {
+      "name": "FAMAF",
+      "designation": "Secretario de Innovación y Vinculación Tecnológica"
+    },
+    "community_title": "Secretario de Innovación y Vinculación Tecnológica",
+    "image": "luisBiedma.jpg",
+    "bio": "Doctor en Matemática, científico practicante y emprendedor tecnológico. Actualmente me desempeño como Secretario de Innovación y Vinculación Tecnológica en FAMAF - UNC. Mi propósito en este rol es acelerar la transferencia de conocimiento desde la frontera científica hacia el impacto real en el mercado y la sociedad.\n\nA lo largo de mi carrera, aprendí a balancear el rigor de la academia con el pragmatismo del mundo de los negocios. Cofundé una empresa de base tecnológica en Fintech, lideré un laboratorio de Machine Learning para startups de Silicon Valley y participé en el diseño de soluciones basadas en datos para industrias tan diversas como Logística, Real Estate, Ciberseguridad y Energía.\n\nMi experiencia como profesor universitario también me da otra habilidad crítica para la vinculación: la capacidad de traducir modelos matemáticos o físicos abstractos y algoritmos complejos en conceptos de negocio claros, accionables y de alto valor para directivos y tomadores de decisiones.\n\nLo que aporto a cualquier mesa:\n- Vinculación Tecnológica Estratégica: conexión orgánica entre las capacidades de investigación científica y las demandas de eficiencia del sector privado y gubernamental.\n- Liderazgo en Innovación y ML/AI: dirección de equipos de alto rendimiento en el diseño de arquitecturas de datos, desde la viabilidad y pruebas de concepto o MVPs hasta la puesta de sistemas en producción.\n- Visión de Negocio Validada: experiencia como cofundador, freelancer y asesor de startups.\n\nCreo firmemente que la matemática aplicada y la inteligencia artificial no son cajas negras, sino activos potentes para que las organizaciones modernas automaticen procesos, mitiguen riesgos y descubran su verdadero óptimo operativo.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/luis-biedma/"
+    },
+    "type": "Community"
   }
 ]
