@@ -27,7 +27,7 @@
           <span class="octagon-frame" aria-hidden="true"></span>
         </div>
         <h3 class="mt-n1">{{ props.data.name }}</h3>
-        <v-chip size="x-small" color="#FFC400" class="mt-1">Ejemplo — a confirmar</v-chip>
+        <v-chip size="x-small" color="#FFC400" class="mt-1">{{ props.data.company.designation }}</v-chip>
         <p style="font-size: 90%">{{ props.data.company.name }}</p>
       </button>
     </template>
@@ -35,8 +35,7 @@
     <v-card
       max-width="800"
       rounded="xl"
-      class="pa-4"
-      style="border: 2px solid black"
+      class="team-dialog-card pa-4"
     >
       <v-container fluid>
         <v-row>
@@ -59,7 +58,7 @@
           </v-col>
           <v-col md="8" cols="12">
             <h1 class="mt-3 mb-0">{{ props.data.name }}</h1>
-            <v-chip size="small" color="#FFC400">Ejemplo — a confirmar</v-chip>
+            <v-chip size="small" color="#FFC400">{{ props.data.company.designation }}</v-chip>
             <p style="font-weight: 500" class="mt-n1">
               {{ props.data.community_title }} |
               {{ props.data.company.designation }},
@@ -121,6 +120,23 @@ const dialog = ref(false);
 
 .octagon-frame {
   display: none;
+}
+
+.team-dialog-card {
+  border: 2px solid rgba(255, 153, 0, 0.8);
+  background:
+    linear-gradient(135deg, rgba(76, 36, 5, 0.98), rgba(18, 19, 27, 0.99)) !important;
+  color: #ffffff;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.46);
+}
+
+.team-dialog-card h1,
+.team-dialog-card p {
+  color: #ffffff;
+}
+
+.team-dialog-card p {
+  white-space: pre-line;
 }
 
 h4,
