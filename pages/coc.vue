@@ -8,7 +8,7 @@
     <v-container fluid class="mt-5">
       <v-row>
         <v-col md="12">
-          <h1>Code of Conduct</h1>
+          <h1>Código de conducta del AWS Student Community Day</h1>
           <p>
             Todas las personas participantes, organizaciones aliadas, speakers y
             equipo del AWS Student Community Day UNC deben respetar estas pautas:
@@ -44,5 +44,5 @@ definePageMeta({
   layout: false,
 });
 
-useEventSeo("Code of Conduct");
+useEventSeo("Código de conducta del AWS Student Community Day");
 </script>

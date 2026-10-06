@@ -1,6 +1,6 @@
 <!--
   Componente: AppFooter.vue
-  Qué hace: pie institucional, enlaces de comunidad y contacto oficial.
+  Qué hace: pie institucional con recursos y enlaces oficiales.
   Dónde se usa: layouts/default.vue.
   Datos: communityName y communityLinks desde data/config.json.
 -->
@@ -23,25 +23,25 @@
       <v-col md="10" cols="12">
         <v-container fluid class="pa-0">
           <v-row justify-center align="center">
-            <v-col md="9" cols="12">
+            <v-col cols="12">
               <a
-                href="https://aws.amazon.com/developer/community/usergroups/cordoba/"
+                href="https://www.meetup.com/aws-sbg-at-national-university-of-cordoba"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="link"
                 class="grey--text text--darken-3 mr-6 google-font"
                 style="text-decoration: none; color: white"
-                >AWS User Group Córdoba</a
+                >Meetup de AWS Student Builder Group UNC</a
               >
               <br class="hidden-md-and-up" />
               <a
-                href="https://aws.amazon.com/education/awseducate/"
+                href="https://builder.aws.com/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="link"
                 class="grey--text text--darken-3 mr-6 google-font"
                 style="text-decoration: none; color: white"
-                >AWS Educate</a
+                >AWS Builder Center</a
               >
 
               <br class="hidden-md-and-up" />
@@ -60,37 +60,26 @@
                 rel="noreferrer"
                 aria-label="link"
                 class="mr-6 google-font grey--text text--darken-3"
-                >Código de conducta</router-link
+                >Código de conducta del AWS Student Community Day</router-link
               >
               <br class="hidden-md-and-up" />
               <a
-                href="https://aws.amazon.com/codeofconduct/"
+                href="https://d1.awsstatic.com/onedam/marketing-channels/website/public/legal/codeofconduct/AWS_Code_of_Conduct_Spanish_2026-06-04.pdf"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="link"
                 class="mr-6 google-font grey--text text--darken-3"
                 style="text-decoration: none; color: white"
-                >Código de conducta de la comunidad AWS</a
+                >Código de conducta de AWS</a
               >
             </v-col>
 
-            <v-col md="3" cols="12">
-              <CommonSpeakerSocialButton
-                :socialLinks="mainData.communityLinks"
-                :dark="true"
-                class="footer-icons"
-              />
-            </v-col>
           </v-row>
         </v-container>
       </v-col>
     </v-row>
   </v-container>
 </template>
-
-<script setup>
-const { mainData } = useJSONData();
-</script>
 
 <style scoped>
 .app-footer {
