@@ -9,11 +9,12 @@
     <v-row class="stats-panel" data-gsap-reveal>
       <v-col cols="12" md="12" sm="12">
         <v-container fluid class="pa-6 pa-md-8">
-          <p class="section-eyebrow">Una mirada rápida</p>
+          <p class="section-eyebrow">Proyecciones esperadas</p>
           <h2 class="section-heading">El evento en números</h2>
           <p class="stats-intro">
-            Proyecciones y oportunidades para entender la escala de la jornada
-            antes de sumarte como asistente, speaker, voluntario o aliado.
+            Estimaciones preliminares para comunicar la escala y la propuesta
+            del evento. Los valores pueden actualizarse a medida que avance la
+            organización.
           </p>
           <v-row>
             <v-col

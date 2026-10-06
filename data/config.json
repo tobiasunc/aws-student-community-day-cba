@@ -100,14 +100,10 @@
       "long": "AWS Student Community Day UNC 2026 es un evento creado por estudiantes para estudiantes. Participá de charlas, talleres, laboratorios y actividades de conexión para descubrir oportunidades en la nube y desarrollar habilidades prácticas en AWS."
     },
     "stats": [
-      { "name": "Personas esperadas en Córdoba", "value": "300+" },
-      { "name": "Tracks simultáneos para elegir", "value": "5" },
-      { "name": "Entrevistas rápidas de conexión", "value": "7 min" },
-      { "name": "Becas y credenciales disponibles", "value": "100%" },
-      { "name": "Alcance digital estimado", "value": "14.000+" },
-      { "name": "Interacción digital estimada", "value": "4–6%" },
-      { "name": "Interés en pasantías o empleo", "value": "65%" },
-      { "name": "Interés en stands y comunidades", "value": "80%" }
+      { "name": "Asistentes presenciales esperados", "value": "300+" },
+      { "name": "Tracks de contenido previstos", "value": "5" },
+      { "name": "Duración estimada de entrevistas", "value": "7 min" },
+      { "name": "Becas y credenciales proyectadas", "value": "100%" }
     ],
     "whatToExpect": [
       { "title": "Espacios y stands de la comunidad", "description": "Espacios temáticos interactivos con demostraciones en vivo, proyectos de código abierto y comunidades tecnológicas locales.", "icon": "mdi-storefront-outline" },

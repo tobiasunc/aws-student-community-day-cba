@@ -2,7 +2,7 @@
   {
     "id": "2001",
     "slide": "",
-    "title": "Tu primera arquitectura AWS",
+    "title": "Tu primera arquitectura AWS (a confirmar)",
     "description": "Charla de una hora del Red Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Red Track",
     "link": "",
@@ -17,7 +17,7 @@
   {
     "id": "2002",
     "slide": "",
-    "title": "Costos y buenas prÃ¡cticas en la nube",
+    "title": "Costos y buenas prácticas en la nube (a confirmar)",
     "description": "Charla de una hora del Red Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Red Track",
     "link": "",
@@ -32,7 +32,7 @@
   {
     "id": "2003",
     "slide": "",
-    "title": "IAM sin miedo: permisos claros",
+    "title": "IAM sin miedo: permisos claros (a confirmar)",
     "description": "Charla de una hora del Red Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Red Track",
     "link": "",
@@ -47,7 +47,7 @@
   {
     "id": "2004",
     "slide": "",
-    "title": "Serverless desde cero",
+    "title": "Serverless desde cero (a confirmar)",
     "description": "Charla de una hora del Red Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Red Track",
     "link": "",
@@ -62,7 +62,7 @@
   {
     "id": "2005",
     "slide": "",
-    "title": "Observabilidad para proyectos reales",
+    "title": "Observabilidad para proyectos reales (a confirmar)",
     "description": "Charla de una hora del Red Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Red Track",
     "link": "",
@@ -77,7 +77,7 @@
   {
     "id": "2006",
     "slide": "",
-    "title": "CÃ³mo presentar tu proyecto cloud",
+    "title": "Cómo presentar tu proyecto cloud (a confirmar)",
     "description": "Charla de una hora del Red Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Red Track",
     "link": "",
@@ -107,7 +107,7 @@
   {
     "id": "2008",
     "slide": "",
-    "title": "IA generativa con Amazon Bedrock",
+    "title": "IA generativa con Amazon Bedrock (a confirmar)",
     "description": "Charla de una hora del Blue Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Blue Track",
     "link": "",
@@ -122,7 +122,7 @@
   {
     "id": "2009",
     "slide": "",
-    "title": "Datos y analytics para estudiantes",
+    "title": "Datos y análisis para estudiantes (a confirmar)",
     "description": "Charla de una hora del Blue Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Blue Track",
     "link": "",
@@ -137,7 +137,7 @@
   {
     "id": "2010",
     "slide": "",
-    "title": "APIs modernas con AWS",
+    "title": "APIs modernas con AWS (a confirmar)",
     "description": "Charla de una hora del Blue Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Blue Track",
     "link": "",
@@ -152,7 +152,7 @@
   {
     "id": "2011",
     "slide": "",
-    "title": "AutomatizaciÃ³n con Lambda",
+    "title": "Automatización con Lambda (a confirmar)",
     "description": "Charla de una hora del Blue Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Blue Track",
     "link": "",
@@ -167,7 +167,7 @@
   {
     "id": "2012",
     "slide": "",
-    "title": "Prototipado rÃ¡pido con servicios administrados",
+    "title": "Prototipado rápido con servicios administrados (a confirmar)",
     "description": "Charla de una hora del Blue Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Blue Track",
     "link": "",
@@ -182,7 +182,7 @@
   {
     "id": "2013",
     "slide": "",
-    "title": "Del experimento al producto",
+    "title": "Del experimento al producto (a confirmar)",
     "description": "Charla de una hora del Blue Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Blue Track",
     "link": "",
@@ -212,7 +212,7 @@
   {
     "id": "2015",
     "slide": "",
-    "title": "Infraestructura como cÃ³digo",
+    "title": "Infraestructura como código (a confirmar)",
     "description": "Charla de una hora del Green Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Green Track",
     "link": "",
@@ -227,7 +227,7 @@
   {
     "id": "2016",
     "slide": "",
-    "title": "Contenedores y despliegues simples",
+    "title": "Contenedores y despliegues simples (a confirmar)",
     "description": "Charla de una hora del Green Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Green Track",
     "link": "",
@@ -242,7 +242,7 @@
   {
     "id": "2017",
     "slide": "",
-    "title": "CI/CD para equipos pequeÃ±os",
+    "title": "CI/CD para equipos pequeños (a confirmar)",
     "description": "Charla de una hora del Green Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Green Track",
     "link": "",
@@ -257,7 +257,7 @@
   {
     "id": "2018",
     "slide": "",
-    "title": "Arquitecturas resilientes",
+    "title": "Arquitecturas resilientes (a confirmar)",
     "description": "Charla de una hora del Green Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Green Track",
     "link": "",
@@ -272,7 +272,7 @@
   {
     "id": "2019",
     "slide": "",
-    "title": "Seguridad en pipelines",
+    "title": "Seguridad en pipelines (a confirmar)",
     "description": "Charla de una hora del Green Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Green Track",
     "link": "",
@@ -287,7 +287,7 @@
   {
     "id": "2020",
     "slide": "",
-    "title": "Escalabilidad sin complicaciones",
+    "title": "Escalabilidad sin complicaciones (a confirmar)",
     "description": "Charla de una hora del Green Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Green Track",
     "link": "",
@@ -317,7 +317,7 @@
   {
     "id": "2022",
     "slide": "",
-    "title": "Carreras en cloud y tecnologÃ­a",
+    "title": "Carreras en cloud y tecnología (a confirmar)",
     "description": "Charla de una hora del Orange Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Orange Track",
     "link": "",
@@ -332,7 +332,7 @@
   {
     "id": "2023",
     "slide": "",
-    "title": "IA responsable y privacidad",
+    "title": "IA responsable y privacidad (a confirmar)",
     "description": "Charla de una hora del Orange Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Orange Track",
     "link": "",
@@ -347,7 +347,7 @@
   {
     "id": "2024",
     "slide": "",
-    "title": "CÃ³mo prepararse para una entrevista tÃ©cnica",
+    "title": "Cómo prepararse para una entrevista técnica (a confirmar)",
     "description": "Charla de una hora del Orange Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Orange Track",
     "link": "",
@@ -362,7 +362,7 @@
   {
     "id": "2025",
     "slide": "",
-    "title": "Código abierto y comunidad",
+    "title": "Código abierto y comunidad (a confirmar)",
     "description": "Charla de una hora del Orange Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Orange Track",
     "link": "",
@@ -377,7 +377,7 @@
   {
     "id": "2026",
     "slide": "",
-    "title": "Empleabilidad en el ecosistema AWS",
+    "title": "Empleabilidad en el ecosistema AWS (a confirmar)",
     "description": "Charla de una hora del Orange Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Orange Track",
     "link": "",
@@ -392,7 +392,7 @@
   {
     "id": "2027",
     "slide": "",
-    "title": "Historias de proyectos que crecieron",
+    "title": "Historias de proyectos que crecieron (a confirmar)",
     "description": "Charla de una hora del Orange Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Orange Track",
     "link": "",
@@ -422,7 +422,7 @@
   {
     "id": "2029",
     "slide": "",
-    "title": "Charla relámpago: mi primer proyecto AWS",
+    "title": "Charla relámpago: mi primer proyecto AWS (a confirmar)",
     "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Yellow Track",
     "link": "",
@@ -437,7 +437,7 @@
   {
     "id": "2030",
     "slide": "",
-    "title": "Charla relámpago: aprender en comunidad",
+    "title": "Charla relámpago: aprender en comunidad (a confirmar)",
     "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Yellow Track",
     "link": "",
@@ -452,7 +452,7 @@
   {
     "id": "2031",
     "slide": "",
-    "title": "Charla relámpago: errores que enseñan",
+    "title": "Charla relámpago: errores que enseñan (a confirmar)",
     "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Yellow Track",
     "link": "",
@@ -467,7 +467,7 @@
   {
     "id": "2032",
     "slide": "",
-    "title": "Charla relámpago: herramientas favoritas",
+    "title": "Charla relámpago: herramientas favoritas (a confirmar)",
     "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Yellow Track",
     "link": "",
@@ -482,7 +482,7 @@
   {
     "id": "2033",
     "slide": "",
-    "title": "Charla relámpago: del aula a la nube",
+    "title": "Charla relámpago: del aula a la nube (a confirmar)",
     "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Yellow Track",
     "link": "",
@@ -497,7 +497,7 @@
   {
     "id": "2034",
     "slide": "",
-    "title": "Charla relámpago: preguntas abiertas",
+    "title": "Charla relámpago: preguntas abiertas (a confirmar)",
     "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
     "track": "Yellow Track",
     "link": "",
