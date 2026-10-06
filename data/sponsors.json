@@ -2,7 +2,7 @@
   {
     "category_name": "Empresas aliadas",
     "sponsors": [
-      { "id": "teracloud", "name": "TeraCloud", "link": "https://teracloud.com.ar/", "logo": "teracloud-logo.png" },
+      { "id": "teracloud", "name": "TeraCloud", "link": "https://teracloud.io/", "logo": "teracloud-logo.png" },
       { "id": "craftech", "name": "Craftech", "link": "https://craftech.io/", "logo": "CRAFTECH-logo.png" }
     ]
   },
