@@ -59,7 +59,7 @@ export const useEventSeo = (pageTitle?: string, event?: EventConfig) => {
       priceCurrency: 'ARS',
       availability: 'https://schema.org/InStock',
       url: config.eventInfo.registration.link,
-      validFrom: config.eventInfo.registration.startDate || '2026-01-01T00:00:00-03:00',
+      validFrom: (config.eventInfo as any).registration?.startDate || '2026-01-01T00:00:00-03:00',
       validThrough: config.eventInfo.registration.endDate,
     },
   }
