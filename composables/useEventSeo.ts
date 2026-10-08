@@ -17,10 +17,8 @@ export const useEventSeo = (pageTitle?: string, event?: EventConfig) => {
   const baseUrl = siteUrl.endsWith('/') ? siteUrl : `${siteUrl}/`
   const canonicalPath = route.path === '/' ? '/' : `${route.path.replace(/\/+$/, '')}/`
   const pageUrl = new URL(canonicalPath, baseUrl).toString()
-  const image = new URL(
-    'img/common/para-cuando-mandamos-links,%20lo-que-se-tendria-que-ver.png?v=20261005',
-    baseUrl,
-  ).toString()
+  const image = new URL('thumbnail.png', baseUrl).toString()
+
   const eventSchema = {
     '@context': 'https://schema.org',
     '@type': 'Event',
@@ -33,6 +31,11 @@ export const useEventSeo = (pageTitle?: string, event?: EventConfig) => {
     eventStatus: 'https://schema.org/EventScheduled',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     image: [image],
+    performer: {
+      '@type': 'Organization',
+      name: config.communityName,
+      url: baseUrl,
+    },
     location: {
       '@type': 'Place',
       name: config.eventInfo.venue.name,
@@ -56,6 +59,7 @@ export const useEventSeo = (pageTitle?: string, event?: EventConfig) => {
       priceCurrency: 'ARS',
       availability: 'https://schema.org/InStock',
       url: config.eventInfo.registration.link,
+      validFrom: config.eventInfo.registration.startDate || '2026-01-01T00:00:00-03:00',
       validThrough: config.eventInfo.registration.endDate,
     },
   }
