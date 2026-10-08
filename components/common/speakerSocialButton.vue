@@ -19,6 +19,7 @@
       >
         <v-img
           v-if="network.icon"
+          :class="{ 'social-icon-linkedin': network.key === 'linkedin' }"
           :src="network.icon"
           :alt="network.name"
           width="20"
@@ -54,3 +55,9 @@ defineProps({
   },
 });
 </script>
+
+<style scoped>
+.social-icon-linkedin {
+  filter: brightness(0) invert(1);
+}
+</style>

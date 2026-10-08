@@ -30,8 +30,10 @@
           rel="noopener noreferrer"
         >
           <v-img
+            class="sponsor-logo"
             :alt="`Logo de ${sponsor.name}`"
             :src="`/img/${item.folder || 'sponsors'}/${sponsor.logo}`"
+            contain
             @error="handleImageError"
           ></v-img>
           <span>{{ sponsor.name }}</span>
@@ -86,5 +88,11 @@ const handleImageError = (event) => {
   font-size: 0.9rem;
   font-weight: 600;
   text-align: center;
+}
+
+.sponsor-logo {
+  width: 100%;
+  height: 84px;
+  flex: 0 0 84px;
 }
 </style>

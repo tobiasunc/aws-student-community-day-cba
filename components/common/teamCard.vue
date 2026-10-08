@@ -11,7 +11,7 @@
         type="button"
         v-bind="activatorProps"
         style="cursor: pointer"
-        class="text-center image-container"
+        :class="['text-center', 'image-container', accentClass]"
       >
         <div class="octagon-portrait" data-gsap-image data-gsap-box>
           <v-img
@@ -26,7 +26,7 @@
           ></v-img>
           <span class="octagon-frame" aria-hidden="true"></span>
         </div>
-        <h3 class="mt-n1">{{ props.data.name }}</h3>
+        <h3 class="mt-n1" :class="accentClass">{{ props.data.name }}</h3>
         <v-chip size="x-small" color="#FFC400" class="mt-1">{{ props.data.company.designation }}</v-chip>
         <p style="font-size: 90%">{{ props.data.company.name }}</p>
       </button>
@@ -35,7 +35,7 @@
     <v-card
       max-width="800"
       rounded="xl"
-      class="team-dialog-card pa-4"
+      :class="['team-dialog-card', 'pa-4', accentClass]"
     >
       <v-container fluid>
         <v-row>
@@ -57,7 +57,7 @@
             </div>
           </v-col>
           <v-col md="8" cols="12">
-            <h1 class="mt-3 mb-0">{{ props.data.name }}</h1>
+            <h1 class="mt-3 mb-0" :class="accentClass">{{ props.data.name }}</h1>
             <v-chip size="small" color="#FFC400">{{ props.data.company.designation }}</v-chip>
             <p style="font-weight: 500" class="mt-n1">
               {{ props.data.community_title }} |
@@ -81,11 +81,13 @@
 <script setup lang="ts">
 import type { TeamMember } from '~/types'
 import { ref } from 'vue'
+import { computed } from 'vue'
 
 const props = defineProps<{ data: TeamMember }>()
 
 // Reactive variables
 const dialog = ref(false);
+const accentClass = computed(() => props.data.accent ? `team-accent-${props.data.accent}` : '')
 </script>
 
 <style scoped>
@@ -106,6 +108,21 @@ const dialog = ref(false);
   width: 100%;
   aspect-ratio: 1;
   filter: drop-shadow(0 0 14px rgba(255, 153, 0, 0.28));
+}
+
+.team-accent-cyan .octagon-portrait {
+  filter: drop-shadow(0 0 14px rgba(76, 201, 240, 0.9))
+    drop-shadow(0 0 32px rgba(76, 201, 240, 0.45));
+}
+
+.team-accent-cyan h1,
+.team-accent-cyan h3 {
+  color: #ffffff;
+}
+
+.team-accent-blue .octagon-portrait {
+  filter: drop-shadow(0 0 14px rgba(59, 130, 246, 0.9))
+    drop-shadow(0 0 32px rgba(59, 130, 246, 0.45));
 }
 
 .avatar {
@@ -137,6 +154,16 @@ const dialog = ref(false);
 
 .team-dialog-card p {
   white-space: pre-line;
+}
+
+.team-dialog-card.team-accent-cyan {
+  border-color: rgba(76, 201, 240, 0.9);
+  box-shadow: 0 0 28px rgba(76, 201, 240, 0.3), 0 24px 70px rgba(0, 0, 0, 0.46);
+}
+
+.team-dialog-card.team-accent-blue {
+  border-color: rgba(59, 130, 246, 0.9);
+  box-shadow: 0 0 28px rgba(59, 130, 246, 0.3), 0 24px 70px rgba(0, 0, 0, 0.46);
 }
 
 h4,

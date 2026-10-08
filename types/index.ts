@@ -173,6 +173,7 @@ export interface Speaker extends Person {}
 
 export interface TeamMember extends Person {
   type: string
+  accent?: 'cyan' | 'blue'
 }
 
 export interface Sponsor {

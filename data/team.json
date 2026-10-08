@@ -19,9 +19,9 @@
     "name": "Catalina Villan",
     "company": {
       "name": "AWS Student Builder Group at UNC",
-      "designation": "Equipo central"
+      "designation": "Core team"
     },
-    "community_title": "Equipo central",
+    "community_title": "Core team",
     "image": "cataVillan.jpg",
     "bio": "Soy estudiante de segundo año de la Licenciatura en Ciencias de la Computación en FaMAF, Universidad Nacional de Córdoba. Actualmente exploro distintas áreas de la informática, como seguridad, cloud y HPC.",
     "social": {
@@ -34,9 +34,9 @@
     "name": "Matias Emiliano Del Carpio",
     "company": {
       "name": "AWS Student Builder Group at UNC",
-      "designation": "Equipo central"
+      "designation": "Core team"
     },
-    "community_title": "Equipo central",
+    "community_title": "Core team",
     "image": "matiasCarpio.jpg",
     "bio": "Nací en Córdoba, Argentina el 30 de diciembre de 2006 y soy estudiante de Licenciatura en Ciencias de la Computación en la UNC. Desde chico siempre me interesó todo lo referido a la tecnología de mi entorno: saber cómo funcionan los aparatos del día a día, jugar videojuegos, programarlos, etc. Me gusta la novedad y aprender por mi propia cuenta, y siempre estoy buscando aprender algo nuevo.",
     "social": {
@@ -49,9 +49,9 @@
     "name": "Facundo Horacio Octavio Herrera Alderete",
     "company": {
       "name": "AWS Student Builder Group at UNC",
-      "designation": "Equipo central"
+      "designation": "Core team"
     },
-    "community_title": "Equipo central",
+    "community_title": "Core team",
     "image": "facundoHerrera.jpg",
     "bio": "Estudiante de Ingeniería en Computación e Ingeniería Aeroespacial, Developer en desarrollo web, sistemas embebidos y robótica, gran apasionado de la docencia y de que el conocimiento se debe compartir. Asesor pedagógico de herramientas digitales y de robótica en educación, y en algún momento, Ingeniero en Planificación de Mantenimiento de Aeronaves militares y comerciales.",
     "social": {
@@ -64,9 +64,9 @@
     "name": "Francisco Villan",
     "company": {
       "name": "AWS Student Builder Group at UNC",
-      "designation": "Equipo central"
+      "designation": "Core team"
     },
-    "community_title": "Equipo central",
+    "community_title": "Core team",
     "image": "franVillan.jpg",
     "bio": "Estudiante de la Licenciatura en Ciencias de la Computación en FaMAF, Universidad Nacional de Córdoba. Interesado en el desarrollo de software, cloud computing y las nuevas tecnologías, participa activamente en la comunidad para fortalecer sus conocimientos y colaborar en proyectos junto a otros estudiantes.",
     "social": {
@@ -79,9 +79,9 @@
     "name": "Joaquin Ezequiel Zapata",
     "company": {
       "name": "AWS Student Builder Group at UNC",
-      "designation": "Equipo central"
+      "designation": "Core team"
     },
-    "community_title": "Equipo central",
+    "community_title": "Core team",
     "image": "ezeZapata.jpg",
     "bio": "Estudiante de Ingeniería en Computación en la FCEFyN, Universidad Nacional de Córdoba. Apasionado por la tecnología y el desarrollo de soluciones innovadoras, se interesa por el cloud computing, la programación y el trabajo colaborativo en comunidades tecnológicas, donde busca seguir aprendiendo y aportando a proyectos de impacto.",
     "social": {
@@ -94,9 +94,9 @@
     "name": "Iván Ezequiel Schneider",
     "company": {
       "name": "AWS Student Builder Group at UNC",
-      "designation": "Equipo central"
+      "designation": "Core team"
     },
-    "community_title": "Equipo central",
+    "community_title": "Core team",
     "image": "ivanSchneider.png",
     "bio": "Ingeniero en Sistemas de Información recibido de la UTN, con un fuerte interés en el ámbito tecnológico y gran capacidad para integrarme eficazmente en equipos multidisciplinarios. Mi principal motivación es resolver problemas técnicos de manera creativa y eficiente, siempre con el enfoque de aprender nuevas tecnologías y mejorar constantemente.\n\nMe comprometo a dar lo mejor de mí, aportando valor a cada proyecto y manteniendo una actitud proactiva. Además, mi habilidad para ser asertivo me permite comunicarme de manera efectiva, garantizando una colaboración fluida y constructiva. Siempre estoy dispuesto a seguir creciendo tanto a nivel profesional como personal, buscando nuevas oportunidades para aprender, contribuir y enfrentar nuevos retos tecnológicos.",
     "social": {
@@ -109,9 +109,9 @@
     "name": "Ezequiel Ludueña",
     "company": {
       "name": "AWS Student Builder Group at UNC",
-      "designation": "Equipo central"
+      "designation": "Core team"
     },
-    "community_title": "Equipo central",
+    "community_title": "Core team",
     "image": "ezeLuduena.jpg",
     "bio": "Estudiante avanzado de Ciencias de la Computación en la Universidad Nacional de Córdoba. Entre mis principales intereses se encuentran la programación, el software libre y el self-hosting. Actualmente me dedico a desarrollar módulos de Odoo para organizaciones sociales, sindicatos y cooperativas de trabajo.",
     "social": {
@@ -132,16 +132,17 @@
     "social": {
       "linkedin": "https://www.linkedin.com/in/valentina-belen-moreno-7584ba1bb/"
     },
-    "type": "Community"
+    "type": "Community",
+    "accent": "cyan"
   },
   {
     "id": "6010",
     "name": "Marianela Victoria Flora",
     "company": {
       "name": "AWS Student Builder Group at UNC",
-      "designation": "Equipo central"
+      "designation": "Core team"
     },
-    "community_title": "Equipo central",
+    "community_title": "Core team",
     "image": "mariFlora.jpg",
     "bio": "Ingeniera en Computación, actualmente estoy explorando el área de desarrollo backend, testing y programación de dispositivos robóticos. Estoy trabajando como Junior Software Engineer en EPAM Systems y realizo trabajos freelance de QA Tester Manual / Automation.\n\nInglés avanzado C1, español nativo.\n\nHabilidades: Python, C++, HTML, CSS, JavaScript, Git, Haskell, Java y metodologías ágiles.\n\nHabilidades de testing: testing funcional, escritura de casos de prueba, documentación de bugs, Jira, automatización con Python y Selenium, Playwright.\n\nDesde muy chica me apasiona el mundo de la tecnología, más específicamente todo lo relacionado con computadoras, microchips y programación. En el proceso también se me contagió el gusto por los videojuegos, el café y las plantas.",
     "social": {
@@ -154,9 +155,9 @@
     "name": "Emilia Mocayar",
     "company": {
       "name": "AWS Student Builder Group at UNC",
-      "designation": "Equipo central"
+      "designation": "Core team"
     },
-    "community_title": "Equipo central",
+    "community_title": "Core team",
     "image": "emiliaMocayar.jpg",
     "bio": "Actualmente me desempeño como QA Engineer en Wallbit y estudio Ingeniería en Computación en la FCEFyN, UNC.\n\nA los 16 años descubrí la programación, y con ello, lo mucho que me apasiona colaborar en el desarrollo de soluciones que impactan en el mundo real y en el día a día de las personas.\n\nDisfruto aprender y compartir conocimientos sobre ciencia y tecnología.",
     "social": {
@@ -177,6 +178,7 @@
     "social": {
       "linkedin": "https://www.linkedin.com/in/luis-biedma/"
     },
-    "type": "Community"
+    "type": "Community",
+    "accent": "blue"
   }
 ]

@@ -42,17 +42,22 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "image/svg+xml",
-          href: "/img/common/aws-program-icon.svg?v=20261005",
+          href: "/favicon.svg",
         },
         {
           rel: "shortcut icon",
           type: "image/svg+xml",
-          href: "/img/common/aws-program-icon.svg?v=20261005",
+          href: "/favicon.svg",
         },
         {
           rel: "apple-touch-icon",
-          href: "/img/common/aws-program-icon.svg?v=20261005",
+          href: "/favicon.svg",
         },
+      ],
+      meta: [
+        { property: "og:image", content: "https://awstudentcommunitydaycba.com/thumbnail.png" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:image", content: "https://awstudentcommunitydaycba.com/thumbnail.png" },
       ],
     },
   },
