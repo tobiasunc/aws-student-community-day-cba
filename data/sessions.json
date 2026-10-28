@@ -1,527 +1,457 @@
-﻿[
+[
   {
-    "id": "2001",
+    "id": "3001",
     "slide": "",
-    "title": "Tu primera arquitectura AWS (a confirmar)",
-    "description": "Charla de una hora del Red Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
+    "title": "Construir tu propio futuro bajo el modelo Campus Norte y certificaciones AWS",
+    "description": "Charla de cómo construir tu carrera profesional bajo el modelo Campus Norte UNC, con certificación de competencia, créditos académicos y cómo convive con las certificaciones de AWS.",
     "track": "Red Track",
     "link": "",
     "time": "13:00 ART",
-    "format": "Charla técnica",
+    "format": "Lightning Talk",
     "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "timeDuration": "15",
+    "speakers": ["125"]
   },
   {
-    "id": "2002",
+    "id": "3002",
     "slide": "",
-    "title": "Costos y buenas prácticas en la nube (a confirmar)",
-    "description": "Charla de una hora del Red Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
+    "title": "Reconversión laboral - El recorrido con créditos UNC y las certificaciones AWS",
+    "description": "",
     "track": "Red Track",
     "link": "",
-    "time": "14:00 ART",
+    "time": "13:15 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "timeDuration": "15",
+    "speakers": []
   },
   {
-    "id": "2003",
+    "id": "3003",
     "slide": "",
-    "title": "IAM sin miedo: permisos claros (a confirmar)",
-    "description": "Charla de una hora del Red Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
+    "title": "No todos los caminos llevan a EKS",
+    "description": "Kubernetes suele presentarse como el destino natural de cualquier arquitectura moderna, pero no siempre es la mejor respuesta. En esta charla recorreremos las etapas típicas de crecimiento de una empresa, desde un MVP con pocos usuarios hasta una plataforma con tráfico alto, grandes volúmenes de datos y varios equipos trabajando en paralelo. Para cada etapa analizaremos qué opción de cómputo en AWS tiene más sentido: instancias EC2 con Auto Scaling Groups, Elastic Beanstalk, Amazon ECS combinado con servicios serverless y, finalmente, Amazon EKS. Para hacerlo concreto, seguiremos el recorrido de una empresa ficticia a medida que crece y enfrenta cada una de estas decisiones. De cada alternativa veremos qué problemas resuelve, cuánta complejidad operativa agrega, cómo escala y qué perfil de equipo requiere para sostenerla. También veremos cómo evoluciona el monitoreo en cada etapa. El objetivo es que quienes están dando sus primeros pasos en DevOps se lleven un marco simple para tomar decisiones de arquitectura como lo haría un arquitecto de soluciones.",
+    "track": "Red Track",
+    "link": "",
+    "time": "13:30 ART",
+    "format": "Charla técnica",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "90",
+    "speakers": ["104"]
+  },
+  {
+    "id": "3004",
+    "slide": "",
+    "title": "Del código a la nube: todo lo que podés construir con AWS",
+    "description": "¿Cómo pasamos de una aplicación que funciona en nuestra computadora a una solución real utilizada por personas y empresas? En esta charla exploraremos los fundamentos del cloud computing y descubriremos cómo Amazon Web Services (AWS) permite diseñar, desplegar y operar aplicaciones modernas. Partiremos de conceptos esenciales como cómputo, almacenamiento, redes y modelos de costos, para luego recorrer el proceso de llevar una aplicación desde localhost hasta la nube. Además, conoceremos cómo diferentes servicios de AWS pueden combinarse para resolver problemas reales de negocio, desde aplicaciones web y automatización de procesos hasta análisis de datos e inteligencia artificial. A través de ejemplos, arquitecturas y una demostración práctica, buscaremos acercar el ecosistema AWS a estudiantes y desarrolladores que quieran dar sus primeros pasos en la nube.",
     "track": "Red Track",
     "link": "",
     "time": "15:00 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "timeDuration": "120",
+    "speakers": ["115", "116"]
   },
   {
-    "id": "2004",
+    "id": "3005",
     "slide": "",
-    "title": "Serverless desde cero (a confirmar)",
-    "description": "Charla de una hora del Red Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
-    "track": "Red Track",
-    "link": "",
-    "time": "16:00 ART",
-    "format": "Charla técnica",
-    "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
-  },
-  {
-    "id": "2005",
-    "slide": "",
-    "title": "Observabilidad para proyectos reales (a confirmar)",
-    "description": "Charla de una hora del Red Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
+    "title": "Cómo especializarte en Modelado de Amenazas",
+    "description": "Threat Dragon fue la puerta de entrada al modelado de amenazas, pero en sistemas amplios con equipos de desarrollo se queda muy corto. OWASP ThreatAtlas acaba de nacer para sumarle edición colaborativa, control de acceso por roles, flujos de aprobación y aceptación de riesgos, marcos personalizables, integración con JIRA y CI/CD, y asistencia de IA. Veremos qué jugo sacarle en la práctica: evidencia para la evaluación de riesgos exigida por el BCRA a fintechs y PSP (Com. A 8398) y para proyectos ISO 27001. Y otra oportunidad mayor: cientos de pymes de desarrollo en la región querrán incorporarla a su ciclo de desarrollo, y ahí hay un lugar para consultores, equipos y comunidad.",
     "track": "Red Track",
     "link": "",
     "time": "17:00 ART",
-    "format": "Charla técnica",
+    "format": "Lightning Talk",
     "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "timeDuration": "30",
+    "speakers": ["118"]
   },
   {
-    "id": "2006",
+    "id": "3006",
     "slide": "",
-    "title": "Cómo presentar tu proyecto cloud (a confirmar)",
-    "description": "Charla de una hora del Red Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
+    "title": "Todos pueden crear aplicaciones. ¿Pero quién las está protegiendo?",
+    "description": "La IA puede acelerar el desarrollo, mejorar procesos y también contribuir a detectar vulnerabilidades. El problema no es que desarrollemos más rápido. El problema aparece cuando confundimos velocidad de desarrollo con calidad y seguridad del producto.",
+    "track": "Red Track",
+    "link": "",
+    "time": "17:30 ART",
+    "format": "Lightning Talk",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "30",
+    "speakers": ["111"]
+  },
+  {
+    "id": "3007",
+    "slide": "",
+    "title": "Detectar lo invisible: ciencia de datos e IA contra el fraude",
+    "description": "¿Qué sucede detrás de una aplicación financiera cuando alguien solicita un préstamo o realiza una operación digital? ¿Cómo podemos distinguir una operación legítima de un intento de fraude en cuestión de segundos? En esta charla exploraremos cómo la ciencia de datos, el machine learning y la inteligencia artificial se utilizan para prevenir el fraude financiero. A través de ejemplos prácticos, conoceremos cómo transformar datos en señales de riesgo, combinar reglas de negocio con modelos predictivos y evaluar el impacto de nuestras decisiones. También abordaremos las arquitecturas cloud que permiten implementar estas soluciones en tiempo real, el papel de la IA generativa y los desafíos de llevar modelos a producción. Una mirada técnica al mundo de la prevención del fraude, donde cada decisión implica encontrar el equilibrio entre seguridad y experiencia del usuario.",
     "track": "Red Track",
     "link": "",
     "time": "18:00 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "speakers": ["117"]
   },
   {
-    "id": "2007",
+    "id": "3008",
     "slide": "",
-    "title": "Cena y Networking",
-    "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades.",
+    "title": "Cena + premiación",
+    "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades, con la premiación de cierre del evento.",
     "track": "Red Track",
     "link": "",
     "time": "19:00 ART",
     "format": "Networking",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "speakers": []
   },
   {
-    "id": "2008",
+    "id": "3101",
     "slide": "",
-    "title": "IA generativa con Amazon Bedrock (a confirmar)",
-    "description": "Charla de una hora del Blue Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
+    "title": "FONBEC: como ayudamos a que se reciban a miles",
+    "description": "",
     "track": "Blue Track",
     "link": "",
     "time": "13:00 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "timeDuration": "15",
+    "speakers": []
   },
   {
-    "id": "2009",
+    "id": "3102",
     "slide": "",
-    "title": "Datos y análisis para estudiantes (a confirmar)",
-    "description": "Charla de una hora del Blue Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
+    "title": "Networking en AWS para no romper producción",
+    "description": "Para usar una aplicación, tus peticiones/requests pasan por muchas piezas: DNS y Route 53, VPC, subnets, route tables, gateways, Security Groups, balanceadores y target groups. En esta charla veremos qué hace cada una y cómo se conectan entre sí. Después armamos el camino completo en dos casos de uso: una app en EC2 detrás de un ALB y otra en EKS expuesta con un Ingress.",
     "track": "Blue Track",
     "link": "",
-    "time": "14:00 ART",
+    "time": "13:15 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "timeDuration": "30",
+    "speakers": ["103"]
   },
   {
-    "id": "2010",
+    "id": "3103",
     "slide": "",
-    "title": "APIs modernas con AWS (a confirmar)",
-    "description": "Charla de una hora del Blue Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
+    "title": "Kubernetes explicado con crayones",
+    "description": "Charla taller orientada a estudiantes y profesionales que quieren introducirse a la orquestación de contenedores y tienen una base técnica general.",
     "track": "Blue Track",
     "link": "",
-    "time": "15:00 ART",
-    "format": "Charla técnica",
+    "time": "13:45 ART",
+    "format": "Workshop / Taller Hands-On",
     "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "timeDuration": "210",
+    "speakers": ["105"]
   },
   {
-    "id": "2011",
+    "id": "3104",
     "slide": "",
-    "title": "Automatización con Lambda (a confirmar)",
-    "description": "Charla de una hora del Blue Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
+    "title": "Crafteando en la nube: tu propio servidor de Minecraft en AWS",
+    "description": "¿Alguna vez quisiste jugar Minecraft con tus amigos sin depender de Realms ni dejar tu PC prendida todo el día? En este taller vamos a levantar, paso a paso, un servidor de Minecraft en AWS usando EC2. Veremos conceptos clave de cloud (instancias, security groups, IP elásticas, IAM) mientras construimos algo divertido y tangible. También aprenderemos a controlar costos con apagado y encendido automático (Lambda + EventBridge) y alertas con AWS Budgets. Al final, cada participante se va con su propio servidor funcionando y las bases para desplegar otras cargas de trabajo en la nube.",
     "track": "Blue Track",
     "link": "",
-    "time": "16:00 ART",
-    "format": "Charla técnica",
+    "time": "17:15 ART",
+    "format": "Workshop / Taller Hands-On",
     "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "timeDuration": "90",
+    "speakers": ["101"]
   },
   {
-    "id": "2012",
+    "id": "3105",
     "slide": "",
-    "title": "Prototipado rápido con servicios administrados (a confirmar)",
-    "description": "Charla de una hora del Blue Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
+    "title": "Hiperactiva: ideas que se convierten en futuro",
+    "description": "",
     "track": "Blue Track",
     "link": "",
-    "time": "17:00 ART",
+    "time": "18:45 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "timeDuration": "15",
+    "speakers": []
   },
   {
-    "id": "2013",
+    "id": "3106",
     "slide": "",
-    "title": "Del experimento al producto (a confirmar)",
-    "description": "Charla de una hora del Blue Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
-    "track": "Blue Track",
-    "link": "",
-    "time": "18:00 ART",
-    "format": "Charla técnica",
-    "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
-  },
-  {
-    "id": "2014",
-    "slide": "",
-    "title": "Cena y Networking",
-    "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades.",
+    "title": "Cena + premiación",
+    "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades, con la premiación de cierre del evento.",
     "track": "Blue Track",
     "link": "",
     "time": "19:00 ART",
     "format": "Networking",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "speakers": []
   },
   {
-    "id": "2015",
+    "id": "3201",
     "slide": "",
-    "title": "Infraestructura como código (a confirmar)",
-    "description": "Charla de una hora del Green Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
-    "track": "Green Track",
-    "link": "",
-    "time": "13:00 ART",
-    "format": "Charla técnica",
-    "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
-  },
-  {
-    "id": "2016",
-    "slide": "",
-    "title": "Contenedores y despliegues simples (a confirmar)",
-    "description": "Charla de una hora del Green Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
-    "track": "Green Track",
-    "link": "",
-    "time": "14:00 ART",
-    "format": "Charla técnica",
-    "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
-  },
-  {
-    "id": "2017",
-    "slide": "",
-    "title": "CI/CD para equipos pequeños (a confirmar)",
-    "description": "Charla de una hora del Green Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
-    "track": "Green Track",
-    "link": "",
-    "time": "15:00 ART",
-    "format": "Charla técnica",
-    "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
-  },
-  {
-    "id": "2018",
-    "slide": "",
-    "title": "Arquitecturas resilientes (a confirmar)",
-    "description": "Charla de una hora del Green Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
-    "track": "Green Track",
-    "link": "",
-    "time": "16:00 ART",
-    "format": "Charla técnica",
-    "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
-  },
-  {
-    "id": "2019",
-    "slide": "",
-    "title": "Seguridad en pipelines (a confirmar)",
-    "description": "Charla de una hora del Green Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
-    "track": "Green Track",
-    "link": "",
-    "time": "17:00 ART",
-    "format": "Charla técnica",
-    "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
-  },
-  {
-    "id": "2020",
-    "slide": "",
-    "title": "Escalabilidad sin complicaciones (a confirmar)",
-    "description": "Charla de una hora del Green Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
-    "track": "Green Track",
-    "link": "",
-    "time": "18:00 ART",
-    "format": "Charla técnica",
-    "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
-  },
-  {
-    "id": "2021",
-    "slide": "",
-    "title": "Cena y Networking",
-    "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades.",
-    "track": "Green Track",
-    "link": "",
-    "time": "19:00 ART",
-    "format": "Networking",
-    "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
-  },
-  {
-    "id": "2022",
-    "slide": "",
-    "title": "Carreras en cloud y tecnología (a confirmar)",
-    "description": "Charla de una hora del Orange Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
+    "title": "Sangre, sudor y silicio: lo que hay más allá de la nube",
+    "description": "Hay problemas tan grandes que una sola computadora no alcanza: hacen falta miles trabajando juntas. Te contamos cómo se construyen las computadoras más grandes del mundo y por qué, al final, lo más difícil de conseguir no es el hardware sino las personas.",
     "track": "Orange Track",
     "link": "",
     "time": "13:00 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "timeDuration": "120",
+    "speakers": ["120"]
   },
   {
-    "id": "2023",
+    "id": "3202",
     "slide": "",
-    "title": "IA responsable y privacidad (a confirmar)",
-    "description": "Charla de una hora del Orange Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
-    "track": "Orange Track",
-    "link": "",
-    "time": "14:00 ART",
-    "format": "Charla técnica",
-    "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
-  },
-  {
-    "id": "2024",
-    "slide": "",
-    "title": "Cómo prepararse para una entrevista técnica (a confirmar)",
-    "description": "Charla de una hora del Orange Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
+    "title": "Proyecto SOL3: Software Libre de gestión con Odoo",
+    "description": "En esta charla presentaremos el Programa SOL3 de la Fundación Mueve, una iniciativa que promueve el desarrollo de soluciones de gestión basadas en software libre a partir de Odoo Community. Exploraremos cómo su arquitectura modular y flexible permite adaptar el sistema a distintas necesidades y realidades, en particular, a las de las organizaciones de la economía social y solidaria. Además, recorreremos casos de uso y líneas de trabajo actuales que muestran su potencial para resolver tareas de facturación, cobros y automatización de procesos administrativos. En una segunda parte, orientada a quienes tengan interés en los aspectos técnicos, mostraremos cómo desplegar una instancia de Odoo a partir de una imagen de Docker e instalar nuevos módulos. La charla está dirigida tanto a personas interesadas en incorporar herramientas libres en sus organizaciones como a desarrolladores y desarrolladoras que quieran conocer el ecosistema de Odoo y explorar formas de involucrarse en él.",
     "track": "Orange Track",
     "link": "",
     "time": "15:00 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "speakers": ["113", "114"]
   },
   {
-    "id": "2025",
+    "id": "3203",
     "slide": "",
-    "title": "Código abierto y comunidad (a confirmar)",
-    "description": "Charla de una hora del Orange Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
+    "title": "bedrock by Bitlogic",
+    "description": "",
     "track": "Orange Track",
     "link": "",
     "time": "16:00 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "speakers": []
   },
   {
-    "id": "2026",
+    "id": "3204",
     "slide": "",
-    "title": "Empleabilidad en el ecosistema AWS (a confirmar)",
-    "description": "Charla de una hora del Orange Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
+    "title": "De coder a Vibe Coder / Cómo comer un sandwich con AWS",
+    "description": "Esta charla explora las diferencias entre los viejos métodos de programación, que consistían en escribir código manualmente, y la nueva forma de trabajar con asistentes de IA. Usando la antigua analogía de las \"instrucciones para hacer un sándwich\", vamos a ir viendo las ventajas y los problemas que podemos encontrar al desarrollar con estas IDE, y vamos a explorar técnicas y procesos mentales para evitar caer en estos baches. También vamos a realizar una actividad en vivo, jugando con un \"genio malvado\" que nos da siempre el código que pedimos, pero no siempre el que necesitamos. Con el que mostraremos cómo ser precisos al utilizar las herramientas de código asistido por IA.",
     "track": "Orange Track",
     "link": "",
     "time": "17:00 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "speakers": ["123", "124"]
   },
   {
-    "id": "2027",
+    "id": "3205",
     "slide": "",
-    "title": "Historias de proyectos que crecieron (a confirmar)",
-    "description": "Charla de una hora del Orange Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
+    "title": "Mis compañeros ya no duermen: agentes de IA 24/7 sin romper producción",
+    "description": "Los asistentes de IA ya escriben código y responden preguntas, pero el siguiente paso es otro: agentes que corren de forma persistente, ejecutan tareas sin supervisión, se coordinan entre sí y aprenden de sus errores. En esta charla vamos a ver cómo se arma un equipo de agentes con herramientas como Kiro Crew: roles, orquestación, memoria, skills y conexión a sistemas reales vía MCP. Con casos reales de un equipo DevOps y una demo en vivo, vamos a discutir lo que más importa cuando un agente toca infraestructura real: gobierno, mínimo privilegio, niveles de riesgo y el humano como último paso.",
     "track": "Orange Track",
     "link": "",
     "time": "18:00 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "speakers": ["112"]
   },
   {
-    "id": "2028",
+    "id": "3206",
     "slide": "",
-    "title": "Cena y Networking",
-    "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades.",
+    "title": "Cena + premiación",
+    "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades, con la premiación de cierre del evento.",
     "track": "Orange Track",
     "link": "",
     "time": "19:00 ART",
     "format": "Networking",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "speakers": []
   },
   {
-    "id": "2029",
+    "id": "3301",
     "slide": "",
-    "title": "Charla relámpago: mi primer proyecto AWS (a confirmar)",
-    "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
-    "track": "Yellow Track",
+    "title": "Como empezar tu comunidad internacional en Cordoba",
+    "description": "",
+    "track": "Green Track",
     "link": "",
     "time": "13:00 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "timeDuration": "15",
+    "speakers": []
   },
   {
-    "id": "2030",
+    "id": "3302",
     "slide": "",
-    "title": "Charla relámpago: aprender en comunidad (a confirmar)",
-    "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
-    "track": "Yellow Track",
+    "title": "Estudiar lejos de casa: el desafio de construir oportunidades y comunidad",
+    "description": "Charla informativa sobre residencia universitaria para estudiantes de bajos recursos.",
+    "track": "Green Track",
     "link": "",
-    "time": "14:00 ART",
+    "time": "13:15 ART",
+    "format": "Lightning Talk",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "15",
+    "speakers": ["119"]
+  },
+  {
+    "id": "3303",
+    "slide": "",
+    "title": "Estrategia y Talento: cómo potenciar la empleabilidad con la IA y transitar con éxito los procesos de selección",
+    "description": "Taller práctico diseñado para potenciar la empleabilidad mediante la integración estratégica de la inteligencia artificial en la gestión de la carrera profesional. Durante la actividad, los participantes aprenderán a utilizar herramientas tecnológicas para optimizar la elaboración de sus currículums y a desarrollar competencias clave para transitar con éxito los procesos de selección y las entrevistas laborales.",
+    "track": "Green Track",
+    "link": "",
+    "time": "13:30 ART",
+    "format": "Workshop / Taller Hands-On",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "120",
+    "speakers": ["106"]
+  },
+  {
+    "id": "3304",
+    "slide": "",
+    "title": "¿Piden 2 años de experiencia? Construí la tuya: Del Call Center a SRE",
+    "description": "¿Cómo pasar de un trabajo no técnico en un call center a gestionar la confiabilidad de sistemas en una multinacional? En esta Lightning Talk romperemos el mito de la 'experiencia previa' requerida por el mercado. Descubrirás cómo usar la IA como mentor para estructurar un roadmap de aprendizaje, cómo construir un Homelab casero para adquirir práctica real en SRE/DevOps y cómo empaquetar esa experiencia en LinkedIn para atraer reclutadores sin enviar CVs a ciegas.",
+    "track": "Green Track",
+    "link": "",
+    "time": "15:30 ART",
+    "format": "Lightning Talk",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "15",
+    "speakers": ["107"]
+  },
+  {
+    "id": "3305",
+    "slide": "",
+    "title": "¿Y ahora qué aprendo? Construir una carrera en software en la era de la IA",
+    "description": "Nuevos modelos, agentes y herramientas aparecen todo el tiempo. Mientras tanto, quienes están aprendiendo y adentrándose al mundo tech se preguntan: ¿por dónde empiezo?, ¿qué bases necesito?, ¿vale la pena aprender algo que una IA ya parece resolver? Esta charla propone pensar cómo construir una carrera en software en medio de esos cambios. A través de ejemplos y encuestas en vivo, la idea es explorar cómo elegir qué aprender, incorporar la IA al aprendizaje y desarrollar criterio para entender y evaluar lo que construimos. Dirigida especialmente a estudiantes y personas en sus primeros años de carrera o experiencias laborales, busca ofrecer herramientas para tomar decisiones sobre su formación y elegir un próximo paso concreto.",
+    "track": "Green Track",
+    "link": "",
+    "time": "15:45 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "speakers": ["108"]
   },
   {
-    "id": "2031",
+    "id": "3306",
     "slide": "",
-    "title": "Charla relámpago: errores que enseñan (a confirmar)",
-    "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
-    "track": "Yellow Track",
+    "title": "De estudiante a fundador: cómo vendí una app antes de programarla",
+    "description": "Una charla de 15 minutos para estudiantes. Alan cuenta cómo arrancó Deenex a los 19 años, sin capital y sin una línea de código, y cómo sus primeros clientes pagaron por una app que todavía no estaba programada. A partir de esa historia, muestra cómo validar una idea con clientes reales antes de invertir meses en programarla, y qué le diría hoy a un estudiante que quiere pasar del aula a construir algo propio.",
+    "track": "Green Track",
     "link": "",
-    "time": "15:00 ART",
-    "format": "Charla técnica",
+    "time": "16:45 ART",
+    "format": "Lightning Talk",
     "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "timeDuration": "15",
+    "speakers": ["102"]
   },
   {
-    "id": "2032",
+    "id": "3307",
     "slide": "",
-    "title": "Charla relámpago: herramientas favoritas (a confirmar)",
-    "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
-    "track": "Yellow Track",
-    "link": "",
-    "time": "16:00 ART",
-    "format": "Charla técnica",
-    "date": "7 de noviembre de 2026",
-    "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
-  },
-  {
-    "id": "2033",
-    "slide": "",
-    "title": "Charla relámpago: del aula a la nube (a confirmar)",
-    "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
-    "track": "Yellow Track",
+    "title": "Push & Pray no es una estrategia: CI/CD en AWS",
+    "description": "Esta charla presenta los fundamentos de CI/CD y cómo aplicarlos en AWS. Veremos qué son la integración continua, la entrega continua y el despliegue continuo, cuáles son las etapas de un pipeline (código, build, pruebas y despliegue) y qué servicios de AWS permiten automatizarlo. También abordaremos buenas prácticas de seguridad dentro del pipeline, como el manejo de secretos y el escaneo de dependencias. Para cerrar, mostraremos una demo grabada de un pipeline completo, desde un git push hasta el despliegue en la nube. Está pensada para estudiantes que quieran empezar a automatizar sus proyectos.",
+    "track": "Green Track",
     "link": "",
     "time": "17:00 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "speakers": ["109", "110"]
   },
   {
-    "id": "2034",
+    "id": "3308",
     "slide": "",
-    "title": "Charla relámpago: preguntas abiertas (a confirmar)",
-    "description": "Charla de una hora del Yellow Track para aprender, intercambiar experiencias y llevarse ideas accionables.",
-    "track": "Yellow Track",
+    "title": "Más allá del código: formarte y construir comunidad desde Córdoba",
+    "description": "Aprender tecnología hoy es mucho más que aprender a programar, es entender cómo funciona la industria, encontrar con quién crecer y preguntarse qué impacto tiene lo que construimos. En esta charla te contamos tres iniciativas disponibles en Córdoba con esa mirada. XAcademy, el programa de formación gratuita de la Fundación Tecnología con Propósito, que prepara personas para la industria IT en desarrollo, testing, automatización, IA y más; AI League For Good, una comunidad que pone sobre la mesa el uso ético y responsable de la inteligencia artificial; y la Comunidad de Seguridad de AI, un espacio para formarte y pivotear tu carrera hacia esta rama tan necesaria como relevante.",
+    "track": "Green Track",
     "link": "",
     "time": "18:00 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "speakers": ["121", "122"]
   },
   {
-    "id": "2035",
+    "id": "3309",
     "slide": "",
-    "title": "Cena y Networking",
-    "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades.",
+    "title": "Cena + premiación",
+    "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades, con la premiación de cierre del evento.",
+    "track": "Green Track",
+    "link": "",
+    "time": "19:00 ART",
+    "format": "Networking",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "60",
+    "speakers": []
+  },
+  {
+    "id": "3401",
+    "slide": "",
+    "title": "Entrevista corta Teracloud",
+    "description": "",
+    "track": "Yellow Track",
+    "link": "",
+    "time": "13:45 ART",
+    "format": "Entrevistas rápidas",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "135",
+    "speakers": []
+  },
+  {
+    "id": "3402",
+    "slide": "",
+    "title": "Entrevista corta Craftech",
+    "description": "",
+    "track": "Yellow Track",
+    "link": "",
+    "time": "16:15 ART",
+    "format": "Entrevistas rápidas",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "105",
+    "speakers": []
+  },
+  {
+    "id": "3403",
+    "slide": "",
+    "title": "Sorteo de Bitlogic",
+    "description": "",
+    "track": "Yellow Track",
+    "link": "",
+    "time": "18:30 ART",
+    "format": "Actividad",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "15",
+    "speakers": []
+  },
+  {
+    "id": "3404",
+    "slide": "",
+    "title": "Cena + premiación",
+    "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades, con la premiación de cierre del evento.",
     "track": "Yellow Track",
     "link": "",
     "time": "19:00 ART",
     "format": "Networking",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
-    "speakers": [
-      "101"
-    ]
+    "speakers": []
+  },
+  {
+    "id": "3501",
+    "slide": "",
+    "title": "Proyectos Cybercirujas",
+    "description": "",
+    "track": "Sala Cyberciruja Track",
+    "link": "",
+    "time": "13:00 ART",
+    "format": "Comunidad",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "345",
+    "speakers": []
+  },
+  {
+    "id": "3502",
+    "slide": "",
+    "title": "Cena + premiación",
+    "description": "Un espacio para compartir, conocer a otros participantes y seguir conectando ideas entre comunidades, con la premiación de cierre del evento.",
+    "track": "Sala Cyberciruja Track",
+    "link": "",
+    "time": "19:00 ART",
+    "format": "Networking",
+    "date": "7 de noviembre de 2026",
+    "timeDuration": "60",
+    "speakers": []
   }
 ]

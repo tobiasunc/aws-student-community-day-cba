@@ -20,7 +20,7 @@
     "name": "AWS Student Community Day UNC 2026",
     "tagline": "Conectando el Talento Estudiantil con el Ecosistema Tecnológico",
     "date": "7 de noviembre de 2026",
-    "time": "9:00 a 18:00 ART",
+    "time": "13:00 a 20:00 ART",
     "startDateTime": "2026-11-07T13:00:00-03:00",
     "endDateTime": "2026-11-07T20:00:00-03:00",
     "venue": {
@@ -124,7 +124,8 @@
       { "id": "blue", "name": "Blue", "color": "#146EB4", "category": "Talleres prácticos", "description": "Talleres sobre datos, IA y desarrollo de aplicaciones." },
       { "id": "green", "name": "Green", "color": "#2E7D32", "category": "Charlas Técnicas", "description": "Charlas sobre infraestructura, automatización y operación en la nube." },
       { "id": "orange", "name": "Orange", "color": "#EC7211", "category": "Charlas Técnicas", "description": "Charlas sobre carreras, comunidad, industria y empleabilidad." },
-      { "id": "yellow", "name": "Yellow", "color": "#FFC400", "category": "Charlas técnicas breves", "description": "Charlas breves y experiencias compartidas por la comunidad." }
+      { "id": "yellow", "name": "Yellow", "color": "#FFC400", "category": "Charlas técnicas breves", "description": "Charlas breves y experiencias compartidas por la comunidad." },
+      { "id": "cyberciruja", "name": "Sala Cyberciruja", "color": "#9C27B0", "category": "Comunidad", "description": "Espacio de la comunidad Cybercirujas con proyectos y actividades abiertas." }
     ],
     "topics": [
       { "id": "workshops", "title": "Talleres prácticos", "topics": ["DevOps e infraestructura", "Seguridad de nube y DevSecOps", "Código abierto y hardware", "Talleres de herramientas específicas"] },

@@ -11,7 +11,7 @@
           <h1 class="section-heading">Agenda</h1>
           <p class="muted-copy">
             Explorá workshops, charlas técnicas y flash talks organizadas en
-            cinco tracks de contenido. Seleccioná un track para ver sus sesiones.
+            tracks de contenido. Seleccioná un track para ver sus sesiones.
           </p>
         </v-col>
       </v-row>

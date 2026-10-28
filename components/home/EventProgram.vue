@@ -8,7 +8,7 @@
   <v-container fluid class="py-8">
     <v-row>
       <v-col cols="12" data-gsap-reveal>
-        <h2 class="text-h3 mb-2 section-heading">Un evento, cinco tracks</h2>
+        <h2 class="text-h3 mb-2 section-heading">Un evento, varios tracks</h2>
         <p class="text-body-1 mb-6 muted-copy">
           Elegí el track que más te interese y descubrí las sesiones disponibles
           para cada temática.
