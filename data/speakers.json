@@ -342,5 +342,33 @@
     "social": {
       "linkedin": "https://www.linkedin.com/in/sanchezsoria/"
     }
+  },
+  {
+    "id": "126",
+    "name": "Leandro Ochoa",
+    "company": {
+      "name": "Bitlogic",
+      "designation": "Software Engineer"
+    },
+    "community_title": "Software Engineer en Bitlogic",
+    "image": "",
+    "bio": "Leandro Ochoa es desarrollador de software en Bitlogic, donde forma parte del equipo que construye Aprendiz, una plataforma educativa basada en inteligencia artificial y tecnologías de AWS. Su trabajo abarca el desarrollo y la evolución de soluciones que combinan sistemas de agentes de IA, arquitecturas cloud y servicios escalables para acompañar el aprendizaje de estudiantes de distintas instituciones. Desde Córdoba, participa en la construcción de tecnología educativa de alcance internacional, enfrentando desafíos reales de arquitectura, escalabilidad y evolución de producto.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/leandroochoa"
+    }
+  },
+  {
+    "id": "127",
+    "name": "Juan Cruz Dominici",
+    "company": {
+      "name": "Bitlogic",
+      "designation": "Software Engineer"
+    },
+    "community_title": "Software Engineer en Bitlogic",
+    "image": "",
+    "bio": "Juan Cruz Dominici es desarrollador de software en Bitlogic, donde forma parte del equipo que construye Aprendiz, una plataforma educativa basada en inteligencia artificial y tecnologías de AWS. Su trabajo abarca el desarrollo y la evolución de soluciones que combinan sistemas de agentes de IA, arquitecturas cloud y servicios escalables para acompañar el aprendizaje de estudiantes de distintas instituciones. Desde Córdoba, participa en la construcción de tecnología educativa de alcance internacional, enfrentando desafíos reales de arquitectura, escalabilidad y evolución de producto.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/juancdominici"
+    }
   }
 ]

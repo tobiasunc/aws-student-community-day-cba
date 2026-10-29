@@ -209,16 +209,16 @@
   },
   {
     "id": "3203",
-    "slide": "",
-    "title": "bedrock by Bitlogic",
-    "description": "",
+    "slide": "https://drive.google.com/open?id=1Y8VlBct1FnK3aPv54vVTUvZpzVoQosVs",
+    "title": "Código local, desafíos globales: construyendo una plataforma educativa de alcance internacional sobre AWS",
+    "description": "¿Cómo se construye una plataforma capaz de acompañar a miles de estudiantes, disponible las 24 horas y adaptable a las necesidades de distintas instituciones educativas? Lo que comienza como una solución aparentemente sencilla —un chatbot impulsado por inteligencia artificial— rápidamente se convierte en un desafío de ingeniería: garantizar disponibilidad, escalar ante una demanda variable, incorporar conocimiento académico, personalizar experiencias y mantener los costos bajo control. En esta charla recorreremos cómo abordamos estos desafíos construyendo Aprendiz, una plataforma educativa desarrollada desde Córdoba con tecnologías de AWS. A través de problemas reales, decisiones de arquitectura y sus trade-offs, exploraremos cómo evolucionar de una primera solución con modelos fundacionales en Amazon Bedrock hacia un sistema de agentes, recuperación de información mediante RAG e infraestructura reproducible y escalable. Más que presentar un catálogo de tecnologías, queremos compartir una forma de pensar: cómo descomponer problemas complejos, evaluar alternativas y construir soluciones que evolucionan junto con el producto. Porque desarrollar software de alcance mundial comienza con un problema que vale la pena resolver.",
     "track": "Orange Track",
     "link": "",
     "time": "16:00 ART",
     "format": "Charla técnica",
     "date": "7 de noviembre de 2026",
     "timeDuration": "60",
-    "speakers": []
+    "speakers": ["126", "127"]
   },
   {
     "id": "3204",
