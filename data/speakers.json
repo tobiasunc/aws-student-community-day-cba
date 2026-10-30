@@ -7,7 +7,7 @@
       "designation": "Líder SBG / Estudiante"
     },
     "community_title": "Desarrollador de software y especialista en ciberseguridad",
-    "image": "",
+    "image": "Miguel-Zamudio.jfif",
     "bio": "Estudiante de ingeniería en sistemas computacionales, desarrollador de software y especialista en ciberseguridad con experiencia como freelancer y en empresa. Capacidad innata para aprender rápidamente cualquier lenguaje de programación. Trabajo bajo presión con enfoque colaborativo y empático hacia todas las personas.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/miguel-zamudio-dev/"
@@ -21,7 +21,7 @@
       "designation": "CEO y fundador de Deenex y de Xnod"
     },
     "community_title": "CEO y fundador de Deenex",
-    "image": "",
+    "image": "Alan-Tapia.jfif",
     "bio": "Alan Tapia es CEO y fundador de Deenex, la plataforma con la que las cadenas gastronómicas tienen su propia app, y de Xnod, empresa de software a medida e inteligencia artificial. Arrancó Deenex a los 19 años, sin capital y sin una línea de código: la vendió antes de programarla y con esa primera venta la construyó. Hoy Deenex supera el millón de usuarios y está en más de 500 locales gastronómicos. Es advisor de emprendedores y da conferencias de negocios y tecnología.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/alantapia"
@@ -35,7 +35,7 @@
       "designation": "DevOps Engineer"
     },
     "community_title": "DevOps Engineer en Craftech",
-    "image": "",
+    "image": "Sergio-Ortiz.png",
     "bio": "Soy Sergio Ortiz, DevOps Engineer en Craftech, consultora cloud especializada en AWS, donde diseño y opero infraestructura en producción con Kubernetes (EKS), Terraform, GitOps con ArgoCD y observabilidad con Prometheus y Grafana. Vengo del desarrollo de software y tengo más de 6 años de experiencia en tecnología. Tengo las certificaciones AWS Certified Solutions Architect Associate y AWS Certified AI Practitioner, además de certificaciones de Oracle Cloud en arquitectura y DevOps. Me apasiona explicar los temas difíciles desde lo básico, con ejemplos reales de producción.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/sergio-ortiz-mendoza17/"
@@ -49,7 +49,7 @@
       "designation": "DevOps Tech Lead"
     },
     "community_title": "DevOps Tech Lead en Craftech",
-    "image": "",
+    "image": "Rodrigo-Miranda.jfif",
     "bio": "Soy Rodrigo Miranda, DevOps Tech Lead en Craftech y profesor en la Diplomatura en DevOps & Cloud Computing de la UNC. Hace 4 años y medio que diseño infraestructura en AWS, con foco en seguridad y en proyectos que deben cumplir normativas como PCI DSS, SOC 2 o ISO 27001. Soy AWS Solutions Architect – Associate y participé como orador en Nerdearla y en el AWS Community Day 2026. Me gusta compartir lo que voy aprendiendo y ayudar a que quienes recién empiezan tomen decisiones de arquitectura y sean capaces de desarrollar su propio criterio.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/rodrigo-miranda-boscato/"
@@ -63,7 +63,7 @@
       "designation": "Team Lead DevOps"
     },
     "community_title": "Team Lead DevOps en Craftech",
-    "image": "",
+    "image": "Matias-Lionel-Ceballos.jfif",
     "bio": "Ingeniero en Computación por la Universidad Nacional de Córdoba y Team Lead DevOps en Craftech. Docente en la Diplomatura en DevOps & Cloud Computing.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/matias-lionel-ceballos/"
@@ -77,7 +77,7 @@
       "designation": "Consultor de empresas en RRHH"
     },
     "community_title": "Consultor de RRHH",
-    "image": "",
+    "image": "Marcos-Antonio-Espinoza-de-la-Torre.png",
     "bio": "Magíster en Comunicación e Imagen Institucional, licenciado en RRHH con más de 20 años de experiencia en estrategia y talento de personal.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/marcosespinoza1"
@@ -91,7 +91,7 @@
       "designation": "Integrations Reliability Engineer"
     },
     "community_title": "Integrations Reliability Engineer en Avature",
-    "image": "",
+    "image": "Ezequiel-De-la-Vega.png",
     "bio": "Estudiante de Ingeniería en Sistemas en UTN FRC e Integrations Reliability Engineer en Avature. Apasionado por la cultura SRE, la observabilidad y las arquitecturas distribuidas. Pasé de trabajar en atención al cliente a gestionar confiabilidad e integraciones en producción, habiendo construido en el camino mi propio Homelab bare-metal (MyssTic Edge) con observabilidad, automatización e IaC. Enfocado en demostrar cómo los proyectos personales y la práctica real salvan la brecha entre la universidad y la industria.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/ezequieldlv"
@@ -105,7 +105,7 @@
       "designation": "Software Engineer SSR"
     },
     "community_title": "Software Engineer y miembro de AWS Student Builder Group UNC",
-    "image": "",
+    "image": "Mauro-Gigena.png",
     "bio": "Mauro es desarrollador de software, estudiante de Ingeniería y creador de contenido sobre tecnología y desarrollo de carrera. Cuenta con experiencia desarrollando soluciones para distintos sectores, lo que le permitió conocer diversas necesidades y formas de trabajar. Forma parte del AWS Student Builder Group UNC y comparte aprendizajes de su trabajo y formación con una comunidad de estudiantes y desarrolladores. Le interesa explorar cómo aprender, construir criterio y crecer profesionalmente en un sector que cambia constantemente.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/gigenamauro"
@@ -119,7 +119,7 @@
       "designation": "Cloud Engineer"
     },
     "community_title": "Cloud Engineer en Teracloud",
-    "image": "",
+    "image": "Ariana-Gonzalez-Vidal.jfif",
     "bio": "Ariana G. Vidal es Cloud Engineer: diseña y automatiza infraestructura en AWS, con foco en infraestructura como código y despliegues confiables. Le apasiona compartir lo que aprende y acompañar a nuevas generaciones en sus primeros pasos en la nube.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/ariana-g-vidal"
@@ -133,7 +133,7 @@
       "designation": "DevSecOps"
     },
     "community_title": "DevSecOps en Teracloud",
-    "image": "",
+    "image": "Lourdes-Dorado.jfif",
     "bio": "Lourdes Dorado es DevSecOps y se dedica a integrar la seguridad en cada etapa del ciclo de desarrollo, desde el primer commit hasta producción. Le apasiona compartir lo que aprende y acompañar a nuevas generaciones en sus primeros pasos en la nube.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/m-l-dorado/"
@@ -147,7 +147,7 @@
       "designation": "Coordinadora"
     },
     "community_title": "Profesora y coordinadora de TU en Ciberseguridad UPC",
-    "image": "",
+    "image": "Veronica-Celiz.png",
     "bio": "Lic. en Seguridad Informática | Profesora y coordinadora de la Tecnicatura Universitaria en Ciberseguridad UPC | ORYVEN.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/veronicaceliz"
@@ -161,7 +161,7 @@
       "designation": "DevOps & Cloud Engineer"
     },
     "community_title": "DevOps & Cloud Engineer en Craftech",
-    "image": "",
+    "image": "Jeremias-Maldonado.jfif",
     "bio": "Jeremías Maldonado Gómez es DevOps en Craftech. Diseña y opera infraestructura cloud en AWS y Azure para diversos clientes. En el último año incorporó agentes de IA, priorizando el gobierno y la seguridad: automatizar sin poner en riesgo producción. Estudia en la UTN, donde desarrolla Aurora, su proyecto de tesis: un ecosistema tecnológico para acompañar a pacientes con Alzheimer en el hogar.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/jeremias-maldonado-gomez"
@@ -175,7 +175,7 @@
       "designation": "Presidenta de la fundación"
     },
     "community_title": "Dra. en Cs. de la Computación y docente de la UNC (FAMAF y FCEFyN)",
-    "image": "",
+    "image": "Araceli-Acosta.jpg",
     "bio": "Araceli Acosta es Dra. en Cs. de la Computación y docente de la UNC en FAMAF y en FCEFyN. Además es presidenta de la Fundación Mueve, que promueve la Cultura Digital emancipadora.",
     "social": {}
   },
@@ -187,7 +187,7 @@
       "designation": "Desarrollador de Software"
     },
     "community_title": "Estudiante de Lic. en Cs. de la Computación (FAMAF-UNC)",
-    "image": "",
+    "image": "Ezequiel-Luduena.jfif",
     "bio": "Ezequiel Ludueña es estudiante de Lic. en Cs. de la Computación de FAMAF-UNC. Trabaja en el desarrollo de módulos de Odoo con Mueve y en proyectos de extensión universitaria relacionados.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/ezeluduena/"
@@ -201,7 +201,7 @@
       "designation": "DevOps & Cloud Engineer"
     },
     "community_title": "Cloud Engineer en Teracloud, estudiante de la FCEFyN",
-    "image": "",
+    "image": "Federico-Fernandez.png",
     "bio": "DevOps & Cloud Engineer, estudiante de la FCEFyN. Fanático de Nirvana y de la PC/Linux.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/fernandezbarriosfederico/"
@@ -215,7 +215,7 @@
       "designation": "Cloud/DevOps Engineer"
     },
     "community_title": "Cloud/DevOps Engineer, estudiante de Sistemas en la UTN",
-    "image": "",
+    "image": "Santino-Chamia.jfif",
     "bio": "Cloud/DevOps Engineer y estudiante de Sistemas en la UTN. Fan de la neurociencia, los libros y de estar siempre aprendiendo algo nuevo.",
     "social": {}
   },
@@ -227,7 +227,7 @@
       "designation": "Analista de Prevención de Fraude"
     },
     "community_title": "Analista de Prevención de Fraude, estudiante de Cs. de la Computación (UNC)",
-    "image": "",
+    "image": "Constanza-Gomez.jfif",
     "bio": "Constanza Gómez es estudiante de Ciencias de la Computación en la Universidad Nacional de Córdoba (UNC) y Analista de Prevención de Fraude en Naranja X, donde combina ciencia de datos, análisis de comportamiento y tecnología para desarrollar estrategias de detección y prevención del fraude financiero. Su experiencia se centra en transformar datos en decisiones, utilizando herramientas de programación, análisis estadístico y machine learning para resolver problemas reales de negocio. Le interesa especialmente explorar cómo la inteligencia artificial y la ciencia de datos pueden aportar soluciones innovadoras con impacto en la industria financiera.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/constanzagomez01/"
@@ -241,7 +241,7 @@
       "designation": "Profesor de seguridad informática"
     },
     "community_title": "Profesor de ciberseguridad y ex CISO",
-    "image": "",
+    "image": "Pablo-Masjoan.jfif",
     "bio": "Pablo Masjoan es Ingeniero en Sistemas con más de 20 años de experiencia en ciberseguridad, gestión de riesgos y cumplimiento. Comenzó como analista de seguridad, participó en proyectos en toda Latinoamérica, lideró equipos de gobierno, riesgo y cumplimiento, y fue CISO de empresa aeronáutica. Es docente de ciberseguridad en varias universidades y expositor en conferencias internacionales. Disfruta de investigar novedades del sector, y acercar las temáticas tanto a colegas como a quienes recién empiezan, con ejemplos concretos del mundo real.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/pablomasjoan/"
@@ -255,7 +255,7 @@
       "designation": "Socio y socia de la institución"
     },
     "community_title": "Residencia universitaria",
-    "image": "",
+    "image": "Colegio-Mayor-Universitario-Jose-Manuel-Estrada.png",
     "bio": "El Colegio Mayor Universitario \"José Manuel Estrada\" es una asociación civil sin fines de lucro, autogestionada e independiente que busca contribuir a la inclusión social en la educación universitaria de jóvenes de nuestro país y del extranjero que atraviesan distintas dificultades, principalmente económicas, para realizar sus estudios. Asimismo, brinda una formación humana integral que complementa la formación profesional adquirida en la universidad. De esta manera se inculca la responsabilidad, el compromiso social, el pensamiento crítico y constituye el desarrollo de la ciudadanía, la cultura y la ética de los estudiantes.",
     "social": {}
   },
@@ -267,7 +267,7 @@
       "designation": "Carpincho Emérito"
     },
     "community_title": "Analista en Computación en UNC Supercómputo (HPC)",
-    "image": "",
+    "image": "Alejandro-Ismael-Silva.jfif",
     "bio": "Alejandro I. Silva es Analista en Computación y trabaja en UNC Supercómputo administrando infraestructura HPC. Fue desarrollador full-stack e integra Carpinchos, equipo de HPC de la UNC, con el que obtuvo el tercer puesto en IndySCC 2023 y llegó a las finales de ASC 2024 y 2026. Tiene un commit en Linux, hizo un juego en assembler y dibuja cómics.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/alajandroisamel"
@@ -281,7 +281,7 @@
       "designation": "Directora Ejecutiva de XAcademy"
     },
     "community_title": "Directora Ejecutiva de XAcademy y de Climatech Argentina",
-    "image": "",
+    "image": "Agostina-Martino.png",
     "bio": "Agostina Martino es Licenciada en Diseño y Magíster en Administración de Empresas (MBA) por la Universidad Siglo 21. Actualmente se desempeña como Directora Ejecutiva de XAcademy en la Fundación Tecnología con Propósito y de Climatech Argentina, y es profesora en la Universidad Siglo 21. Lleva más de 10 años impulsando proyectos en el cruce de innovación, educación, emprendedurismo e impacto social y ambiental junto a startups, empresas y organizaciones.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/agostinamartino/"
@@ -295,7 +295,7 @@
       "designation": "Directora de Desarrollo Institucional"
     },
     "community_title": "Directora de Desarrollo Institucional y Coordinadora de AI League for Good",
-    "image": "",
+    "image": "Agostina-Sanchez-Stabile.png",
     "bio": "Agostina Sánchez Stábile es Licenciada en Ciencia Política y diplomada en Metodologías Ágiles. Actualmente se desempeña como Directora de Desarrollo Institucional en la Fundación Tecnología con Propósito y Coordinadora de AI League for Good. Lleva más de seis años diseñando proyectos de impacto social y digital con gobiernos y organizaciones sociales.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/agostina-s%C3%A1nchez-st%C3%A1bile-3abaa1168/"
@@ -309,7 +309,7 @@
       "designation": "Principal Innovation Architect"
     },
     "community_title": "AWS Community Builder y líder de AWS AI User Group Argentina",
-    "image": "",
+    "image": "Guille-Ojeda.jfif",
     "bio": "Guille Ojeda es Principal Innovation Architect en la oficina del CTO de Caylent. Escribe una newsletter llamada Simple AWS con 42.000 suscriptores, ha publicado más de 250 artículos y 2 libros, y da charlas sobre arquitectura AWS e IA aplicada en eventos como AWS Summits y re:Invents. Es AWS Community Builder, lidera AWS AI User Group Argentina y fue reconocido como AWS Builder del Año para LATAM-ES 2025.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/guilleojeda/"
@@ -323,7 +323,7 @@
       "designation": "Senior Cloud Software Developer"
     },
     "community_title": "Senior Cloud Software Developer en Caylent",
-    "image": "",
+    "image": "Facundo-Creus.jfif",
     "bio": "Soy un desarrollador argentino de 52 años. Mi fascinación por las conexiones digitales comenzó en los días pre-internet con BBS y módems telefónicos, y continúa evolucionando en la era de la nube, donde aplico la misma curiosidad y dedicación que me caracterizaron desde mis primeros pasos en el mundo de la informática.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/creus/"
@@ -337,7 +337,7 @@
       "designation": "Coordinador de Sedes"
     },
     "community_title": "Coordinador de Sedes de Campus Norte UNC",
-    "image": "",
+    "image": "Tomas-Sanchez-Soria.jfif",
     "bio": "Licenciado en Diseño por la Universidad Provincial de Córdoba y Máster en Project Management por ENEB (Barcelona). Vive en Córdoba, Argentina, y es Coordinador de Sedes de Campus Norte UNC, de la Universidad Nacional de Córdoba, donde también coordina el Área de Comunicación del Prorrectorado de Desarrollo Territorial.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/sanchezsoria/"
@@ -351,7 +351,7 @@
       "designation": "Software Engineer"
     },
     "community_title": "Software Engineer en Bitlogic",
-    "image": "",
+    "image": "Leandro-Ochoa.jfif",
     "bio": "Leandro Ochoa es desarrollador de software en Bitlogic, donde forma parte del equipo que construye Aprendiz, una plataforma educativa basada en inteligencia artificial y tecnologías de AWS. Su trabajo abarca el desarrollo y la evolución de soluciones que combinan sistemas de agentes de IA, arquitecturas cloud y servicios escalables para acompañar el aprendizaje de estudiantes de distintas instituciones. Desde Córdoba, participa en la construcción de tecnología educativa de alcance internacional, enfrentando desafíos reales de arquitectura, escalabilidad y evolución de producto.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/leandroochoa"
@@ -365,7 +365,7 @@
       "designation": "Software Engineer"
     },
     "community_title": "Software Engineer en Bitlogic",
-    "image": "",
+    "image": "Juan-Cruz-Dominici.jfif",
     "bio": "Juan Cruz Dominici es desarrollador de software en Bitlogic, donde forma parte del equipo que construye Aprendiz, una plataforma educativa basada en inteligencia artificial y tecnologías de AWS. Su trabajo abarca el desarrollo y la evolución de soluciones que combinan sistemas de agentes de IA, arquitecturas cloud y servicios escalables para acompañar el aprendizaje de estudiantes de distintas instituciones. Desde Córdoba, participa en la construcción de tecnología educativa de alcance internacional, enfrentando desafíos reales de arquitectura, escalabilidad y evolución de producto.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/juancdominici"
