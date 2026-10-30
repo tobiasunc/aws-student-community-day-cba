@@ -11,6 +11,8 @@
         <HomeHeroSection class="my-0 my-md-10" />
         <!-- Hero -->
 
+        <HomeEventProgram class="mb-md-10" />
+
         <!-- Qué vas a encontrar -->
         <HomeExpectationSection class="mt-md-10" />
         <!-- Fin de qué vas a encontrar -->
@@ -18,8 +20,6 @@
         <!-- Convocatorias -->
         <HomeParticipationForms />
         <!-- Convocatorias -->
-
-        <HomeEventProgram class="mb-md-10" />
 
         <!-- Tecnologías -->
         <HomeTechSection class="mb-md-10" />

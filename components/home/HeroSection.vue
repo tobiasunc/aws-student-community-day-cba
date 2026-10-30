@@ -7,7 +7,7 @@
 <template>
   <v-container fluid class="hero-section" data-gsap-reveal>
     <v-row justify-center align="center">
-      <v-col md="6" sm="6" cols="12">
+      <v-col md="9" sm="12" cols="12">
         <p class="eyebrow" data-gsap-hero>AWS STUDENT COMMUNITY DAY / UNC 2026</p>
         <h1 class="responsive-h1 my-4" data-gsap-hero>
           <span class="hero-line" data-gsap-hero-line>AWS Student Community Day</span>
@@ -57,28 +57,29 @@
           </div>
         </div>
 
-        <v-btn
-          rounded
-          size="large"
-          color="#FFD427"
-          v-if="
-            registrationIsOpen
-          "
-          :href="mainData.eventInfo.registration.link"
-          class="register-button my-4 mt-3"
-          data-gsap-hero
-          target="_blank"
-          rel="noopener noreferrer"
-          variant="flat"
-          >Inscribite ahora</v-btn
-        >
-      </v-col>
-      <v-col md="6" sm="6" cols="12">
-        <v-img class="hero-image" data-gsap-image data-gsap-parallax
-          alt="AWS Student Community Day UNC"
-          :src="heroImage"
-          :lazy-src="heroImage"
-        ></v-img>
+        <div class="hero-actions my-4 mt-3" data-gsap-hero>
+          <v-btn
+            rounded
+            size="large"
+            color="#FFD427"
+            v-if="registrationIsOpen"
+            :href="mainData.eventInfo.registration.link"
+            class="register-button"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="flat"
+            >Inscribite ahora</v-btn
+          >
+          <v-btn
+            rounded
+            size="large"
+            color="#FFD427"
+            to="/agenda"
+            class="schedule-button"
+            variant="outlined"
+            >Ver cronograma</v-btn
+          >
+        </div>
       </v-col>
     </v-row>
   </v-container>
@@ -86,7 +87,6 @@
 
 <script setup lang="ts">
 import { useDisplay } from "vuetify";
-import heroImage from "@/assets/img/foto_pagina_principal.png";
 import { computed, onBeforeUnmount, onMounted, reactive, ref } from "vue";
 import { useJSONData } from "~/composables/useJSONData";
 import { useRegistrationStatus } from "~/composables/useRegistrationStatus";
@@ -260,21 +260,21 @@ onBeforeUnmount(() => {
   font-weight: 700;
 }
 
-.hero-image {
-  width: min(100%, 520px);
-  max-height: 470px;
-  margin: 0 auto;
-  filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.35));
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: center;
+}
+
+.schedule-button {
+  font-weight: 700;
 }
 
 @media (max-width: 959px) {
   .hero-section {
     min-height: auto;
     padding-top: 92px;
-  }
-
-  .hero-image {
-    max-height: 420px;
   }
 }
 
@@ -283,8 +283,8 @@ onBeforeUnmount(() => {
     padding-top: 76px;
   }
 
-  .hero-image {
-    max-height: 330px;
+  .hero-actions .v-btn {
+    flex: 1 1 100%;
   }
 }
 
