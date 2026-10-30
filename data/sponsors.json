@@ -4,7 +4,8 @@
     "folder": "sponsors",
     "sponsors": [
       { "id": "teracloud", "name": "TeraCloud", "link": "https://teracloud.io/", "logo": "teracloud-logo.png" },
-      { "id": "craftech", "name": "Craftech", "link": "https://craftech.io/", "logo": "CRAFTECH-logo.png" }
+      { "id": "craftech", "name": "Craftech", "link": "https://craftech.io/", "logo": "CRAFTECH-logo.png" },
+      { "id": "bitlogic", "name": "Bitlogic", "link": "https://es.bitlogic.io/", "logo": "bitlogic-logo.png" }
     ]
   },
   {
