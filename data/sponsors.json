@@ -16,7 +16,14 @@
       { "id": "fundacion-si", "name": "Fundación Sí", "link": "https://fundacionsi.org.ar/", "logo": "Fundacion-si-logo.avif" },
       { "id": "famaf", "name": "FAMAF - UNC", "link": "https://www.famaf.unc.edu.ar/", "logo": "FAMAF-logo.png" },
       { "id": "cybercirujas", "name": "Cybercirujas", "link": "https://foro.cybercirujas.org/", "logo": "cybercirujas-logo.gif" },
-      { "id": "coderdojo", "name": "CoderDojo Córdoba", "link": "https://coderdojo.unc.edu.ar/", "logo": "CoderDojo-logo.png" }
+      { "id": "coderdojo", "name": "CoderDojo Córdoba", "link": "https://coderdojo.unc.edu.ar/", "logo": "CoderDojo-logo.png" },
+      { "id": "ceimaf", "name": "CEIMAF", "link": "https://linktr.ee/guri_ceimaf", "logo": "ceimaf-logo.png" },
+      { "id": "guri", "name": "GURI", "link": "https://linktr.ee/guri_ceimaf", "logo": "guri-logo.png" },
+      { "id": "beerjs", "name": "Beer.js Córdoba", "link": "https://www.meetup.com/beer-js-cordoba/", "logo": "logo-beerjs.svg" },
+      { "id": "secyt", "name": "SeCyT - UNC", "link": "https://www.unc.edu.ar/ciencia-y-tecnolog%C3%ADa", "logo": "logo-secretari.png" },
+      { "id": "casa-universitaria", "name": "Fundación La Casa Universitaria", "link": "https://www.lacasauniversitaria.com.ar/", "logo": "fundacion-casa-universitaria.png" },
+      { "id": "espacio-tec", "name": "Espacio Mujeres TeC", "link": "https://espaciomujerestec.cba.gov.ar/", "logo": "espacio-tec-logo.png" },
+      { "id": "ceu", "name": "CEU - FCEFyN", "link": "https://www.instagram.com/ceu.fcefyn/", "logo": "logo-ceu.png" }
     ]
   }
 ]
