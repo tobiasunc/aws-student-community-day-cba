@@ -33,32 +33,28 @@
 
     <v-card
       max-width="800"
-      rounded="xl"
-      class="pa-4"
-      style="border: 2px solid black"
+      class="pa-4 speaker-dialog futuristic-surface"
+      style="border-radius: 12px; border: 2px solid var(--aws-orange)"
     >
       <v-container fluid>
         <v-row>
-          <v-col md="4" cols="12">
-            <div class="text-center image-container">
-              <div class="octagon-portrait">
-                <v-img
-                  class="avatar"
-                  :alt="props.data.name"
-                  cover
-                  :src="
-                    props.data.image.length
-                      ? '/img/speakers/' + props.data.image
-                      : '/img/common/avatar.png'
-                  "
-                ></v-img>
-                <span class="octagon-frame" aria-hidden="true"></span>
-              </div>
+          <v-col md="4" cols="12" class="d-flex justify-center">
+            <div class="dialog-portrait">
+              <v-img
+                class="dialog-avatar"
+                :alt="props.data.name"
+                cover
+                :src="
+                  props.data.image.length
+                    ? '/img/speakers/' + props.data.image
+                    : '/img/common/avatar.png'
+                "
+              ></v-img>
             </div>
           </v-col>
           <v-col md="8" cols="12">
             <h1 class="mt-3 mb-0">{{ props.data.name }}</h1>
-            <p style="font-weight: 500" class="mt-n1">
+            <p style="font-weight: 500" class="mt-1">
               {{ props.data.community_title }} |
               {{ props.data.company.designation }},
               {{ props.data.company.name }}
@@ -127,4 +123,25 @@ p {
   z-index: 10;
 }
 
+/* Diálogo de detalle del speaker */
+.dialog-portrait {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 1;
+  filter: drop-shadow(0 0 14px rgba(255, 153, 0, 0.28));
+}
+
+.dialog-avatar {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(30% 0, 70% 0, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0 70%, 0 30%);
+  background: #15151d;
+}
+
+.speaker-dialog :deep(h1),
+.speaker-dialog :deep(p) {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+}
 </style>
