@@ -47,7 +47,7 @@
             <v-col md="12" cols="12">
               <p
                 class="my-2"
-                style="text-align: left;font-size:25px;font-weight:500;line-height:15px"
+                style="text-align: left;font-size:25px;font-weight:500;line-height:1.2"
               >
                 {{ props.data.title }} Details
               </p>
@@ -97,11 +97,18 @@
               </v-chip>
               <v-container fluid class="px-0 mx-0">
                 <span v-for="(itemp, indexp) in speakers" :key="indexp">
-                  <v-chip pill class="mt-2 mr-2">
+                  <v-chip
+                    pill
+                    link
+                    to="/speakers"
+                    class="mt-2 mr-2"
+                    :aria-label="`Ver a ${itemp.name} en la página de ponentes`"
+                  >
                     <v-avatar start>
                       <img :alt="`Foto de ${itemp.name}`" :src="getImgUrl(itemp.image)" style="width: 100%" />
                     </v-avatar>
                     {{ itemp.name }}
+                    <v-icon end size="small">mdi-arrow-right</v-icon>
                   </v-chip>
                 </span>
               </v-container>

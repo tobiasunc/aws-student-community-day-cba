@@ -62,6 +62,23 @@
 
             <p class="mt-4">{{ props.data.bio }}</p>
 
+            <div v-if="speakerSessions.length" class="mt-4">
+              <p style="font-weight: 600" class="mb-2">
+                {{ speakerSessions.length > 1 ? 'Sus charlas' : 'Su charla' }}
+              </p>
+              <NuxtLink
+                v-for="session in speakerSessions"
+                :key="session.id"
+                :to="sessionLink(session)"
+                class="session-link"
+                :aria-label="`Ver en la agenda: ${session.title}`"
+              >
+                <v-icon size="small" class="session-link__icon">mdi-calendar-text</v-icon>
+                <span class="session-link__title">{{ session.title }}</span>
+                <v-icon size="small" class="session-link__arrow">mdi-arrow-right</v-icon>
+              </NuxtLink>
+            </div>
+
             <common-speaker-social-button :socialLinks="props.data.social" />
           </v-col>
         </v-row>
@@ -74,13 +91,33 @@
 </template>
 
 <script setup lang="ts">
-import type { Speaker } from '~/types'
-import { ref } from 'vue'
+import type { Session, Speaker } from '~/types'
+import { computed, ref } from 'vue'
+import { useJSONData } from '~/composables/useJSONData'
 
 const props = defineProps<{ data: Speaker }>()
 
 // Reactive variables
 const dialog = ref(false);
+
+const { sessionsData, mainData } = useJSONData();
+
+// Charlas en las que participa este speaker (excluye networking/cena).
+const speakerSessions = computed(() =>
+  sessionsData.filter(
+    (session) =>
+      session.format !== 'Networking' &&
+      (session.speakers || []).map(String).includes(String(props.data.id)),
+  ),
+);
+
+// Link a la agenda, filtrando por el track de la charla (/agenda?track=<id>).
+const sessionLink = (session: Session) => {
+  const track = mainData.eventInfo.tracks.find(
+    (t) => `${t.name} Track` === session.track,
+  );
+  return track ? { path: '/agenda', query: { track: track.id } } : { path: '/agenda' };
+};
 </script>
 
 <style scoped>
@@ -143,5 +180,45 @@ p {
   position: relative;
   z-index: 1;
   color: #ffffff;
+}
+
+.session-link {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 196, 0, 0.45);
+  border-radius: 12px;
+  background: rgba(255, 196, 0, 0.06);
+  color: #ffd84d !important;
+  text-decoration: none;
+  line-height: 1.3;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.session-link:hover,
+.session-link:focus-visible {
+  background: rgba(255, 196, 0, 0.14);
+  border-color: #ffc400;
+  transform: translateY(-1px);
+}
+
+.session-link__icon {
+  flex: 0 0 auto;
+  opacity: 0.9;
+}
+
+.session-link__title {
+  flex: 1 1 auto;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+.session-link__arrow {
+  flex: 0 0 auto;
+  opacity: 0.8;
 }
 </style>
