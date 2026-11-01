@@ -62,7 +62,7 @@
             rounded
             size="large"
             color="#FFD427"
-            v-if="registrationIsOpen"
+            v-if="mainData.eventInfo.registration.link"
             :href="mainData.eventInfo.registration.link"
             class="register-button"
             target="_blank"
